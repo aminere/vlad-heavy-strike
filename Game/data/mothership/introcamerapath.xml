@@ -1,0 +1,116 @@
+<CameraPath>
+    <Properties>
+        <uint Name="ID" Value="8d5d797f"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0.720106 -32.7745 1.90735e-006"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <bool Name="WrapAround" Value="0"/>
+    </Properties>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="85e2e1fc"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="6.053 -16.7539 17.2736"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="4"/>
+            <vec3D Name="CameraLookAt" Value="-4.15191 -15.7906 -7.76653"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="8b59ce7a"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="52.2415 -64.7572 95.6087"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="6.5"/>
+            <vec3D Name="CameraLookAt" Value="37.192 -68.2632 67.6929"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="f1ec967d"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="88.1626 109.117 134.485"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="3.5"/>
+            <vec3D Name="CameraLookAt" Value="67.8351 60.7888 99.8487"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="dad45c92"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="-29.0373 96.6532 72.1032"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="3.5"/>
+            <vec3D Name="CameraLookAt" Value="-14.7304 42.6445 36.7603"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="ce1b4480"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="-14.8525 77.3788 35.2136"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="3.5"/>
+            <vec3D Name="CameraLookAt" Value="-0.545635 23.3699 -0.129365"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+    <CameraPathElement>
+        <Properties>
+            <uint Name="ID" Value="e49f8e21"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="-31.9763 102.508 73.3517"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <vec3D Name="UpVector" Value="0 0 1"/>
+            <float Name="FollowDuration" Value="1"/>
+            <vec3D Name="CameraLookAt" Value="-9.11825 87.3907 40.4467"/>
+            <event Name="SetCameraInfo" Value="SetCameraPathElementInfoEvent"/>
+        </Properties>
+    </CameraPathElement>
+</CameraPath>

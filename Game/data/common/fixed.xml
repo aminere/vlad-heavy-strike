@@ -1,0 +1,6 @@
+<Font>	
+	<string Name="Path" Value="common/fixed.png" />
+	<vec2D Name="CharacterSize" Value="9 16" />
+	<vec2D Name="TextureSize" Value="128 128" />
+	<int Name="CharactersPerLine" Value="14" />
+</Font>

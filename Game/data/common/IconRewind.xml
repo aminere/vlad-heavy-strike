@@ -1,0 +1,10 @@
+<Animations>
+	<array Name="Animations">
+		<struct>
+			<string Name="Name" Value="Rewind" />
+			<array Name="Frames">
+				<file Value="common/tex/IconRewind.png"/>
+			</array>
+		</struct>
+	</array>
+</Animations>

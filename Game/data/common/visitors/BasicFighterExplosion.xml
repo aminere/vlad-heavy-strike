@@ -1,0 +1,236 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1"/>
+    <float Name="Duration" Value="-1"/>
+    <bool Name="DepthTest" Value="0"/>
+    <ref Name="Mesh" TemplatePath="common/mesh/fighter.xml"/>
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="51"/>
+                        <uint Value="4f"/>
+                        <uint Value="52"/>
+                        <uint Value="50"/>
+                        <uint Value="132"/>
+                        <uint Value="4e"/>
+                        <uint Value="134"/>
+                        <uint Value="133"/>
+                        <uint Value="136"/>
+                        <uint Value="135"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1e7"/>
+                        <uint Value="12e"/>
+                        <uint Value="12d"/>
+                        <uint Value="12c"/>
+                        <uint Value="12b"/>
+                        <uint Value="12a"/>
+                        <uint Value="46"/>
+                        <uint Value="47"/>
+                        <uint Value="48"/>
+                        <uint Value="49"/>
+                        <uint Value="1e8"/>
+                        <uint Value="4a"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1a4"/>
+                        <uint Value="1a2"/>
+                        <uint Value="1a3"/>
+                        <uint Value="1a5"/>
+                        <uint Value="1a8"/>
+                        <uint Value="16b"/>
+                        <uint Value="16e"/>
+                        <uint Value="16c"/>
+                        <uint Value="16d"/>
+                        <uint Value="196"/>
+                        <uint Value="1a9"/>
+                        <uint Value="1a6"/>
+                        <uint Value="1a7"/>
+                        <uint Value="19b"/>
+                        <uint Value="19a"/>
+                        <uint Value="19d"/>
+                        <uint Value="19c"/>
+                        <uint Value="19e"/>
+                        <uint Value="1a1"/>
+                        <uint Value="19f"/>
+                        <uint Value="1a0"/>
+                        <uint Value="197"/>
+                        <uint Value="199"/>
+                        <uint Value="198"/>
+                        <uint Value="168"/>
+                        <uint Value="167"/>
+                        <uint Value="16a"/>
+                        <uint Value="169"/>
+                        <uint Value="186"/>
+                        <uint Value="185"/>
+                        <uint Value="18e"/>
+                        <uint Value="191"/>
+                        <uint Value="18d"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="ad"/>
+                        <uint Value="aa"/>
+                        <uint Value="a9"/>
+                        <uint Value="a2"/>
+                        <uint Value="a1"/>
+                        <uint Value="87"/>
+                        <uint Value="88"/>
+                        <uint Value="8a"/>
+                        <uint Value="89"/>
+                        <uint Value="b2"/>
+                        <uint Value="b3"/>
+                        <uint Value="b5"/>
+                        <uint Value="b4"/>
+                        <uint Value="c4"/>
+                        <uint Value="c1"/>
+                        <uint Value="c5"/>
+                        <uint Value="c3"/>
+                        <uint Value="c2"/>
+                        <uint Value="c0"/>
+                        <uint Value="be"/>
+                        <uint Value="bf"/>
+                        <uint Value="d9"/>
+                        <uint Value="d8"/>
+                        <uint Value="9d"/>
+                        <uint Value="bc"/>
+                        <uint Value="9e"/>
+                        <uint Value="bd"/>
+                        <uint Value="b6"/>
+                        <uint Value="b7"/>
+                        <uint Value="b9"/>
+                        <uint Value="bb"/>
+                        <uint Value="ba"/>
+                        <uint Value="b8"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="23"/>
+                        <uint Value="106"/>
+                        <uint Value="22"/>
+                        <uint Value="105"/>
+                        <uint Value="137"/>
+                        <uint Value="55"/>
+                        <uint Value="139"/>
+                        <uint Value="54"/>
+                        <uint Value="53"/>
+                        <uint Value="138"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="101"/>
+                        <uint Value="100"/>
+                        <uint Value="1ce"/>
+                        <uint Value="1d7"/>
+                        <uint Value="f9"/>
+                        <uint Value="1d6"/>
+                        <uint Value="ee"/>
+                        <uint Value="104"/>
+                        <uint Value="1dd"/>
+                        <uint Value="f8"/>
+                        <uint Value="102"/>
+                        <uint Value="103"/>
+                        <uint Value="f1"/>
+                        <uint Value="ef"/>
+                        <uint Value="1c9"/>
+                        <uint Value="eb"/>
+                        <uint Value="ec"/>
+                        <uint Value="ed"/>
+                        <uint Value="1d8"/>
+                        <uint Value="e9"/>
+                        <uint Value="e8"/>
+                        <uint Value="4"/>
+                        <uint Value="3"/>
+                        <uint Value="7"/>
+                        <uint Value="6"/>
+                        <uint Value="ea"/>
+                        <uint Value="b"/>
+                        <uint Value="a"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1f"/>
+                        <uint Value="20"/>
+                        <uint Value="1da"/>
+                        <uint Value="21"/>
+                        <uint Value="1de"/>
+                        <uint Value="1d"/>
+                        <uint Value="1e"/>
+                        <uint Value="1b"/>
+                        <uint Value="1c"/>
+                        <uint Value="2"/>
+                        <uint Value="1df"/>
+                        <uint Value="1d5"/>
+                        <uint Value="5"/>
+                        <uint Value="1cf"/>
+                        <uint Value="9"/>
+                        <uint Value="8"/>
+                        <uint Value="c"/>
+                        <uint Value="1d9"/>
+                        <uint Value="f"/>
+                        <uint Value="d"/>
+                        <uint Value="16"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="43"/>
+                        <uint Value="42"/>
+                        <uint Value="40"/>
+                        <uint Value="41"/>
+                        <uint Value="45"/>
+                        <uint Value="128"/>
+                        <uint Value="44"/>
+                        <uint Value="129"/>
+                        <uint Value="124"/>
+                        <uint Value="125"/>
+                        <uint Value="126"/>
+                        <uint Value="127"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1cd"/>
+                        <uint Value="1e4"/>
+                        <uint Value="1cc"/>
+                        <uint Value="1e2"/>
+                        <uint Value="1cb"/>
+                        <uint Value="1e1"/>
+                        <uint Value="1ca"/>
+                        <uint Value="1e3"/>
+                        <uint Value="11f"/>
+                        <uint Value="1e6"/>
+                        <uint Value="1e9"/>
+                        <uint Value="123"/>
+                        <uint Value="1e5"/>
+                        <uint Value="3c"/>
+                        <uint Value="122"/>
+                        <uint Value="120"/>
+                        <uint Value="3d"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="39"/>
+                        <uint Value="3a"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="11c"/>
+                        <uint Value="11d"/>
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>

@@ -1,0 +1,45 @@
+<Player>
+    <Properties>
+        <uint Name="ID" Value="bebe0380"/>
+        <string Name="Name" Value="Player"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 287.855 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="1"/>
+        <bool Name="CanDropItem" Value="1"/>
+        <bool Name="Destructible" Value="1"/>
+        <float Name="HitPoints" Value="1"/>
+        <bool Name="PlayfieldCheck" Value="1"/>
+        <bool Name="Immune" Value="0"/>
+        <bool Name="IsBoss" Value="0"/>
+        <bool Name="ShakeOnExplode" Value="1"/>
+        <bool Name="ShakeOnShot" Value="0"/>
+        <float Name="ExplosionScaleFactor" Value="2.5"/>
+        <float Name="Acceleration" Value="2.5"/>
+        <float Name="TouchAcceleration" Value="250"/>
+        <float Name="DecelerationFactor" Value="0.9"/>
+        <aabb3D Name="MotionBounds" Value="-10 -2 -0.5 10 30 0.5"/>
+        <vec3D Name="BaseSpeed" Value="0 4 0"/>
+        <float Name="MaxTilt" Value="45"/>
+        <float Name="TiltDuration" Value="0.25"/>
+        <float Name="SkyBoxRotationSpeed" Value="4"/>
+        <float Name="ClampDuration" Value="0.2"/>
+        <float Name="DamageDist" Value="25"/>
+        <float Name="RegenPerSecond" Value="50"/>
+        <float Name="RegenDelay" Value="1"/>
+        <float Name="HideHealthBarTime" Value="1"/>
+        <float Name="ContactDamagePerSecond" Value="100"/>
+        <float Name="BulletDamage" Value="30"/>
+        <color Name="FullHealthColor" Value="0 1 1"/>
+        <color Name="LowHealthColor" Value="1 0 0"/>
+        <float Name="RespawnSpectateTime" Value="1"/>
+    </Properties>
+    <MeshEntity TemplatePath="common/PlayerMesh.xml">
+        <Properties>
+            <uint Name="ID" Value="94cc3adb"/>
+        </Properties>
+    </MeshEntity>
+</Player>

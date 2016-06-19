@@ -1,0 +1,277 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="4b443adb"/>
+        <string Name="Name" Value="Shield"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="2.4 2.4 2.4"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+    </Properties>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="889f76f"/>
+            <string Name="Name" Value="Layer1"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 348.719 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="common/mesh/ShieldSphere.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="Rotation3DVisitor">
+                <uint Name="ID" Value="f15a2ba2"/>
+                <string Name="Name" Value=""/>
+                <bool Name="AutoStart" Value="1"/>
+                <enum Name="PlaybackType" Value="2"/>
+                <int Name="MaxPlayCount" Value="-1"/>
+                <struct Name="Src">
+                    <vec3D Name="Value" Value="0 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <struct Name="Dest">
+                    <vec3D Name="Value" Value="0 360 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <float Name="Duration" Value="3"/>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="ae5f19b0"/>
+                <string Name="Name" Value="Sphere"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="6def301f"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="e9648abe"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="1"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="1"/>
+                            <color Name="Color" Value="0 1 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/mesh/Shield.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="2"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="48e3b38c"/>
+            <string Name="Name" Value="Layer2"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="348.719 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="common/mesh/ShieldSphere.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="Rotation3DVisitor">
+                <uint Name="ID" Value="ca132802"/>
+                <string Name="Name" Value=""/>
+                <bool Name="AutoStart" Value="1"/>
+                <enum Name="PlaybackType" Value="2"/>
+                <int Name="MaxPlayCount" Value="-1"/>
+                <struct Name="Src">
+                    <vec3D Name="Value" Value="0 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <struct Name="Dest">
+                    <vec3D Name="Value" Value="360 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <float Name="Duration" Value="3"/>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="ce117ee7"/>
+                <string Name="Name" Value="Sphere"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="3e160380"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="e9648abe"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="1"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="1"/>
+                            <color Name="Color" Value="0 1 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/mesh/Shield.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="2"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="53c2dea6"/>
+            <string Name="Name" Value="Layer3"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 0 348.719"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="common/mesh/ShieldSphere.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="Rotation3DVisitor">
+                <uint Name="ID" Value="2ff266d"/>
+                <string Name="Name" Value=""/>
+                <bool Name="AutoStart" Value="1"/>
+                <enum Name="PlaybackType" Value="2"/>
+                <int Name="MaxPlayCount" Value="-1"/>
+                <struct Name="Src">
+                    <vec3D Name="Value" Value="0 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <struct Name="Dest">
+                    <vec3D Name="Value" Value="0 0 360"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <float Name="Duration" Value="3"/>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="a0562546"/>
+                <string Name="Name" Value="Sphere"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="52850707"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="e9648abe"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="1"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="1"/>
+                            <color Name="Color" Value="0 1 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/mesh/Shield.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="2"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <BillBoardEntity>
+        <Properties>
+            <uint Name="ID" Value="3fbee19d"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="4 4 4"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="3bb87f07"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="614b983d"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="0"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <color Name="Color" Value="0 1 1"/>
+                        <float Name="Alpha" Value="0.5"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/ShieldGlow32.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+        </Components>
+    </BillBoardEntity>
+</Entity3D>

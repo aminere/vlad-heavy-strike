@@ -1,0 +1,213 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="bac79315"/>
+        <string Name="Name" Value="CrossPassage1"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 539.949 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+    </Properties>
+    <MeshEntity TemplatePath="common/RevolverBase.xml">
+        <Properties>
+            <uint Name="ID" Value="b9d987dd"/>
+            <vec3D Name="Position" Value="12.2042 -11.5158 -0.433115"/>
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="common/RevolverBase.xml">
+        <Properties>
+            <uint Name="ID" Value="a3731b32"/>
+            <vec3D Name="Position" Value="12.2042 4.00063 -0.433115"/>
+        </Properties>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="31f3c107"/>
+            <string Name="Name" Value="Blades"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 -11.5 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="common/mesh/OBJ_Rev_Blades.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="Rotation3DVisitor">
+                <uint Name="ID" Value="2da8261d"/>
+                <string Name="Name" Value=""/>
+                <bool Name="AutoStart" Value="1"/>
+                <enum Name="PlaybackType" Value="2"/>
+                <int Name="MaxPlayCount" Value="-1"/>
+                <struct Name="Src">
+                    <vec3D Name="Value" Value="0 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <struct Name="Dest">
+                    <vec3D Name="Value" Value="0 0 360"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <float Name="Duration" Value="7"/>
+            </ref>
+            <ref Name="" ClassName="EnvironmentCollisionComponent">
+                <uint Name="ID" Value="923b1988"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="128"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="1"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="0"/>
+                </struct>
+                <uint Name="Priority" Value="1"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/Cross.xml"/>
+                <bool Name="Dynamic" Value="1"/>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="7cfa5d6e"/>
+                <string Name="Name" Value="OBJ_Rev_Blades"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="3db95444"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="a76106e9"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.588 0.588 0.588"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/mesh/OBJ_Rev_Blades.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="87822fe3"/>
+            <string Name="Name" Value="Blades"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 3.72 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="common/mesh/OBJ_Rev_Blades.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="Rotation3DVisitor">
+                <uint Name="ID" Value="6efc591"/>
+                <string Name="Name" Value=""/>
+                <bool Name="AutoStart" Value="1"/>
+                <enum Name="PlaybackType" Value="2"/>
+                <int Name="MaxPlayCount" Value="-1"/>
+                <struct Name="Src">
+                    <vec3D Name="Value" Value="0 0 360"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <struct Name="Dest">
+                    <vec3D Name="Value" Value="0 0 0"/>
+                    <enum Name="Type" Value="0"/>
+                </struct>
+                <float Name="Duration" Value="7"/>
+            </ref>
+            <ref Name="" ClassName="EnvironmentCollisionComponent">
+                <uint Name="ID" Value="9460851e"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="128"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="1"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="0"/>
+                </struct>
+                <uint Name="Priority" Value="1"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/Cross.xml"/>
+                <bool Name="Dynamic" Value="1"/>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="6cf0ff3"/>
+                <string Name="Name" Value="OBJ_Rev_Blades"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="87587b17"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="a76106e9"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.588 0.588 0.588"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/mesh/OBJ_Rev_Blades.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+</Entity3D>

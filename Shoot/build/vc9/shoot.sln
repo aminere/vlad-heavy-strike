@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shoot", "shoot.vcproj", "{18CA3F84-75A7-43C4-8388-34C2E384C80F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		XNA CLR Debug|Win32 = XNA CLR Debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Debug|Win32.Build.0 = Debug|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.ActiveCfg = Release|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.Build.0 = Release|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.XNA CLR Debug|Win32.ActiveCfg = XNA CLR Debug|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.XNA CLR Debug|Win32.Build.0 = XNA CLR Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

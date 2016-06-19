@@ -1,0 +1,241 @@
+<Boss1>
+    <Properties>
+        <uint Name="ID" Value="65556045"/>
+        <string Name="Name" Value="Boss1"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <bool Name="CanDropItem" Value="1"/>
+        <bool Name="Destructible" Value="1"/>
+        <float Name="HitPoints" Value="1"/>
+        <bool Name="PlayfieldCheck" Value="1"/>
+        <bool Name="Immune" Value="1"/>
+        <bool Name="IsBoss" Value="1"/>
+        <bool Name="ShakeOnExplode" Value="0"/>
+        <bool Name="ShakeOnShot" Value="0"/>
+        <bool Name="ResetRotationOnExplode" Value="0"/>
+        <float Name="ExplosionScaleFactor" Value="1"/>
+        <float Name="DamageDist" Value="25"/>
+        <float Name="CannonOffset" Value="1"/>
+        <float Name="PullbackDuration" Value="0.1"/>
+        <float Name="CannonFrequency" Value="0.5"/>
+        <float Name="CannonActiveTime" Value="2"/>
+        <float Name="CannonInactiveTime" Value="1.5"/>
+        <float Name="DualShootDuration" Value="5"/>
+        <float Name="SideSwitchDuration" Value="1"/>
+        <float Name="BulletOffset" Value="-4"/>
+        <float Name="BulletSize" Value="4"/>
+        <float Name="BulletSpeed" Value="20"/>
+        <float Name="BulletLife" Value="4"/>
+        <float Name="AimDuration" Value="0.5"/>
+        <ref Name="SpinAttackLeft" TemplatePath="boss1/Boss1SpinAttackLeft.xml"/>
+        <ref Name="SpinAttackRight" TemplatePath="boss1/Boss1SpinAttackRight.xml"/>
+        <ref Name="Retreat" ClassName="CombineVisitor">
+            <uint Name="ID" Value="6fd10e84"/>
+            <string Name="Name" Value=""/>
+            <bool Name="AutoStart" Value="1"/>
+            <array Name="Visitors">
+                <ref ClassName="Rotation3DVisitor">
+                    <uint Name="ID" Value="cb46d766"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="2"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <struct Name="Src">
+                        <vec3D Name="Value" Value="0 0 0"/>
+                        <enum Name="Type" Value="0"/>
+                    </struct>
+                    <struct Name="Dest">
+                        <vec3D Name="Value" Value="0 0 360"/>
+                        <enum Name="Type" Value="0"/>
+                    </struct>
+                    <float Name="Duration" Value="1"/>
+                </ref>
+                <ref TemplatePath="common/BossRetreat.xml"/>
+            </array>
+        </ref>
+        <bool Name="DestroyWhenDone" Value="0"/>
+    </Properties>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="77cd1280"/>
+            <string Name="Name" Value="BaseMesh"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="boss1/Boss1Mesh.xml"/>
+        </Properties>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="fbe5c09d"/>
+                <string Name="Name" Value="Cannon1"/>
+                <vec3D Name="Position" Value="-2 -10 -2.18"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="d2a6092a"/>
+                <string Name="Name" Value="Cannon2"/>
+                <vec3D Name="Position" Value="2 -10 -2.18"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="e282d322"/>
+                <string Name="Name" Value="Cannon3"/>
+                <vec3D Name="Position" Value="10 -2 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 -90"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="685b2ba2"/>
+                <string Name="Name" Value="Cannon4"/>
+                <vec3D Name="Position" Value="10 2 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 -90"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="a1c8f5f5"/>
+                <string Name="Name" Value="Cannon6"/>
+                <vec3D Name="Position" Value="-2 10 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 180"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="578a7e23"/>
+                <string Name="Name" Value="Cannon5"/>
+                <vec3D Name="Position" Value="2 10 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 180"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="6cb463bd"/>
+                <string Name="Name" Value="Cannon7"/>
+                <vec3D Name="Position" Value="-10 2 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+            </Properties>
+        </Actor>
+        <Actor TemplatePath="boss1/Boss1Cannon.xml">
+            <Properties>
+                <uint Name="ID" Value="ea9c26b9"/>
+                <string Name="Name" Value="Cannon8"/>
+                <vec3D Name="Position" Value="-10 -2 -2.18"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+            </Properties>
+        </Actor>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="ef8e6787"/>
+                <string Name="Name" Value="Mesh"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1.6 1.6 1.6"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="2dde5a01"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="373082bf"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.8 0.8 0.8"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="boss1/Boss1.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+                <ref Name="" ClassName="DamageComponent">
+                    <uint Name="ID" Value="ad1c36b1"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="7"/>
+                            <vec3D Name="Center" Value="0 0 0"/>
+                        </ref>
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="1.5"/>
+                            <vec3D Name="Center" Value="5 -5 -1.5"/>
+                        </ref>
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="1.5"/>
+                            <vec3D Name="Center" Value="5 5 -1.5"/>
+                        </ref>
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="1.5"/>
+                            <vec3D Name="Center" Value="-5 -5 -1.5"/>
+                        </ref>
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="1.5"/>
+                            <vec3D Name="Center" Value="-5 5 -1.5"/>
+                        </ref>
+                    </array>
+                    <float Name="DamagePerSecond" Value="9999"/>
+                    <bool Name="ExplodeOnContact" Value="0"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <ConfigPoint>
+        <Properties>
+            <uint Name="ID" Value="b7f3938b"/>
+            <string Name="Name" Value="Boss1Point"/>
+            <vec3D Name="Position" Value="0 -29.9016 -2.2"/>
+            <float Name="PlayerMotionWidth" Value="20"/>
+            <float Name="SpawnWidth" Value="20"/>
+            <float Name="PlayerCameraFollowAmount" Value="0"/>
+            <vec3D Name="BaseSpeed" Value="0 0 0"/>
+            <float Name="FollowPathDuration" Value="2"/>
+            <color Name="SkyBoxColor" Value="1 0 0.501961"/>
+            <bool Name="CameraFollowOnXAxis" Value="1"/>
+            <bool Name="CameraFollowOnYAxis" Value="0"/>
+            <bool Name="AlwaysShowShield" Value="0"/>
+            <bool Name="CanRespawnHere" Value="1"/>
+        </Properties>
+    </ConfigPoint>
+</Boss1>

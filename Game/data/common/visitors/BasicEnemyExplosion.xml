@@ -1,0 +1,116 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1" />
+    <ref Name="Mesh" TemplatePath="common/mesh/BasicEnemy.xml" />
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="31" />
+                        <uint Value="30" />
+                        <uint Value="118" />
+                        <uint Value="119" />
+                        <uint Value="11a" />
+                        <uint Value="130" />
+                        <uint Value="13c" />
+                        <uint Value="131" />
+                        <uint Value="135" />
+                        <uint Value="4b" />
+                        <uint Value="48" />
+                        <uint Value="47" />
+                        <uint Value="53" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="158" />
+                        <uint Value="157" />
+                        <uint Value="15a" />
+                        <uint Value="159" />
+                        <uint Value="71" />
+                        <uint Value="70" />
+                        <uint Value="6e" />
+                        <uint Value="6f" />
+                        <uint Value="76" />
+                        <uint Value="74" />
+                        <uint Value="73" />
+                        <uint Value="83" />
+                        <uint Value="75" />
+                        <uint Value="82" />
+                        <uint Value="15e" />
+                        <uint Value="16c" />
+                        <uint Value="15f" />
+                        <uint Value="16b" />
+                        <uint Value="15d" />
+                        <uint Value="16d" />
+                        <uint Value="16e" />
+                        <uint Value="15c" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1a0" />
+                        <uint Value="19d" />
+                        <uint Value="160" />
+                        <uint Value="163" />
+                        <uint Value="ae" />
+                        <uint Value="72" />
+                        <uint Value="15b" />
+                        <uint Value="198" />
+                        <uint Value="161" />
+                        <uint Value="78" />
+                        <uint Value="77" />
+                        <uint Value="7a" />
+                        <uint Value="b6" />
+                        <uint Value="b3" />
+                        <uint Value="b4" />
+                        <uint Value="19e" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="ad" />
+                        <uint Value="aa" />
+                        <uint Value="ab" />
+                        <uint Value="ac" />
+                        <uint Value="196" />
+                        <uint Value="197" />
+                        <uint Value="195" />
+                        <uint Value="194" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="b0" />
+                        <uint Value="af" />
+                        <uint Value="b2" />
+                        <uint Value="b1" />
+                        <uint Value="19c" />
+                        <uint Value="19b" />
+                        <uint Value="199" />
+                        <uint Value="19a" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="db" />
+                        <uint Value="65" />
+                        <uint Value="c0" />
+                        <uint Value="c1" />
+                        <uint Value="7c" />
+                        <uint Value="7d" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="12c" />
+                        <uint Value="12d" />
+                        <uint Value="147" />
+                        <uint Value="ff" />
+                        <uint Value="fe" />
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>

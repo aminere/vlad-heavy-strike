@@ -1,0 +1,81 @@
+<MeshEntity>
+    <Properties>
+        <uint Name="ID" Value="d96689ae"/>
+        <string Name="Name" Value="Junction"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <ref Name="Mesh" TemplatePath="1/Meshes/ML1_Junction.xml"/>
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="RigidBodyComponent">
+            <uint Name="ID" Value="5e43d322"/>
+            <string Name="Name" Value=""/>
+            <enum Name="CollisionGroup" Value="128"/>
+            <struct Name="CollisionMask">
+                <bool Name="Group_1" Value="1"/>
+                <bool Name="Group_2" Value="0"/>
+                <bool Name="Group_3" Value="0"/>
+                <bool Name="Group_4" Value="1"/>
+                <bool Name="Group_5" Value="0"/>
+                <bool Name="Group_6" Value="0"/>
+                <bool Name="Group_7" Value="0"/>
+                <bool Name="Group_8" Value="0"/>
+            </struct>
+            <uint Name="Priority" Value="0"/>
+            <float Name="CollisionRadius" Value="0.5"/>
+            <float Name="Mass" Value="1"/>
+            <array Name="Shapes">
+                <ref ClassName="CollisionShapeBox">
+                    <aabb3D Name="Box" Value="-2 -8 -1 2.5 8 1"/>
+                </ref>
+            </array>
+        </ref>
+    </Components>
+    <SubMesh>
+        <Properties>
+            <uint Name="ID" Value="f952fcb1"/>
+            <string Name="Name" Value="ML1_Junction"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 -5.66244e-007"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="eb7b5fc8"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="5217e3e7"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="0"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <color Name="Color" Value="0.588 0.588 0.588"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="1/Meshes/ML1_Junction.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="1"/>
+            </ref>
+        </Components>
+    </SubMesh>
+</MeshEntity>

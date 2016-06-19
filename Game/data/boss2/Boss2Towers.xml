@@ -1,0 +1,25 @@
+<TriggerSpawner>
+    <Properties>
+        <uint Name="ID" Value="412912bc"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="-1.99801 -13.3257 0.245416"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+		<bool Name="CanReactivate" Value="0"/>		
+        <ref Name="Actor" TemplatePath="boss2/Boss2Tower.xml"/>
+        <ref Name="ActorSettings" ClassName="BasicTowerSettings">
+            <uint Name="HitPoints" Value="32"/>
+            <float Name="AimDuration" Value="1"/>
+            <float Name="FirstShotDelay" Value="1"/>
+            <float Name="BulletSpeed" Value="20"/>
+            <float Name="BulletLife" Value="4"/>
+            <vec3D Name="BulletOffset" Value="0 2 0"/>
+            <bool Name="ShakeOnExplode" Value="1"/>
+        </ref>
+        <float Name="DistToPlayer" Value="35"/>
+    </Properties>
+</TriggerSpawner>

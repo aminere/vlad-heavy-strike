@@ -1,0 +1,4 @@
+<MeshResource>	
+	<bool Name="Dynamic" Value="0" />
+	<string Name="MeshPath" Value="3/Meshes/Rock_10x20_A.fbx" />	
+</MeshResource>

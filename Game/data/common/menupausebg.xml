@@ -1,0 +1,73 @@
+<UIContext>
+    <Properties>
+        <uint Name="ID" Value="dad66696"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <ref Name="QuadTree" ClassName="QuadTree"/>
+        <bool Name="BlockUpdate" Value="1"/>
+        <float Name="TransitionLinePos" Value="400"/>
+        <string Name="OnTouchEvent" Value=""/>
+        <aabb2D Name="TouchArea" Value="0 0 0 0"/>
+    </Properties>
+    <Entity2D>
+        <Properties>
+            <uint Name="ID" Value="db8f1280"/>
+            <string Name="Name" Value="Panel"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec2D Name="Position" Value="0 0"/>
+            <float Name="Rotation" Value="0"/>
+            <vec2D Name="Scale" Value="1 1"/>
+            <vec2D Name="Center" Value="0 0"/>
+            <aabb2D Name="BBox" Value="0 0 480 640"/>
+            <bool Name="HFlip" Value="0"/>
+            <bool Name="VFlip" Value="0"/>
+        </Properties>
+        <Image>
+            <Properties>
+                <uint Name="ID" Value="11434f6f"/>
+                <string Name="Name" Value="BG"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec2D Name="Position" Value="0 0"/>
+                <float Name="Rotation" Value="0"/>
+                <vec2D Name="Scale" Value="15 20"/>
+                <vec2D Name="Center" Value="0 0"/>
+                <aabb2D Name="BBox" Value="0 0 32 32"/>
+                <bool Name="HFlip" Value="0"/>
+                <bool Name="VFlip" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="adcf82bf"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="47c15f4b"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="1"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="1 1 1"/>
+                            <float Name="Alpha" Value="0.78"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/tex/BlackBG.png"/>
+                                    <bool Name="MipMaps" Value="0"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="2"/>
+                    <enum Name="RenderingPass" Value="5"/>
+                </ref>
+            </Components>
+        </Image>
+    </Entity2D>
+</UIContext>

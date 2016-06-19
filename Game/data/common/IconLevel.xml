@@ -1,0 +1,10 @@
+<Animations>
+	<array Name="Animations">
+		<struct>
+			<string Name="Name" Value="Level" />
+			<array Name="Frames">
+				<file Value="menu/Level1_32.png"/>
+			</array>
+		</struct>
+	</array>
+</Animations>

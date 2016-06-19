@@ -1,0 +1,16 @@
+<Shader>
+    <struct Name="GLSL">
+        <file Name="VertexShader" Value="common/Shaders/test.vs" />
+        <file Name="PixelShader" Value="common/Shaders/test.ps" />
+    </struct>
+    <struct Name="HLSL">
+        <file Name="VertexShader" Value="common/Shaders/test.vs.hlsl" />
+        <file Name="PixelShader" Value="common/Shaders/test.ps.hlsl" />
+    </struct>
+    <array Name="Parameters">
+        <ref ClassName="ColorShaderParameter">
+            <string Name="Name" Value="LightColor" />
+            <color Name="Value" Value="1 1 1" />
+        </ref>
+    </array>
+</Shader>

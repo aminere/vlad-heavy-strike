@@ -1,0 +1,13 @@
+*.opensdf
+*.sdf
+Shoot/build/vc11/Release Editor OptimOff/
+Shoot/build/vc11/Release/
+Game/build/vc11/editor/Release OptimOff/
+ShootEditor/build/vc11/Release OptimOff/
+Shoot/build/vc11/Win32/
+Game/build/vc11/game/Win32/
+ShootEditor/build/vc11/Win32/
+Game/build/vc11/game/Release Editor OptimOff/
+Game/build/vc11/editor/Win32/
+Game/build/vc11/editor/ipch/
+Game/build/vc11/game/Release/

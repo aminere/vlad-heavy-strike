@@ -1,0 +1,83 @@
+<MeshEntity>
+    <Properties>
+        <uint Name="ID" Value="c3c12808"/>
+        <string Name="Name" Value="SpinningLaserBlock"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <ref Name="Mesh" TemplatePath="laserspin/ML2_Laser_Spin_Open.xml"/>
+    </Properties>
+    <SubMesh>
+        <Properties>
+            <uint Name="ID" Value="894eed20"/>
+            <string Name="Name" Value="Mesh"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 -0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="5d3cdd9e"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="b4f2214"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="0"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="laserspin/ML2_Laser_Spin.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="1"/>
+            </ref>
+        </Components>
+    </SubMesh>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="2d80139d"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 2.82879"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="laserspin/SpinningLasersActor.xml"/>
+            <ref Name="ActorSettings" ClassName="SpinningLasersSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <float Name="RotationSpeed" Value="180"/>
+                <float Name="ShootFrequency" Value="1.5"/>
+                <float Name="LaserDuration" Value="1.8"/>
+                <float Name="LaserOffset" Value="2"/>
+                <float Name="LaserSpeed" Value="20"/>
+                <float Name="LaserLength" Value="10"/>
+                <float Name="DisappearOffset" Value="10"/>
+                <float Name="HaltTime" Value="0.4"/>
+            </ref>
+            <float Name="DistToPlayer" Value="40"/>
+        </Properties>
+    </TriggerSpawner>
+</MeshEntity>

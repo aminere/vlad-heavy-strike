@@ -1,0 +1,37 @@
+<EditorSettings>
+    <Properties>
+        <enum Name="WindowSize" Value="0"/>
+        <struct Name="Flags">
+            <bool Name="RenderBBox" Value="1"/>
+            <bool Name="RenderEntity2DPos" Value="1"/>
+            <bool Name="RenderEntity3DPos" Value="1"/>
+            <bool Name="Render2DOrigin" Value="1"/>
+            <bool Name="Render3DOrigin" Value="1"/>
+            <bool Name="Render3DGrid" Value="1"/>
+            <bool Name="CollisionShapes" Value="0"/>
+            <bool Name="DebugIcons" Value="1"/>
+            <bool Name="RenderQuadTrees" Value="1"/>
+            <bool Name="RenderFrustums" Value="0"/>
+            <bool Name="RenderPickingInfo" Value="1"/>
+        </struct>
+        <color Name="BBoxColor" Value="1 0 1"/>
+        <color Name="EntityPosColor" Value="1 0 1"/>
+        <float Name="Entity2DPosSize" Value="16"/>
+        <float Name="2DOriginSize" Value="64"/>
+        <float Name="Entity3DPosSize" Value="0.25"/>
+        <float Name="3DOriginSize" Value="1"/>
+        <color Name="SelectedEntityColor" Value="1 1 0"/>
+        <color Name="PathColor" Value="0 1 0"/>
+        <color Name="CollisionShapeColor" Value="1 1 1"/>
+        <float Name="2DZoomStep" Value="0.01"/>
+        <float Name="3DZoomStep" Value="0.1"/>
+        <float Name="3DStrafeStep" Value="0.02"/>
+        <float Name="3DLookStep" Value="0.2"/>
+        <float Name="3DZoomStepIncrFactor" Value="2"/>
+        <float Name="3DStrafeStepIncrFactor" Value="2"/>
+        <float Name="PathSmoothness" Value="50"/>
+        <uint Name="GridSize" Value="c8"/>
+        <float Name="DebugIconSize" Value="0.5"/>
+        <float Name="PinSizeFactor" Value="0.02"/>
+    </Properties>
+</EditorSettings>

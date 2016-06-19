@@ -1,0 +1,4 @@
+<MeshResource>	
+	<bool Name="Dynamic" Value="1" />
+	<string Name="MeshPath" Value="common/mesh/asteroid.x" />	
+</MeshResource>

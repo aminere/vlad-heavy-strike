@@ -1,0 +1,587 @@
+<Entity>
+    <Properties>
+        <uint Name="ID" Value="c3fbde1d"/>
+        <string Name="Name" Value="CommonEffects"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+    </Properties>
+    <PulseManager>
+        <Properties>
+            <uint Name="ID" Value="956122b5"/>
+            <string Name="Name" Value="PlayerPulseManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="10"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="194f94bd"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="b2e707a4"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="8e3f91e"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Fire.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+        </Components>
+    </PulseManager>
+    <PulseManager>
+        <Properties>
+            <uint Name="ID" Value="956122b5"/>
+            <string Name="Name" Value="PlayerSidePulseManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="10"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="194f94bd"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="b2e707a4"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="8e3f91e"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Fire.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+        </Components>
+    </PulseManager>
+    <PulseManager>
+        <Properties>
+            <uint Name="ID" Value="59a21ce4"/>
+            <string Name="Name" Value="EnemyPulseManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1f40"/>
+            <float Name="BulletSize" Value="1.3"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="932ff6a"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="4"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="f27b3d59"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="ea85060c"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="0"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Purple.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+        </Components>
+    </PulseManager>
+    <PulseManager>
+        <Properties>
+            <uint Name="ID" Value="59a21ce5"/>
+            <string Name="Name" Value="BossPulseManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="2"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="932ff6a"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="4"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="f27b3d59"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="ea85060c"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="0"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Purple.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+        </Components>
+    </PulseManager>
+    <LaserManager>
+        <Properties>
+            <uint Name="ID" Value="28e05556"/>
+            <string Name="Name" Value="EnemyLaserManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="PoolSize" Value="1000"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="d78e496b"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="f2337bbb"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/EnemyLaser.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="LaserManagerCollisionComponent">
+                <uint Name="ID" Value="3176ccf0"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="4"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+            </ref>
+        </Components>
+    </LaserManager>
+    <LaserManager>
+        <Properties>
+            <uint Name="ID" Value="a04ae20f"/>
+            <string Name="Name" Value="PlayerLaserManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="PoolSize" Value="1000"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="b1f2ff02"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="604c4ae0"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/laser.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="LaserManagerCollisionComponent">
+                <uint Name="ID" Value="819606d4"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+        </Components>
+    </LaserManager>
+    <LaserManager>
+        <Properties>
+            <uint Name="ID" Value="a04ae20f"/>
+            <string Name="Name" Value="PlayerSideLaserManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="PoolSize" Value="1000"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="b1f2ff02"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="604c4ae0"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/laser.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="LaserManagerCollisionComponent">
+                <uint Name="ID" Value="819606d4"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+        </Components>
+    </LaserManager>
+    <PelletManager>
+        <Properties>
+            <uint Name="ID" Value="704184d7"/>
+            <string Name="Name" Value="PlayerPelletManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="1"/>
+            <float Name="MinDistToEnemy" Value="10"/>
+            <float Name="HomingFactor" Value="5"/>
+            <float Name="MaxHomingAngle" Value="60"/>
+            <bool Name="OwnerIsPlayer" Value="1"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="eb3b75a5"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="7228bec1"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/pellet.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="c10b5fb4"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+        </Components>
+    </PelletManager>
+    <PelletManager>
+        <Properties>
+            <uint Name="ID" Value="bc7185ee"/>
+            <string Name="Name" Value="EnemyPelletManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="1"/>
+            <float Name="MinDistToEnemy" Value="10"/>
+            <float Name="HomingFactor" Value="5"/>
+            <float Name="MaxHomingAngle" Value="60"/>
+            <bool Name="OwnerIsPlayer" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="e1cf2057"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="ea85060c"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="0"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Purple.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="783309f9"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="4"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+        </Components>
+    </PelletManager>
+    <PelletManager>
+        <Properties>
+            <uint Name="ID" Value="704184d7"/>
+            <string Name="Name" Value="PlayerSidePelletManager"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <uint Name="BulletPoolSize" Value="1000"/>
+            <float Name="BulletSize" Value="1"/>
+            <float Name="MinDistToEnemy" Value="10"/>
+            <float Name="HomingFactor" Value="5"/>
+            <float Name="MaxHomingAngle" Value="60"/>
+            <bool Name="OwnerIsPlayer" Value="1"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="eb3b75a5"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="ea85060c"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="0"/>
+                        <bool Name="DepthWrite" Value="0"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="1"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/Purple.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="2"/>
+            </ref>
+            <ref Name="" ClassName="BulletManagerCollisionComponent">
+                <uint Name="ID" Value="c10b5fb4"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="8"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="0"/>
+                    <bool Name="Group_2" Value="1"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="0"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="1"/>
+                </struct>
+                <uint Name="Priority" Value="2"/>
+                <float Name="CollisionRadius" Value="0.1"/>
+            </ref>
+        </Components>
+    </PelletManager>
+</Entity>

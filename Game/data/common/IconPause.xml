@@ -1,0 +1,10 @@
+<Animations>
+	<array Name="Animations">
+		<struct>
+			<string Name="Name" Value="Pause" />
+			<array Name="Frames">
+				<file Value="common/tex/IconPause.png"/>
+			</array>
+		</struct>
+	</array>
+</Animations>

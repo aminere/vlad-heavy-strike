@@ -1,0 +1,5 @@
+<bank name="0">
+    <sound name="laser" source="laser.wav" />
+	<sound name="pulse" source="pulse.wav" />
+	<sound name="explosion" source="explosion.wav" />	
+</bank>

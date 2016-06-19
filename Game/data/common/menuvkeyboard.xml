@@ -1,0 +1,15 @@
+<VKeyboard>
+    <Properties>
+        <uint Name="ID" Value="31e3a9eb"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec2D Name="Position" Value="0 0"/>
+        <float Name="Rotation" Value="0"/>
+        <vec2D Name="Scale" Value="1 1"/>
+        <vec2D Name="Center" Value="0 0"/>
+        <aabb2D Name="BBox" Value="0 0 480 220"/>
+        <bool Name="HFlip" Value="0"/>
+        <bool Name="VFlip" Value="0"/>
+    </Properties>
+</VKeyboard>

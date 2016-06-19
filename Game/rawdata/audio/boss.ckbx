@@ -1,0 +1,3 @@
+<bank name="boss">
+    <sound name="longexplosion" source="longexplosion.wav" />	
+</bank>

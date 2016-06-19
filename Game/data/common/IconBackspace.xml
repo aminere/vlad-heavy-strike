@@ -1,0 +1,10 @@
+<Animations>
+	<array Name="Animations">
+		<struct>
+			<string Name="Name" Value="Backspace" />
+			<array Name="Frames">
+				<file Value="common/tex/backspace.png"/>				
+			</array>
+		</struct>
+	</array>
+</Animations>

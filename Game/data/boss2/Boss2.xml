@@ -1,0 +1,164 @@
+<Boss2>
+    <Properties>
+        <uint Name="ID" Value="cf5622b5"/>
+        <string Name="Name" Value="Boss2"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <bool Name="CanDropItem" Value="1"/>
+        <bool Name="Destructible" Value="1"/>
+        <float Name="HitPoints" Value="1"/>
+        <bool Name="PlayfieldCheck" Value="1"/>
+        <bool Name="Immune" Value="0"/>
+        <bool Name="IsBoss" Value="1"/>
+        <bool Name="ShakeOnExplode" Value="0"/>
+        <bool Name="ShakeOnShot" Value="0"/>
+        <bool Name="ResetRotationOnExplode" Value="0"/>
+        <float Name="ExplosionScaleFactor" Value="1"/>
+        <float Name="DamageDist" Value="25"/>
+        <float Name="PrepareHookDuration" Value="4"/>
+        <float Name="WarningDuration" Value="0.6"/>
+        <float Name="SpinSpeedNormal" Value="360"/>
+        <float Name="SpinSpeedFast" Value="1200"/>
+        <float Name="HookOrientDuration" Value="0.1"/>
+        <float Name="HookSpeed" Value="60"/>
+        <float Name="HookSpeedRetreat" Value="25"/>
+        <float Name="HookRange" Value="25"/>
+        <float Name="HookMaxRotation" Value="27"/>
+        <bool Name="DestroyWhenDone" Value="0"/>
+        <ref Name="Retreat" TemplatePath="common/BossRetreat.xml"/>
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="RigidBodyComponent">
+            <uint Name="ID" Value="65366132"/>
+            <string Name="Name" Value=""/>
+            <enum Name="CollisionGroup" Value="128"/>
+            <struct Name="CollisionMask">
+                <bool Name="Group_1" Value="1"/>
+                <bool Name="Group_2" Value="0"/>
+                <bool Name="Group_3" Value="0"/>
+                <bool Name="Group_4" Value="1"/>
+                <bool Name="Group_5" Value="0"/>
+                <bool Name="Group_6" Value="0"/>
+                <bool Name="Group_7" Value="0"/>
+                <bool Name="Group_8" Value="0"/>
+            </struct>
+            <uint Name="Priority" Value="0"/>
+            <float Name="CollisionRadius" Value="0.5"/>
+            <float Name="Mass" Value="1"/>
+            <array Name="Shapes">
+                <ref ClassName="CollisionShapeBox">
+                    <aabb3D Name="Box" Value="-10 -14 -1 10 1 1"/>
+                </ref>
+            </array>
+        </ref>
+    </Components>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="f8095f0d"/>
+            <string Name="Name" Value="BaseMesh"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 -5.65108 2.23699"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="boss2/Boss2_Body.xml"/>
+        </Properties>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="173f0c88"/>
+                <string Name="Name" Value="Mesh"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="2dc136df"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="a501c0e7"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="1 1 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="boss2/Boss2_Body_Diffuse_1024.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <Actor TemplatePath="boss2/Boss2Hook.xml">
+        <Properties>
+            <uint Name="ID" Value="88625fb4"/>
+        </Properties>
+    </Actor>
+    <Actor TemplatePath="boss2/Boss2Hook.xml">
+        <Properties>
+            <uint Name="ID" Value="34c12df9"/>
+            <string Name="Name" Value="LeftHook"/>
+            <vec3D Name="Position" Value="-7.8 -13.5907 0.519643"/>
+        </Properties>
+    </Actor>
+    <TriggerSpawner TemplatePath="boss2/Boss2Towers.xml">
+        <Properties>
+            <uint Name="ID" Value="412912bc"/>
+            <vec3D Name="Position" Value="-1.99801 -13.3257 0.245416"/>
+        </Properties>
+    </TriggerSpawner>
+    <TriggerSpawner TemplatePath="boss2/Boss2Towers.xml">
+        <Properties>
+            <uint Name="ID" Value="3778e1"/>
+            <vec3D Name="Position" Value="0.147426 -13.3257 0.245416"/>
+        </Properties>
+    </TriggerSpawner>
+    <TriggerSpawner TemplatePath="boss2/Boss2Towers.xml">
+        <Properties>
+            <uint Name="ID" Value="bc7c063"/>
+            <vec3D Name="Position" Value="2.30852 -13.3257 0.245416"/>
+        </Properties>
+    </TriggerSpawner>
+    <ConfigPoint>
+        <Properties>
+            <uint Name="ID" Value="7a36a4c0"/>
+            <string Name="Name" Value="Boss2Point"/>
+            <vec3D Name="Position" Value="0 -33.6162 0"/>
+            <float Name="PlayerMotionWidth" Value="20"/>
+            <float Name="SpawnWidth" Value="20"/>
+            <float Name="PlayerCameraFollowAmount" Value="0.35"/>
+            <vec3D Name="BaseSpeed" Value="0 0 0"/>
+            <float Name="FollowPathDuration" Value="4"/>
+            <color Name="SkyBoxColor" Value="1 0 0.501961"/>
+            <bool Name="CameraFollowOnXAxis" Value="1"/>
+            <bool Name="CameraFollowOnYAxis" Value="0"/>
+            <bool Name="AlwaysShowShield" Value="0"/>
+            <bool Name="CanRespawnHere" Value="1"/>
+        </Properties>
+    </ConfigPoint>
+</Boss2>

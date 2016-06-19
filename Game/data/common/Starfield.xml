@@ -1,0 +1,47 @@
+<Starfield>
+    <Properties>
+        <uint Name="ID" Value="a1ce644a" />
+        <string Name="Name" Value="Starfield" />
+        <bool Name="Visible" Value="1" />
+        <bool Name="Enabled" Value="1" />
+        <vec3D Name="Position" Value="0 0 0" />
+        <vec3D Name="Rotation" Value="0 0 0" />
+        <vec3D Name="Scale" Value="1 1 1" />
+        <vec3D Name="Center" Value="0 0 0" />
+        <bool Name="AlwaysActive" Value="1" />
+        <uint Name="MaxParticles" Value="258" />
+        <float Name="Radius" Value="60" />
+        <float Name="FadeInDist" Value="1" />
+        <float Name="ParticleSize" Value="0.3" />
+        <float Name="Speed" Value="5" />
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="GraphicComponent">
+            <uint Name="ID" Value="45dacdcf" />
+            <string Name="Name" Value="" />
+            <ref Name="Material" ClassName="Material">
+                <uint Name="ID" Value="c3bcfa96" />
+                <string Name="Name" Value="" />
+                <struct Name="CreationInfo">
+                    <bool Name="Lighting" Value="0" />
+                    <bool Name="AlphaBlending" Value="1" />
+                    <bool Name="DepthTest" Value="1" />
+                    <bool Name="DepthWrite" Value="0" />
+                    <enum Name="SrcBlendFactor" Value="4" />
+                    <enum Name="DestBlendFactor" Value="5" />
+                    <color Name="Color" Value="1 1 1" />
+                    <float Name="Alpha" Value="1" />
+                    <array Name="Textures">
+                        <struct>
+                            <file Name="Path" Value="common/tex/Star.png" />
+                            <bool Name="MipMaps" Value="1" />
+                        </struct>
+                    </array>
+                    <ref Name="Shader" ClassName="Shader" />
+                </struct>
+            </ref>
+            <uint Name="RenderingPriority" Value="0" />
+            <enum Name="RenderingPass" Value="2" />
+        </ref>
+    </Components>
+</Starfield>

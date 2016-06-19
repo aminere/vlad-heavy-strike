@@ -1,0 +1,102 @@
+<ExplosionVisitor>
+    <ref Name="Mesh" TemplatePath="common/mesh/saucer.xml" />
+    <float Name="Intensity" Value="-1" />
+    <float Name="Duration" Value="1" />
+	<array Name="ChunkGroups">
+        <struct>
+			<array Name="Chunks">
+				<struct>
+					<array Name="Triangles">
+						<uint Value="58" />
+						<uint Value="33" />
+						<uint Value="35" />
+						<uint Value="5e" />
+						<uint Value="18" />
+						<uint Value="31" />
+						<uint Value="2f" />
+						<uint Value="52" />
+						<uint Value="4c" />
+						<uint Value="c" />
+						<uint Value="1e" />
+					</array>
+				</struct>
+				<struct>
+					<array Name="Triangles">
+						<uint Value="42" />
+						<uint Value="39" />
+						<uint Value="3e" />
+						<uint Value="37" />
+						<uint Value="64" />
+						<uint Value="24" />
+						<uint Value="6b" />
+						<uint Value="29" />
+						<uint Value="2" />
+						<uint Value="46" />
+						<uint Value="2d" />
+					</array>
+				</struct>
+				<struct>
+					<array Name="Triangles">
+						<uint Value="44" />
+						<uint Value="1" />
+						<uint Value="45" />
+						<uint Value="5" />
+						<uint Value="41" />
+					</array>
+				</struct>
+				<struct>
+					<array Name="Triangles">
+						<uint Value="4f" />
+						<uint Value="4b" />
+						<uint Value="b" />
+						<uint Value="51" />
+						<uint Value="5b" />
+						<uint Value="57" />
+						<uint Value="11" />
+						<uint Value="17" />
+					</array>
+				</struct>
+				<struct>
+					<array Name="Triangles">
+						<uint Value="5d" />
+						<uint Value="1d" />
+						<uint Value="63" />
+						<uint Value="23" />
+						<uint Value="6a" />
+						<uint Value="38" />
+						<uint Value="61" />
+						<uint Value="21" />
+					</array>
+				</struct>
+				<struct>
+					<array Name="Triangles">
+						<uint Value="34" />
+						<uint Value="32" />
+						<uint Value="30" />
+						<uint Value="53" />
+						<uint Value="d" />
+						<uint Value="4d" />
+						<uint Value="2e" />
+						<uint Value="7" />
+						<uint Value="47" />
+						<uint Value="2c" />
+						<uint Value="2b" />
+						<uint Value="2a" />
+						<uint Value="69" />
+						<uint Value="3a" />
+						<uint Value="3d" />
+						<uint Value="6c" />
+						<uint Value="36" />
+						<uint Value="65" />
+						<uint Value="25" />
+						<uint Value="1f" />
+						<uint Value="5f" />
+						<uint Value="19" />
+						<uint Value="59" />
+						<uint Value="13" />
+					</array>
+				</struct>
+			</array>
+		</struct>
+    </array>
+</ExplosionVisitor>

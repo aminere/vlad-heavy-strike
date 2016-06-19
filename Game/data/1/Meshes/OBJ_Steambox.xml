@@ -1,0 +1,4 @@
+<MeshResource>	
+	<bool Name="Dynamic" Value="0" />
+	<string Name="MeshPath" Value="1/Meshes/OBJ_Steambox.fbx" />	
+</MeshResource>

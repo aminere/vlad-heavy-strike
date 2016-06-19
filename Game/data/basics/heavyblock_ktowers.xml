@@ -1,0 +1,166 @@
+<MeshEntity>
+    <Properties>
+        <uint Name="ID" Value="4af3f0bf"/>
+        <string Name="Name" Value="HeavyBlock"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="1.29626 379.179 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <ref Name="Mesh" TemplatePath="basics/ML1_Heavy.xml"/>
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="RigidBodyComponent">
+            <uint Name="ID" Value="cbfe9356"/>
+            <string Name="Name" Value=""/>
+            <enum Name="CollisionGroup" Value="128"/>
+            <struct Name="CollisionMask">
+                <bool Name="Group_1" Value="1"/>
+                <bool Name="Group_2" Value="0"/>
+                <bool Name="Group_3" Value="0"/>
+                <bool Name="Group_4" Value="1"/>
+                <bool Name="Group_5" Value="0"/>
+                <bool Name="Group_6" Value="0"/>
+                <bool Name="Group_7" Value="0"/>
+                <bool Name="Group_8" Value="0"/>
+            </struct>
+            <uint Name="Priority" Value="0"/>
+            <float Name="CollisionRadius" Value="0.5"/>
+            <float Name="Mass" Value="1"/>
+            <array Name="Shapes">
+                <ref ClassName="CollisionShapeBox">
+                    <aabb3D Name="Box" Value="-16 -3 -1 9 14 1"/>
+                </ref>
+            </array>
+        </ref>
+    </Components>
+    <SubMesh>
+        <Properties>
+            <uint Name="ID" Value="b938c59b"/>
+            <string Name="Name" Value="ML1_Heavy"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 -0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="deef5e58"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="4882c1c6"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="0"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="0.588 0.588 0.588"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="basics/ML1_Heavy.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="1"/>
+            </ref>
+        </Components>
+    </SubMesh>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="7d1281f1"/>
+            <string Name="Name" Value="KamikazeTower"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="3.4806 -2.12164 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="common/kamikazetower.xml"/>
+            <ref Name="ActorSettings" ClassName="KamikazeTowerSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <float Name="AimDuration" Value="1.5"/>
+                <float Name="FirstShotDelay" Value="1"/>
+                <float Name="BulletSpeed" Value="15"/>
+                <float Name="BulletLife" Value="4"/>
+                <vec3D Name="BulletOffset" Value="0 2 0"/>
+                <float Name="BulletSize" Value="1"/>
+                <float Name="HomingFactor" Value="1"/>
+                <float Name="HomingDuration" Value="1.5"/>
+                <float Name="Speed" Value="25"/>
+            </ref>
+            <float Name="DistToPlayer" Value="40"/>
+            <bool Name="CanReactivate" Value="1"/>
+        </Properties>
+    </TriggerSpawner>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="25f18df1"/>
+            <string Name="Name" Value="KamikazeTower"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="10.7077 -2.1008 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="common/kamikazetower.xml"/>
+            <ref Name="ActorSettings" ClassName="KamikazeTowerSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <float Name="AimDuration" Value="1.5"/>
+                <float Name="FirstShotDelay" Value="1"/>
+                <float Name="BulletSpeed" Value="15"/>
+                <float Name="BulletLife" Value="4"/>
+                <vec3D Name="BulletOffset" Value="0 2 0"/>
+                <float Name="BulletSize" Value="1"/>
+                <float Name="HomingFactor" Value="1"/>
+                <float Name="HomingDuration" Value="1.5"/>
+                <float Name="Speed" Value="25"/>
+            </ref>
+            <float Name="DistToPlayer" Value="40"/>
+            <bool Name="CanReactivate" Value="1"/>
+        </Properties>
+    </TriggerSpawner>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="da8d512"/>
+            <string Name="Name" Value="KamikazeTower"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="-3.50957 -2.13309 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="common/kamikazetower.xml"/>
+            <ref Name="ActorSettings" ClassName="KamikazeTowerSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <float Name="AimDuration" Value="1.5"/>
+                <float Name="FirstShotDelay" Value="1"/>
+                <float Name="BulletSpeed" Value="15"/>
+                <float Name="BulletLife" Value="4"/>
+                <vec3D Name="BulletOffset" Value="0 2 0"/>
+                <float Name="BulletSize" Value="1"/>
+                <float Name="HomingFactor" Value="1"/>
+                <float Name="HomingDuration" Value="1.5"/>
+                <float Name="Speed" Value="25"/>
+            </ref>
+            <float Name="DistToPlayer" Value="40"/>
+            <bool Name="CanReactivate" Value="1"/>
+        </Properties>
+    </TriggerSpawner>
+</MeshEntity>

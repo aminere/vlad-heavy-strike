@@ -1,0 +1,37 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="95bf8891" />
+        <string Name="Name" Value="Corner" />
+        <bool Name="Visible" Value="1" />
+        <bool Name="Enabled" Value="1" />
+        <vec3D Name="Position" Value="7.89745 258.669 0" />
+        <vec3D Name="Rotation" Value="0 0 0" />
+        <vec3D Name="Scale" Value="1 1 1" />
+        <vec3D Name="Center" Value="0 0 0" />
+        <bool Name="AlwaysActive" Value="0" />
+    </Properties>
+    <MeshEntity TemplatePath="common/Block.xml">
+        <Properties>
+            <uint Name="ID" Value="7df04ef2" />
+            <vec3D Name="Position" Value="-5.19942 7.5318 0" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="common/Block.xml">
+        <Properties>
+            <uint Name="ID" Value="9dad18e8" />
+            <vec3D Name="Position" Value="-5.19942 -8.71219 0" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="common/Block.xml">
+        <Properties>
+            <uint Name="ID" Value="48a4f4c2" />
+            <vec3D Name="Position" Value="5.23405 -8.71219 0" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="common/Block.xml">
+        <Properties>
+            <uint Name="ID" Value="4e58cc85" />
+            <vec3D Name="Position" Value="5.23405 7.4368 0" />
+        </Properties>
+    </MeshEntity>
+</Entity3D>

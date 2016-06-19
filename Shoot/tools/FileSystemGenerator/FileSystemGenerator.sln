@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileSystemGenerator", "FileSystemGenerator.vcproj", "{319AC38E-D4ED-4352-B998-AA2E1E1A0326}"
+	ProjectSection(ProjectDependencies) = postProject
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F} = {18CA3F84-75A7-43C4-8388-34C2E384C80F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shoot", "..\..\build\vc9\shoot.vcproj", "{18CA3F84-75A7-43C4-8388-34C2E384C80F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{65F1FE0F-7C70-451A-9FE2-B25535AA1185} = {65F1FE0F-7C70-451A-9FE2-B25535AA1185}
+		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11} = {145E8C22-BFC3-45A7-A30D-F88D61C8BF11}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "..\..\build\vc9\libpng.vcproj", "{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "..\..\build\vc9\zlib.vcproj", "{65F1FE0F-7C70-451A-9FE2-B25535AA1185}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{319AC38E-D4ED-4352-B998-AA2E1E1A0326}.Debug|Win32.ActiveCfg = Debug|Win32
+		{319AC38E-D4ED-4352-B998-AA2E1E1A0326}.Debug|Win32.Build.0 = Debug|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Debug|Win32.Build.0 = Debug|Win32
+		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}.Debug|Win32.Build.0 = Debug|Win32
+		{65F1FE0F-7C70-451A-9FE2-B25535AA1185}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65F1FE0F-7C70-451A-9FE2-B25535AA1185}.Debug|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

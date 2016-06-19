@@ -1,0 +1,4 @@
+<MeshResource>
+    <bool Name="Dynamic" Value="1" />
+    <file Name="MeshPath" Value="common/mesh/player.fbx" />
+</MeshResource>

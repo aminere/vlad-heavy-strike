@@ -1,0 +1,118 @@
+<MeshEntity>
+    <Properties>
+        <uint Name="ID" Value="daba3f3d"/>
+        <string Name="Name" Value="Cannon1"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0.00352812 -1 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <ref Name="Mesh" TemplatePath="common/mesh/TightPassageCannon.xml"/>
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="SequenceVisitor">
+            <uint Name="ID" Value="363bbb75"/>
+            <string Name="Name" Value=""/>
+            <bool Name="AutoStart" Value="1"/>
+            <enum Name="PlaybackType" Value="2"/>
+            <int Name="MaxPlayCount" Value="-1"/>
+            <array Name="Visitors">
+                <ref ClassName="Translation3DVisitor">
+                    <uint Name="ID" Value="d7889a1b"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="0"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <struct Name="Src">
+                        <vec3D Name="Value" Value="0 0 0"/>
+                        <enum Name="Type" Value="1"/>
+                    </struct>
+                    <struct Name="Dest">
+                        <vec3D Name="Value" Value="-1.4 0 0"/>
+                        <enum Name="Type" Value="1"/>
+                    </struct>
+                    <float Name="Duration" Value="0.3"/>
+                </ref>
+                <ref ClassName="DelayVisitor">
+                    <uint Name="ID" Value="55fbdec"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <float Name="Duration" Value="0.3"/>
+                </ref>
+                <ref ClassName="Translation3DVisitor">
+                    <uint Name="ID" Value="1d8c0c13"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="0"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <struct Name="Src">
+                        <vec3D Name="Value" Value="0 0 0"/>
+                        <enum Name="Type" Value="1"/>
+                    </struct>
+                    <struct Name="Dest">
+                        <vec3D Name="Value" Value="1.4 0 0"/>
+                        <enum Name="Type" Value="1"/>
+                    </struct>
+                    <float Name="Duration" Value="0.3"/>
+                </ref>
+                <ref ClassName="SendTriggerVisitor">
+                    <uint Name="ID" Value="e1742c1a"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <string Name="TriggerName" Value="BOOM"/>
+                </ref>
+                <ref ClassName="DelayVisitor">
+                    <uint Name="ID" Value="c93ee771"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <float Name="Duration" Value="1"/>
+                </ref>
+            </array>
+        </ref>
+    </Components>
+    <SubMesh>
+        <Properties>
+            <uint Name="ID" Value="5773eab4"/>
+            <string Name="Name" Value="Mesh"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 -0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="1aea98be"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="db4fefd6"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="0"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="0.588 0.588 0.588"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/mesh/ML1_Laser_L.png"/>
+                                <bool Name="MipMaps" Value="1"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="0"/>
+                <enum Name="RenderingPass" Value="1"/>
+            </ref>
+        </Components>
+    </SubMesh>
+</MeshEntity>

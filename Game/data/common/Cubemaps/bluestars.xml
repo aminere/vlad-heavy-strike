@@ -1,0 +1,10 @@
+<CubeMapResource>	
+	<array Name="Textures">
+		<file Value="common/Cubemaps/bluestars_left2.png" />
+		<file Value="common/Cubemaps/bluestars_right1.png" />
+		<file Value="common/Cubemaps/bluestars_bottom4.png" />
+		<file Value="common/Cubemaps/bluestars_top3.png" />
+		<file Value="common/Cubemaps/bluestars_front5.png" />
+		<file Value="common/Cubemaps/bluestars_back6.png" />		
+	</array>	
+</CubeMapResource>

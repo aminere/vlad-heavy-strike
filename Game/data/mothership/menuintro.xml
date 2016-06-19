@@ -1,0 +1,92 @@
+<UIContext>
+    <Properties>
+        <uint Name="ID" Value="6e2e9b6f"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <ref Name="QuadTree" ClassName="QuadTree"/>
+        <bool Name="BlockUpdate" Value="0"/>
+        <float Name="TransitionLinePos" Value="400"/>
+        <string Name="OnTouchEvent" Value=""/>
+        <aabb2D Name="TouchArea" Value="0 0 0 0"/>
+    </Properties>
+    <Entity2D>
+        <Properties>
+            <uint Name="ID" Value="88c531c0"/>
+            <string Name="Name" Value="Panel"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec2D Name="Position" Value="0 0"/>
+            <float Name="Rotation" Value="0"/>
+            <vec2D Name="Scale" Value="1 1"/>
+            <vec2D Name="Center" Value="0 0"/>
+            <aabb2D Name="BBox" Value="0 0 480 640"/>
+            <bool Name="HFlip" Value="0"/>
+            <bool Name="VFlip" Value="0"/>
+        </Properties>
+        <Button>
+            <Properties>
+                <uint Name="ID" Value="14f52290"/>
+                <string Name="Name" Value="Pause"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec2D Name="Position" Value="0 0"/>
+                <float Name="Rotation" Value="0"/>
+                <vec2D Name="Scale" Value="1 1"/>
+                <vec2D Name="Center" Value="0 0"/>
+                <aabb2D Name="BBox" Value="0 0 48 48"/>
+                <bool Name="HFlip" Value="0"/>
+                <bool Name="VFlip" Value="0"/>
+                <string Name="Command" Value="PAUSE"/>
+                <bool Name="CheckBox" Value="0"/>
+            </Properties>
+            <Sprite>
+                <Properties>
+                    <uint Name="ID" Value="c36dc86c"/>
+                    <string Name="Name" Value="Icon"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec2D Name="Position" Value="0 0"/>
+                    <float Name="Rotation" Value="0"/>
+                    <vec2D Name="Scale" Value="1 1"/>
+                    <vec2D Name="Center" Value="0 0"/>
+                    <aabb2D Name="BBox" Value="0 0 48 48"/>
+                    <bool Name="HFlip" Value="0"/>
+                    <bool Name="VFlip" Value="0"/>
+                    <file Name="Path" Value="common/IconPause.xml"/>
+                    <enum Name="Animation" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="dfe9402a"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="fed1efa4"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="1"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="1 1 1"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/tex/IconPause.png"/>
+                                        <bool Name="MipMaps" Value="0"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="1"/>
+                        <enum Name="RenderingPass" Value="3"/>
+                    </ref>
+                </Components>
+            </Sprite>
+        </Button>
+    </Entity2D>
+</UIContext>

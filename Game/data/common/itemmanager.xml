@@ -1,0 +1,16 @@
+<ItemManager>
+    <Properties>
+        <uint Name="ID" Value="231bc09d"/>
+        <string Name="Name" Value="ItemManager"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <float Name="Frequency" Value="8"/>
+        <uint Name="KillStreak" Value="4"/>
+        <array Name="Items">
+            <ref TemplatePath="common/ItemPulseUp.xml"/>
+            <ref TemplatePath="common/ItemLaserUp.xml"/>
+            <ref TemplatePath="common/ItemPelletUp.xml"/>
+            <ref TemplatePath="common/itemgold.xml"/>
+        </array>
+    </Properties>
+</ItemManager>

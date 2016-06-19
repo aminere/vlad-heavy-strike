@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Galaxy">
+      <UniqueIdentifier>{96088546-98e1-416d-8601-6e2629ecb7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{358b582a-c334-4afa-ae38-d8fe300dd284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{da9db83a-9227-422d-b198-e65e3474418e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Weapon">
+      <UniqueIdentifier>{23fb39d0-47e5-4e9b-a1dd-0b0fd896a4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{4f95f35f-3236-461b-97c1-68c1c2ac70f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\game\Starfield.cpp">
+      <Filter>Galaxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\ConfigPoint.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PlayerCamera.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PlayerCollisionComponent.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PlayerFSM.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\AIManager.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\AreaSpawner.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Asteroid.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BasicEnemy.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BasicFighter.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BasicShooter.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BasicTower.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss1.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss1FSM.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss2.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss2FSM.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\FallingAsteroid.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\SpinShooter.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\TightPassage.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\TriggerSpawner.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BulletManager.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\BulletManagerCollisionComponent.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\LaserManager.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\LaserManagerCollisionComponent.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PelletManager.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PlayerCannons.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PulseManager.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\WeaponConfig.cpp">
+      <Filter>Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Actor.cpp" />
+    <ClCompile Include="..\..\..\src\game\ConversationManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\ConversationVisitor.cpp" />
+    <ClCompile Include="..\..\..\src\game\DefaultEntityRegistration.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameData.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameEngine.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameThreadiOS.cpp" />
+    <ClCompile Include="..\..\..\src\game\Item.cpp" />
+    <ClCompile Include="..\..\..\src\game\ItemManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\SFXManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\Kamikaze.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\RadialShooter.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\RadialTower.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\SpinningLasers.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Squad.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\RadialTank.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss3.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss3FSM.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Bomber.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\LaserSwiper.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss4.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Boss4FSM.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\AudioManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\UIContext.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\PlayerList.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\UIHandler.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\ScoreoidUtils.cpp" />
+    <ClCompile Include="..\..\..\src\game\DamageComponent.cpp" />
+    <ClCompile Include="..\..\..\src\game\KamikazeTower.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\VKButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\VKeyboard.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\game\Starfield.h">
+      <Filter>Galaxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\ConfigPoint.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PlayerCamera.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PlayerCollisionComponent.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PlayerFSM.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\AIManager.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\AreaSpawner.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Asteroid.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BasicEnemy.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BasicFighter.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BasicShooter.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BasicTower.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss1.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss1FSM.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss2.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss2FSM.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\FallingAsteroid.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\SpinShooter.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\TightPassage.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\TriggerSpawner.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BulletManager.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\BulletManagerCollisionComponent.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\LaserManager.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\LaserManagerCollisionComponent.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PelletManager.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PlayerCannons.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PulseManager.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\WeaponConfig.h">
+      <Filter>Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Actor.h" />
+    <ClInclude Include="..\..\..\src\game\ConversationManager.h" />
+    <ClInclude Include="..\..\..\src\game\ConversationVisitor.h" />
+    <ClInclude Include="..\..\..\src\game\FSM.h" />
+    <ClInclude Include="..\..\..\src\game\FSMState.h" />
+    <ClInclude Include="..\..\..\src\game\GameData.h" />
+    <ClInclude Include="..\..\..\src\game\GameEngine.h" />
+    <ClInclude Include="..\..\..\src\game\GameManager.h" />
+    <ClInclude Include="..\..\..\src\game\GameThreadiOS.h" />
+    <ClInclude Include="..\..\..\src\game\Item.h" />
+    <ClInclude Include="..\..\..\src\game\ItemManager.h" />
+    <ClInclude Include="..\..\..\src\game\SFXManager.h" />
+    <ClInclude Include="..\..\..\src\game\ShootTest.h" />
+    <ClInclude Include="..\..\..\src\game\Kamikaze.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\RadialShooter.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\RadialTower.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\SpinningLasers.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Squad.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\RadialTank.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss3.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss3FSM.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Bomber.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\LaserSwiper.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss4.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\Boss4FSM.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\AudioManager.h" />
+    <ClInclude Include="..\..\..\src\game\UIContext.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\PlayerList.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\UIHandler.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\ScoreoidUtils.h" />
+    <ClInclude Include="..\..\..\src\game\DamageComponent.h" />
+    <ClInclude Include="..\..\..\src\game\KamikazeTower.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\VKButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\game\VKeyboard.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

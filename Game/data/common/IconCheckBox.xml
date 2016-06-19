@@ -1,0 +1,11 @@
+<Animations>
+	<array Name="Animations">
+		<struct>
+			<string Name="Name" Value="CheckBox" />
+			<array Name="Frames">
+				<file Value="common/tex/IconOn.png"/>
+				<file Value="common/tex/IconOff.png"/>
+			</array>
+		</struct>
+	</array>
+</Animations>

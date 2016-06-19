@@ -1,0 +1,583 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="2cbcbc0f"/>
+        <string Name="Name" Value="Crushers"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="0 0 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+    </Properties>
+    <Entity3D>
+        <Properties>
+            <uint Name="ID" Value="42186075"/>
+            <string Name="Name" Value="Crushers"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="8cc172ea"/>
+                <string Name="Name" Value="Crusher"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="-14 -4.77583 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="2/Meshes/OBJ_Smasher_anim.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="SequenceVisitor">
+                    <uint Name="ID" Value="6777746d"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="2"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <array Name="Visitors">
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="ed2359c4"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="-1.65 -4.78 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.1"/>
+                        </ref>
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="2db8c53a"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="-14 -4.78 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.7"/>
+                        </ref>
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="c63d96c7"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="0.3"/>
+                        </ref>
+                    </array>
+                </ref>
+                <ref Name="" ClassName="DamageComponent">
+                    <uint Name="ID" Value="19b0f012"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -0.8 -1 8 0.8 1"/>
+                        </ref>
+                    </array>
+                    <float Name="DamagePerSecond" Value="9999"/>
+                    <bool Name="ExplodeOnContact" Value="0"/>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="c82af825"/>
+                    <string Name="Name" Value="OBJ_Smasher_anim"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="8a0c91f"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="f3b1f52"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.901961 0.0313726 0.870588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="2/Meshes/OBJ_Smasher_anim.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="5fd53692"/>
+                <string Name="Name" Value="Crusher"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="12.8 7.88682 0.0139098"/>
+                <vec3D Name="Rotation" Value="0 0 180"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="2/Meshes/OBJ_Smasher_anim.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="SequenceVisitor">
+                    <uint Name="ID" Value="cb040329"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="2"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <array Name="Visitors">
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="bf4f48ee"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="0.27 7.89 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.1"/>
+                        </ref>
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="dea75109"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="12.08 7.89 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.7"/>
+                        </ref>
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="8e246a2f"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="0.3"/>
+                        </ref>
+                    </array>
+                </ref>
+                <ref Name="" ClassName="DamageComponent">
+                    <uint Name="ID" Value="c1a5d07d"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-8 -0.8 -1 10 0.8 1"/>
+                        </ref>
+                    </array>
+                    <float Name="DamagePerSecond" Value="9999"/>
+                    <bool Name="ExplodeOnContact" Value="0"/>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="4cac5dbc"/>
+                    <string Name="Name" Value="OBJ_Smasher_anim"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="632ed31b"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="f3b1f52"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.901961 0.0313726 0.870588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="2/Meshes/OBJ_Smasher_anim.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="a9737469"/>
+                <string Name="Name" Value="Crusher"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="-14 20.5182 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="2/Meshes/OBJ_Smasher_anim.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="SequenceVisitor">
+                    <uint Name="ID" Value="1c2b601"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="2"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <array Name="Visitors">
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="49ab64b3"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="-1.65 20.52 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.1"/>
+                        </ref>
+                        <ref ClassName="Translation3DVisitor">
+                            <uint Name="ID" Value="68219bed"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <struct Name="Src">
+                                <vec3D Name="Value" Value="0 0 0"/>
+                                <enum Name="Type" Value="1"/>
+                            </struct>
+                            <struct Name="Dest">
+                                <vec3D Name="Value" Value="-14 20.52 0"/>
+                                <enum Name="Type" Value="0"/>
+                            </struct>
+                            <float Name="Duration" Value="0.7"/>
+                        </ref>
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="6f17a3b8"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="0.3"/>
+                        </ref>
+                    </array>
+                </ref>
+                <ref Name="" ClassName="DamageComponent">
+                    <uint Name="ID" Value="a63bce03"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -0.8 -1 8 0.8 1"/>
+                        </ref>
+                    </array>
+                    <float Name="DamagePerSecond" Value="9999"/>
+                    <bool Name="ExplodeOnContact" Value="0"/>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="bb2ca453"/>
+                    <string Name="Name" Value="OBJ_Smasher_anim"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="c3b638e7"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="f3b1f52"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.901961 0.0313726 0.870588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="2/Meshes/OBJ_Smasher_anim.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+    </Entity3D>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="e18bd009"/>
+            <string Name="Name" Value="CrusherL"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 7.92168 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="2/Meshes/ML2_Smasher_L.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="RigidBodyComponent">
+                <uint Name="ID" Value="b46605b2"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="128"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="1"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="0"/>
+                </struct>
+                <uint Name="Priority" Value="0"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+                <float Name="Mass" Value="1"/>
+                <array Name="Shapes">
+                    <ref ClassName="CollisionShapeBox">
+                        <aabb3D Name="Box" Value="-30 -16 -1 -10 16 1"/>
+                    </ref>
+                </array>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="9a20ce58"/>
+                <string Name="Name" Value="ML2_Smasher_L"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="64acc7c1"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="617d6afc"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.588 0.588 0.588"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="2/Meshes/ML2_Smasher_L.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="18815c16"/>
+            <string Name="Name" Value="CrusherR"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 7.92 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="2/Meshes/ML2_Smasher_R.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="RigidBodyComponent">
+                <uint Name="ID" Value="487e2aa0"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="128"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="1"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="0"/>
+                </struct>
+                <uint Name="Priority" Value="0"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+                <float Name="Mass" Value="1"/>
+                <array Name="Shapes">
+                    <ref ClassName="CollisionShapeBox">
+                        <aabb3D Name="Box" Value="9 -16 -1 25 16 1"/>
+                    </ref>
+                </array>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="be736dfc"/>
+                <string Name="Name" Value="ML2_Smasher_R"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 -0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="5d766f76"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="20d53715"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.588 0.588 0.588"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="2/Meshes/ML2_Smasher_R.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+</Entity3D>

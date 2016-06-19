@@ -1,0 +1,99 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1"/>
+    <float Name="Duration" Value="-1"/>
+    <bool Name="DepthTest" Value="0"/>
+    <ref Name="Mesh" TemplatePath="boss4/Gun_02_L.xml"/>
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="2a"/>
+                        <uint Value="35"/>
+                        <uint Value="29"/>
+                        <uint Value="36"/>
+                        <uint Value="13"/>
+                        <uint Value="7"/>
+                        <uint Value="12"/>
+                        <uint Value="6"/>
+                        <uint Value="2d"/>
+                        <uint Value="37"/>
+                        <uint Value="2e"/>
+                        <uint Value="38"/>
+                        <uint Value="15"/>
+                        <uint Value="14"/>
+                        <uint Value="b"/>
+                        <uint Value="a"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="23"/>
+                        <uint Value="0"/>
+                        <uint Value="1"/>
+                        <uint Value="24"/>
+                        <uint Value="27"/>
+                        <uint Value="28"/>
+                        <uint Value="4"/>
+                        <uint Value="5"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="30"/>
+                        <uint Value="2b"/>
+                        <uint Value="31"/>
+                        <uint Value="10"/>
+                        <uint Value="11"/>
+                        <uint Value="34"/>
+                        <uint Value="33"/>
+                        <uint Value="32"/>
+                        <uint Value="e"/>
+                        <uint Value="f"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="43"/>
+                        <uint Value="2f"/>
+                        <uint Value="39"/>
+                        <uint Value="25"/>
+                        <uint Value="26"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="3c"/>
+                        <uint Value="3b"/>
+                        <uint Value="45"/>
+                        <uint Value="22"/>
+                        <uint Value="19"/>
+                        <uint Value="18"/>
+                        <uint Value="21"/>
+                        <uint Value="44"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="40"/>
+                        <uint Value="3f"/>
+                        <uint Value="41"/>
+                        <uint Value="42"/>
+                        <uint Value="1f"/>
+                        <uint Value="1e"/>
+                        <uint Value="1d"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1c"/>
+                        <uint Value="1a"/>
+                        <uint Value="1b"/>
+                        <uint Value="3d"/>
+                        <uint Value="3e"/>
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>

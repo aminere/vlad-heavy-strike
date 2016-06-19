@@ -1,0 +1,98 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1" />
+    <ref Name="Mesh" TemplatePath="common/mesh/BasicShooter.xml" />
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1db" />
+                        <uint Value="c9" />
+                        <uint Value="c8" />
+                        <uint Value="a2" />
+                        <uint Value="181" />
+                        <uint Value="182" />
+                        <uint Value="198" />
+                        <uint Value="197" />
+                        <uint Value="199" />
+                        <uint Value="19a" />
+                        <uint Value="1dc" />
+                        <uint Value="1dd" />
+                        <uint Value="de" />
+                        <uint Value="df" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="b4" />
+                        <uint Value="b3" />
+                        <uint Value="b1" />
+                        <uint Value="b2" />
+                        <uint Value="b0" />
+                        <uint Value="af" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="160" />
+                        <uint Value="163" />
+                        <uint Value="161" />
+                        <uint Value="162" />
+                        <uint Value="164" />
+                        <uint Value="165" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="168" />
+                        <uint Value="167" />
+                        <uint Value="16a" />
+                        <uint Value="169" />
+                        <uint Value="16c" />
+                        <uint Value="16b" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="1f1" />
+                        <uint Value="1c9" />
+                        <uint Value="1ef" />
+                        <uint Value="1bd" />
+                        <uint Value="1bf" />
+                        <uint Value="1c8" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="c" />
+                        <uint Value="d" />
+                        <uint Value="15" />
+                        <uint Value="2" />
+                        <uint Value="3" />
+                        <uint Value="2a" />
+                        <uint Value="1e" />
+                        <uint Value="22" />
+                        <uint Value="23" />
+                        <uint Value="1f" />
+                        <uint Value="2c" />
+                        <uint Value="2e" />
+                        <uint Value="25" />
+                        <uint Value="24" />
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="79" />
+                        <uint Value="78" />
+                        <uint Value="1a" />
+                        <uint Value="1b" />
+                        <uint Value="53" />
+                        <uint Value="12a" />
+                        <uint Value="54" />
+                        <uint Value="129" />
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>

@@ -1,0 +1,56 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1"/>
+    <ref Name="Mesh" TemplatePath="boss3/Boss3CannonMesh.xml"/>
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="0"/>
+                        <uint Value="19"/>
+                        <uint Value="1"/>
+                        <uint Value="18"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="20"/>
+                        <uint Value="8"/>
+                        <uint Value="1d"/>
+                        <uint Value="5"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="f"/>
+                        <uint Value="27"/>
+                        <uint Value="d"/>
+                        <uint Value="25"/>
+                        <uint Value="a"/>
+                        <uint Value="22"/>
+                        <uint Value="6"/>
+                        <uint Value="1e"/>
+                        <uint Value="28"/>
+                        <uint Value="10"/>
+                        <uint Value="e"/>
+                        <uint Value="26"/>
+                        <uint Value="b"/>
+                        <uint Value="23"/>
+                        <uint Value="24"/>
+                        <uint Value="c"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="3"/>
+                        <uint Value="1a"/>
+                        <uint Value="1c"/>
+                        <uint Value="1b"/>
+                        <uint Value="4"/>
+                        <uint Value="2"/>
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>

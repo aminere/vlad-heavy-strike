@@ -1,0 +1,4 @@
+<MeshResource>	
+	<bool Name="Dynamic" Value="0" />
+	<string Name="MeshPath" Value="2/Meshes/ML2_Construct_R.fbx" />	
+</MeshResource>

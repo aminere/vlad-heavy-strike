@@ -1,0 +1,110 @@
+<Actor>
+    <Properties>
+        <uint Name="ID" Value="200188ef"/>
+        <string Name="Name" Value="LaserCannon1"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="-2.84865 -3.50677 -0.39393"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <bool Name="CanDropItem" Value="0"/>
+        <bool Name="Destructible" Value="1"/>
+        <float Name="HitPoints" Value="50"/>
+        <bool Name="PlayfieldCheck" Value="1"/>
+        <bool Name="Immune" Value="0"/>
+        <bool Name="IsBoss" Value="0"/>
+        <bool Name="ShakeOnExplode" Value="1"/>
+        <bool Name="ShakeOnShot" Value="1"/>
+        <float Name="ExplosionScaleFactor" Value="1"/>
+        <float Name="DamageDist" Value="99"/>
+    </Properties>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="6845004f"/>
+            <string Name="Name" Value="BaseMesh"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="0 0 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Mesh" TemplatePath="boss4/Gun_02_L.xml"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="RigidBodyComponent">
+                <uint Name="ID" Value="917d942c"/>
+                <string Name="Name" Value=""/>
+                <enum Name="CollisionGroup" Value="2"/>
+                <struct Name="CollisionMask">
+                    <bool Name="Group_1" Value="1"/>
+                    <bool Name="Group_2" Value="0"/>
+                    <bool Name="Group_3" Value="0"/>
+                    <bool Name="Group_4" Value="1"/>
+                    <bool Name="Group_5" Value="0"/>
+                    <bool Name="Group_6" Value="0"/>
+                    <bool Name="Group_7" Value="0"/>
+                    <bool Name="Group_8" Value="0"/>
+                </struct>
+                <uint Name="Priority" Value="0"/>
+                <float Name="CollisionRadius" Value="0.5"/>
+                <float Name="Mass" Value="1"/>
+                <array Name="Shapes">
+                    <ref ClassName="CollisionShapeSphere">
+                        <float Name="Radius" Value="1"/>
+                        <vec3D Name="Center" Value="0 -4 0"/>
+                    </ref>
+                    <ref ClassName="CollisionShapeSphere">
+                        <float Name="Radius" Value="1"/>
+                        <vec3D Name="Center" Value="0 -2 0"/>
+                    </ref>
+                </array>
+            </ref>
+        </Components>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="1b23cc2"/>
+                <string Name="Name" Value="Laser"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="2488286c"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="c700b11d"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="1"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.8 0.8 0.8"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="boss4/Boss_04.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="1"/>
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+</Actor>

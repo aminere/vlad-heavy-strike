@@ -1,0 +1,109 @@
+<Button>
+    <Properties>
+        <uint Name="ID" Value="8f4522b5"/>
+        <string Name="Name" Value="Back"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec2D Name="Position" Value="8.48352 562.179"/>
+        <float Name="Rotation" Value="0"/>
+        <vec2D Name="Scale" Value="1.5 1.5"/>
+        <vec2D Name="Center" Value="0 0"/>
+        <aabb2D Name="BBox" Value="0 0 48 48"/>
+        <bool Name="HFlip" Value="0"/>
+        <bool Name="VFlip" Value="0"/>
+        <string Name="Command" Value="BACK"/>
+        <bool Name="CheckBox" Value="0"/>
+    </Properties>
+    <Image>
+        <Properties>
+            <uint Name="ID" Value="14685a55"/>
+            <string Name="Name" Value="BG"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec2D Name="Position" Value="0 0"/>
+            <float Name="Rotation" Value="0"/>
+            <vec2D Name="Scale" Value="1 1"/>
+            <vec2D Name="Center" Value="0 0"/>
+            <aabb2D Name="BBox" Value="0 0 48 48"/>
+            <bool Name="HFlip" Value="0"/>
+            <bool Name="VFlip" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="6b5be043"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="ae9b0dd"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="0.7"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/IconBG.png"/>
+                                <bool Name="MipMaps" Value="0"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="3"/>
+                <enum Name="RenderingPass" Value="5"/>
+            </ref>
+        </Components>
+    </Image>
+    <Sprite>
+        <Properties>
+            <uint Name="ID" Value="fe1db438"/>
+            <string Name="Name" Value="Icon"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec2D Name="Position" Value="2.98891 6.72522"/>
+            <float Name="Rotation" Value="0"/>
+            <vec2D Name="Scale" Value="0.75 0.75"/>
+            <vec2D Name="Center" Value="0 0"/>
+            <aabb2D Name="BBox" Value="0 0 48 48"/>
+            <bool Name="HFlip" Value="0"/>
+            <bool Name="VFlip" Value="0"/>
+            <file Name="Path" Value="common/IconBack.xml"/>
+            <enum Name="Animation" Value="0"/>
+        </Properties>
+        <Components>
+            <ref Name="" ClassName="GraphicComponent">
+                <uint Name="ID" Value="92d4e29e"/>
+                <string Name="Name" Value=""/>
+                <ref Name="Material" ClassName="Material">
+                    <uint Name="ID" Value="2723881"/>
+                    <string Name="Name" Value=""/>
+                    <struct Name="CreationInfo">
+                        <bool Name="Lighting" Value="0"/>
+                        <bool Name="AlphaBlending" Value="1"/>
+                        <bool Name="DepthTest" Value="1"/>
+                        <bool Name="DepthWrite" Value="1"/>
+                        <enum Name="SrcBlendFactor" Value="4"/>
+                        <enum Name="DestBlendFactor" Value="5"/>
+                        <enum Name="CullMode" Value="1"/>
+                        <color Name="Color" Value="1 1 1"/>
+                        <float Name="Alpha" Value="1"/>
+                        <array Name="Textures">
+                            <struct>
+                                <file Name="Path" Value="common/tex/IconBack.png"/>
+                                <bool Name="MipMaps" Value="0"/>
+                            </struct>
+                        </array>
+                        <ref Name="Shader" ClassName="Shader"/>
+                    </struct>
+                </ref>
+                <uint Name="RenderingPriority" Value="4"/>
+                <enum Name="RenderingPass" Value="5"/>
+            </ref>
+        </Components>
+    </Sprite>
+</Button>

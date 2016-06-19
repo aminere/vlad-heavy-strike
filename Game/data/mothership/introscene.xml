@@ -1,0 +1,873 @@
+<ContextStack>
+    <Properties>
+        <uint Name="ID" Value="a1e78b2a"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+    </Properties>
+    <Context>
+        <Properties>
+            <uint Name="ID" Value="48b6139d"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <ref Name="QuadTree" ClassName="QuadTree"/>
+            <bool Name="BlockUpdate" Value="0"/>
+        </Properties>
+        <Camera TemplatePath="mothership/introcamera.xml">
+            <Properties>
+                <uint Name="ID" Value="d8d4f27f"/>
+            </Properties>
+        </Camera>
+        <SkyBoxEntity>
+            <Properties>
+                <uint Name="ID" Value="871db2c8"/>
+                <string Name="Name" Value=""/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 30 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="1"/>
+                <ref Name="CubeMap" TemplatePath="common/Cubemaps/bluestars.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="f080b78e"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="2b4b5dc1"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="0.501961 0.501961 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value=""/>
+                                    <bool Name="MipMaps" Value="0"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="0"/>
+                </ref>
+                <ref Name="" ClassName="Rotation3DVisitor">
+                    <uint Name="ID" Value="531948e0"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="2"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <struct Name="Src">
+                        <vec3D Name="Value" Value="0 30 0"/>
+                        <enum Name="Type" Value="0"/>
+                    </struct>
+                    <struct Name="Dest">
+                        <vec3D Name="Value" Value="360 30 0"/>
+                        <enum Name="Type" Value="0"/>
+                    </struct>
+                    <float Name="Duration" Value="120"/>
+                </ref>
+            </Components>
+        </SkyBoxEntity>
+        <Camera>
+            <Properties>
+                <uint Name="ID" Value="73b032ab"/>
+                <string Name="Name" Value="2DCamera"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <float Name="FOV" Value="45"/>
+                <float Name="ZNear" Value="0.5"/>
+                <float Name="ZFar" Value="300"/>
+                <enum Name="Projection" Value="2"/>
+                <vec3D Name="UpVector" Value="0 0 1"/>
+                <vec3D Name="LookAt" Value="0 0 0"/>
+                <size Name="TargetResolution" Value="480 640"/>
+            </Properties>
+        </Camera>
+        <ParticleGenerator>
+            <Properties>
+                <uint Name="ID" Value="4bf8427"/>
+                <string Name="Name" Value="Stars"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 16.0008"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <uint Name="MaxParticles" Value="c8"/>
+                <int Name="ParticlesPerSecond" Value="60"/>
+                <range Name="ParticleLife" Value="4 4"/>
+                <range Name="ParticleSpeed" Value="50 70"/>
+                <float Name="ParticleSize" Value="0.6"/>
+                <vec3D Name="Direction" Value="0 -1 0"/>
+                <vec3D Name="Gravity" Value="0 0 0"/>
+                <aabb3D Name="EmitBox" Value="-80 20 -10 80 150 10"/>
+                <aabb3D Name="BoundingBox" Value="0 0 0 1 1 1"/>
+                <uint Name="PoolSize" Value="2000"/>
+                <float Name="ActiveTime" Value="-1"/>
+                <bool Name="Explosive" Value="0"/>
+                <bool Name="ApplyWorldTransform" Value="1"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="bf1ccc61"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="75fa147f"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="1"/>
+                            <bool Name="DepthTest" Value="0"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="1 1 1"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="common/tex/Star.png"/>
+                                    <bool Name="MipMaps" Value="1"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="2"/>
+                </ref>
+            </Components>
+        </ParticleGenerator>
+        <MeshEntity TemplatePath="mothership/mothershipmesh.xml">
+            <Properties>
+                <uint Name="ID" Value="b252eaf8"/>
+            </Properties>
+        </MeshEntity>
+        <CameraPath TemplatePath="mothership/introcamerapath.xml">
+            <Properties>
+                <uint Name="ID" Value="8d5d797f"/>
+            </Properties>
+        </CameraPath>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="94cc3adb"/>
+                <string Name="Name" Value="PlayerMesh"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 18.4012 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/player.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="PlayerCollisionComponent">
+                    <uint Name="ID" Value="ae6077b9"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="1"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="0"/>
+                        <bool Name="Group_2" Value="1"/>
+                        <bool Name="Group_3" Value="1"/>
+                        <bool Name="Group_4" Value="0"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="1"/>
+                        <bool Name="Group_8" Value="1"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="1.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeSphere">
+                            <float Name="Radius" Value="1.5"/>
+                            <vec3D Name="Center" Value="0 0.2 0"/>
+                        </ref>
+                    </array>
+                </ref>
+                <ref Name="" ClassName="SequenceVisitor">
+                    <uint Name="ID" Value="346b9d70"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="0"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <array Name="Visitors">
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="40308f7"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="18.5"/>
+                        </ref>
+                        <ref ClassName="FollowPathVisitor">
+                            <uint Name="ID" Value="72cd826e"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <enum Name="PlaybackType" Value="0"/>
+                            <int Name="MaxPlayCount" Value="-1"/>
+                            <link Name="Path" Value="4466d127"/>
+                            <bool Name="OrientEntity" Value="1"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+            <ParticleGenerator>
+                <Properties>
+                    <uint Name="ID" Value="f0585d6e"/>
+                    <string Name="Name" Value="ParticleGenerator"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0.6 -1.35 -0.03"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <uint Name="MaxParticles" Value="c8"/>
+                    <int Name="ParticlesPerSecond" Value="30"/>
+                    <range Name="ParticleLife" Value="0.6 1"/>
+                    <range Name="ParticleSpeed" Value="1 1.5"/>
+                    <float Name="ParticleSize" Value="0.5"/>
+                    <vec3D Name="Direction" Value="0 -1 0"/>
+                    <vec3D Name="Gravity" Value="0 0 0"/>
+                    <aabb3D Name="EmitBox" Value="-0.1 -0.1 -0.1 0.1 0.1 0.1"/>
+                    <aabb3D Name="BoundingBox" Value="0 0 0 1 1 1"/>
+                    <uint Name="PoolSize" Value="1000"/>
+                    <float Name="ActiveTime" Value="-1"/>
+                    <bool Name="Explosive" Value="0"/>
+                    <bool Name="ApplyWorldTransform" Value="1"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="f453f5f5"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="5e435444"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="1"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="0"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="1"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="1 1 1"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/tex/Ice.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="2"/>
+                    </ref>
+                </Components>
+                <BillBoardEntity>
+                    <Properties>
+                        <uint Name="ID" Value="7cf72efe"/>
+                        <string Name="Name" Value=""/>
+                        <bool Name="Visible" Value="1"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec3D Name="Position" Value="0 0 0"/>
+                        <vec3D Name="Rotation" Value="0 0 0"/>
+                        <vec3D Name="Scale" Value="0.6 0.6 0.6"/>
+                        <vec3D Name="Center" Value="0 0 0"/>
+                        <bool Name="AlwaysActive" Value="0"/>
+                    </Properties>
+                    <Components>
+                        <ref Name="" ClassName="GraphicComponent">
+                            <uint Name="ID" Value="d98227ae"/>
+                            <string Name="Name" Value=""/>
+                            <ref Name="Material" ClassName="Material">
+                                <uint Name="ID" Value="59b850c1"/>
+                                <string Name="Name" Value=""/>
+                                <struct Name="CreationInfo">
+                                    <bool Name="Lighting" Value="0"/>
+                                    <bool Name="AlphaBlending" Value="1"/>
+                                    <bool Name="DepthTest" Value="1"/>
+                                    <bool Name="DepthWrite" Value="0"/>
+                                    <enum Name="SrcBlendFactor" Value="4"/>
+                                    <enum Name="DestBlendFactor" Value="1"/>
+                                    <enum Name="CullMode" Value="1"/>
+                                    <color Name="Color" Value="0 0.501961 0.74902"/>
+                                    <float Name="Alpha" Value="1"/>
+                                    <array Name="Textures">
+                                        <struct>
+                                            <file Name="Path" Value="common/tex/Star.png"/>
+                                            <bool Name="MipMaps" Value="1"/>
+                                        </struct>
+                                    </array>
+                                    <ref Name="Shader" ClassName="Shader"/>
+                                </struct>
+                            </ref>
+                            <uint Name="RenderingPriority" Value="0"/>
+                            <enum Name="RenderingPass" Value="2"/>
+                        </ref>
+                    </Components>
+                </BillBoardEntity>
+            </ParticleGenerator>
+            <ParticleGenerator>
+                <Properties>
+                    <uint Name="ID" Value="d6142b11"/>
+                    <string Name="Name" Value="ParticleGenerator"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="-0.603012 -1.34677 -0.0261593"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <uint Name="MaxParticles" Value="c8"/>
+                    <int Name="ParticlesPerSecond" Value="30"/>
+                    <range Name="ParticleLife" Value="0.6 1"/>
+                    <range Name="ParticleSpeed" Value="1 1.5"/>
+                    <float Name="ParticleSize" Value="0.5"/>
+                    <vec3D Name="Direction" Value="0 -1 0"/>
+                    <vec3D Name="Gravity" Value="0 0 0"/>
+                    <aabb3D Name="EmitBox" Value="-0.1 -0.1 -0.1 0.1 0.1 0.1"/>
+                    <aabb3D Name="BoundingBox" Value="0 0 0 1 1 1"/>
+                    <uint Name="PoolSize" Value="1000"/>
+                    <float Name="ActiveTime" Value="-1"/>
+                    <bool Name="Explosive" Value="0"/>
+                    <bool Name="ApplyWorldTransform" Value="1"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="98542683"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="5e435444"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="1"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="0"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="1"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="1 1 1"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/tex/Ice.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="2"/>
+                    </ref>
+                </Components>
+                <BillBoardEntity>
+                    <Properties>
+                        <uint Name="ID" Value="16c6c152"/>
+                        <string Name="Name" Value=""/>
+                        <bool Name="Visible" Value="1"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec3D Name="Position" Value="0 0 0"/>
+                        <vec3D Name="Rotation" Value="0 0 0"/>
+                        <vec3D Name="Scale" Value="0.6 0.6 0.6"/>
+                        <vec3D Name="Center" Value="0 0 0"/>
+                        <bool Name="AlwaysActive" Value="0"/>
+                    </Properties>
+                    <Components>
+                        <ref Name="" ClassName="GraphicComponent">
+                            <uint Name="ID" Value="2cd80c50"/>
+                            <string Name="Name" Value=""/>
+                            <ref Name="Material" ClassName="Material">
+                                <uint Name="ID" Value="59b850c1"/>
+                                <string Name="Name" Value=""/>
+                                <struct Name="CreationInfo">
+                                    <bool Name="Lighting" Value="0"/>
+                                    <bool Name="AlphaBlending" Value="1"/>
+                                    <bool Name="DepthTest" Value="1"/>
+                                    <bool Name="DepthWrite" Value="0"/>
+                                    <enum Name="SrcBlendFactor" Value="4"/>
+                                    <enum Name="DestBlendFactor" Value="1"/>
+                                    <enum Name="CullMode" Value="1"/>
+                                    <color Name="Color" Value="0 0.501961 0.74902"/>
+                                    <float Name="Alpha" Value="1"/>
+                                    <array Name="Textures">
+                                        <struct>
+                                            <file Name="Path" Value="common/tex/Star.png"/>
+                                            <bool Name="MipMaps" Value="1"/>
+                                        </struct>
+                                    </array>
+                                    <ref Name="Shader" ClassName="Shader"/>
+                                </struct>
+                            </ref>
+                            <uint Name="RenderingPriority" Value="0"/>
+                            <enum Name="RenderingPass" Value="2"/>
+                        </ref>
+                    </Components>
+                </BillBoardEntity>
+            </ParticleGenerator>
+            <PlayerCannons>
+                <Properties>
+                    <uint Name="ID" Value="cc0daec1"/>
+                    <string Name="Name" Value="PlayerCannons"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <float Name="PullbackOffset" Value="0.2"/>
+                    <float Name="BulletOffset" Value="1.1"/>
+                    <float Name="BulletRadius" Value="0.5"/>
+                    <array Name="Configs">
+                        <struct>
+                            <array Name="Levels">
+                                <ref ClassName="PulseConfig">
+                                    <float Name="BulletSpeed" Value="45"/>
+                                    <float Name="BulletLife" Value="1"/>
+                                    <float Name="ShootFrequency" Value="0.08"/>
+                                    <float Name="BulletSize" Value="0.8"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                </ref>
+                                <ref ClassName="PulseConfig">
+                                    <float Name="BulletSpeed" Value="45"/>
+                                    <float Name="BulletLife" Value="0.9"/>
+                                    <float Name="ShootFrequency" Value="0.05"/>
+                                    <float Name="BulletSize" Value="1.1"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                </ref>
+                                <ref ClassName="PulseConfig">
+                                    <float Name="BulletSpeed" Value="45"/>
+                                    <float Name="BulletLife" Value="0.8"/>
+                                    <float Name="ShootFrequency" Value="0.04"/>
+                                    <float Name="BulletSize" Value="1.6"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                </ref>
+                            </array>
+                        </struct>
+                        <struct>
+                            <array Name="Levels">
+                                <ref ClassName="LaserConfig">
+                                    <float Name="BulletSpeed" Value="40"/>
+                                    <float Name="BulletLife" Value="1.1"/>
+                                    <float Name="ShootFrequency" Value="0.15"/>
+                                    <float Name="BulletSize" Value="0.55"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="LaserLength" Value="3"/>
+                                </ref>
+                                <ref ClassName="LaserConfig">
+                                    <float Name="BulletSpeed" Value="45"/>
+                                    <float Name="BulletLife" Value="1"/>
+                                    <float Name="ShootFrequency" Value="0.15"/>
+                                    <float Name="BulletSize" Value="0.85"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="LaserLength" Value="6"/>
+                                </ref>
+                                <ref ClassName="LaserConfig">
+                                    <float Name="BulletSpeed" Value="70"/>
+                                    <float Name="BulletLife" Value="0.7"/>
+                                    <float Name="ShootFrequency" Value="0.1"/>
+                                    <float Name="BulletSize" Value="1.4"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="LaserLength" Value="8"/>
+                                </ref>
+                            </array>
+                        </struct>
+                        <struct>
+                            <array Name="Levels">
+                                <ref ClassName="PelletConfig">
+                                    <float Name="BulletSpeed" Value="32"/>
+                                    <float Name="BulletLife" Value="1.2"/>
+                                    <float Name="ShootFrequency" Value="0.08"/>
+                                    <float Name="BulletSize" Value="0.7"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="MinDistToEnemy" Value="5"/>
+                                    <float Name="HomingFactor" Value="12"/>
+                                    <float Name="MaxHomingAngle" Value="45"/>
+                                </ref>
+                                <ref ClassName="PelletConfig">
+                                    <float Name="BulletSpeed" Value="40"/>
+                                    <float Name="BulletLife" Value="1"/>
+                                    <float Name="ShootFrequency" Value="0.05"/>
+                                    <float Name="BulletSize" Value="1"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="MinDistToEnemy" Value="10"/>
+                                    <float Name="HomingFactor" Value="5"/>
+                                    <float Name="MaxHomingAngle" Value="45"/>
+                                </ref>
+                                <ref ClassName="PelletConfig">
+                                    <float Name="BulletSpeed" Value="42"/>
+                                    <float Name="BulletLife" Value="1"/>
+                                    <float Name="ShootFrequency" Value="0.05"/>
+                                    <float Name="BulletSize" Value="1.4"/>
+                                    <float Name="BulletDamage" Value="1"/>
+                                    <float Name="MinDistToEnemy" Value="10"/>
+                                    <float Name="HomingFactor" Value="5"/>
+                                    <float Name="MaxHomingAngle" Value="60"/>
+                                </ref>
+                            </array>
+                        </struct>
+                    </array>
+                    <enum Name="WeaponType" Value="0"/>
+                    <enum Name="WeaponLevel" Value="0"/>
+                </Properties>
+                <MeshEntity>
+                    <Properties>
+                        <uint Name="ID" Value="dcdf24aa"/>
+                        <string Name="Name" Value="LeftCannon"/>
+                        <bool Name="Visible" Value="1"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec3D Name="Position" Value="-0.89 0.282354 -0.01"/>
+                        <vec3D Name="Rotation" Value="0 0 0"/>
+                        <vec3D Name="Scale" Value="1 1 1"/>
+                        <vec3D Name="Center" Value="0 0 0"/>
+                        <bool Name="AlwaysActive" Value="0"/>
+                        <ref Name="Mesh" TemplatePath="common/mesh/fighterPulseCannon.xml"/>
+                    </Properties>
+                    <SubMesh>
+                        <Properties>
+                            <uint Name="ID" Value="638ff468"/>
+                            <string Name="Name" Value="Cube"/>
+                            <bool Name="Visible" Value="1"/>
+                            <bool Name="Enabled" Value="1"/>
+                            <vec3D Name="Position" Value="0 0 0"/>
+                            <vec3D Name="Rotation" Value="0 0 0"/>
+                            <vec3D Name="Scale" Value="1 1 1"/>
+                            <vec3D Name="Center" Value="0 0 0"/>
+                            <bool Name="AlwaysActive" Value="0"/>
+                        </Properties>
+                        <Components>
+                            <ref Name="" ClassName="GraphicComponent">
+                                <uint Name="ID" Value="c23fda91"/>
+                                <string Name="Name" Value=""/>
+                                <ref Name="Material" ClassName="Material">
+                                    <uint Name="ID" Value="ab1d5825"/>
+                                    <string Name="Name" Value=""/>
+                                    <struct Name="CreationInfo">
+                                        <bool Name="Lighting" Value="0"/>
+                                        <bool Name="AlphaBlending" Value="0"/>
+                                        <bool Name="DepthTest" Value="1"/>
+                                        <bool Name="DepthWrite" Value="1"/>
+                                        <enum Name="SrcBlendFactor" Value="4"/>
+                                        <enum Name="DestBlendFactor" Value="5"/>
+                                        <enum Name="CullMode" Value="1"/>
+                                        <color Name="Color" Value="1 1 1"/>
+                                        <float Name="Alpha" Value="1"/>
+                                        <array Name="Textures">
+                                            <struct>
+                                                <file Name="Path" Value="common/mesh/FXPLATES.png"/>
+                                                <bool Name="MipMaps" Value="1"/>
+                                            </struct>
+                                        </array>
+                                        <ref Name="Shader" ClassName="Shader"/>
+                                    </struct>
+                                </ref>
+                                <uint Name="RenderingPriority" Value="0"/>
+                                <enum Name="RenderingPass" Value="1"/>
+                            </ref>
+                        </Components>
+                    </SubMesh>
+                </MeshEntity>
+                <MeshEntity>
+                    <Properties>
+                        <uint Name="ID" Value="90646ed3"/>
+                        <string Name="Name" Value="RightCannon"/>
+                        <bool Name="Visible" Value="1"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec3D Name="Position" Value="0.893615 0.282354 -0.010136"/>
+                        <vec3D Name="Rotation" Value="0 0 0"/>
+                        <vec3D Name="Scale" Value="1 1 1"/>
+                        <vec3D Name="Center" Value="0 0 0"/>
+                        <bool Name="AlwaysActive" Value="0"/>
+                        <ref Name="Mesh" TemplatePath="common/mesh/fighterPulseCannon.xml"/>
+                    </Properties>
+                    <SubMesh>
+                        <Properties>
+                            <uint Name="ID" Value="606cde3c"/>
+                            <string Name="Name" Value="Cube"/>
+                            <bool Name="Visible" Value="1"/>
+                            <bool Name="Enabled" Value="1"/>
+                            <vec3D Name="Position" Value="0 0 0"/>
+                            <vec3D Name="Rotation" Value="0 0 0"/>
+                            <vec3D Name="Scale" Value="1 1 1"/>
+                            <vec3D Name="Center" Value="0 0 0"/>
+                            <bool Name="AlwaysActive" Value="0"/>
+                        </Properties>
+                        <Components>
+                            <ref Name="" ClassName="GraphicComponent">
+                                <uint Name="ID" Value="a3430bf2"/>
+                                <string Name="Name" Value=""/>
+                                <ref Name="Material" ClassName="Material">
+                                    <uint Name="ID" Value="ab1d5825"/>
+                                    <string Name="Name" Value=""/>
+                                    <struct Name="CreationInfo">
+                                        <bool Name="Lighting" Value="0"/>
+                                        <bool Name="AlphaBlending" Value="0"/>
+                                        <bool Name="DepthTest" Value="1"/>
+                                        <bool Name="DepthWrite" Value="1"/>
+                                        <enum Name="SrcBlendFactor" Value="4"/>
+                                        <enum Name="DestBlendFactor" Value="5"/>
+                                        <enum Name="CullMode" Value="1"/>
+                                        <color Name="Color" Value="1 1 1"/>
+                                        <float Name="Alpha" Value="1"/>
+                                        <array Name="Textures">
+                                            <struct>
+                                                <file Name="Path" Value="common/mesh/FXPLATES.png"/>
+                                                <bool Name="MipMaps" Value="1"/>
+                                            </struct>
+                                        </array>
+                                        <ref Name="Shader" ClassName="Shader"/>
+                                    </struct>
+                                </ref>
+                                <uint Name="RenderingPriority" Value="0"/>
+                                <enum Name="RenderingPass" Value="1"/>
+                            </ref>
+                        </Components>
+                    </SubMesh>
+                </MeshEntity>
+            </PlayerCannons>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="44493329"/>
+                    <string Name="Name" Value="Mesh"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="4ccc5575"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="6631c09d"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="1 1 1"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/mesh/psionic32.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <Path>
+            <Properties>
+                <uint Name="ID" Value="4466d127"/>
+                <string Name="Name" Value="PlayerPath"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 18.4012 1.90735e-006"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <bool Name="WrapAround" Value="0"/>
+            </Properties>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="4c1209ac"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1.5"/>
+                </Properties>
+            </PathElement>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="e45a9928"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 13.3273 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1"/>
+                </Properties>
+            </PathElement>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="b519dc3b"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="2.50964 32.4759 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1"/>
+                </Properties>
+            </PathElement>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="d8111e80"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="10.3506 58.3317 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1"/>
+                </Properties>
+            </PathElement>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="9521c47d"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="23.5157 106.091 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1"/>
+                </Properties>
+            </PathElement>
+            <PathElement>
+                <Properties>
+                    <uint Name="ID" Value="4e8779d9"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="35.2821 181.996 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                    <vec3D Name="UpVector" Value="0 0 1"/>
+                    <float Name="FollowDuration" Value="1"/>
+                </Properties>
+            </PathElement>
+        </Path>
+        <Entity2D>
+            <Properties>
+                <uint Name="ID" Value="f4b53a5"/>
+                <string Name="Name" Value="FadeElement"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec2D Name="Position" Value="0 0"/>
+                <float Name="Rotation" Value="0"/>
+                <vec2D Name="Scale" Value="1 1"/>
+                <vec2D Name="Center" Value="0 0"/>
+                <aabb2D Name="BBox" Value="0 0 0 0"/>
+                <bool Name="HFlip" Value="0"/>
+                <bool Name="VFlip" Value="0"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="SequenceVisitor">
+                    <uint Name="ID" Value="6a68d127"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="0"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <array Name="Visitors">
+                        <ref ClassName="FadeVisitor">
+                            <uint Name="ID" Value="9bd181e2"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <color Name="SrcColor" Value="1 1 1"/>
+                            <float Name="SrcAlpha" Value="1"/>
+                            <color Name="DestColor" Value="1 1 1"/>
+                            <float Name="DestAlpha" Value="1"/>
+                            <float Name="Duration" Value="0.01"/>
+                        </ref>
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="6813387b"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="2"/>
+                        </ref>
+                        <ref ClassName="FadeVisitor">
+                            <uint Name="ID" Value="9bd181e2"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <color Name="SrcColor" Value="1 1 1"/>
+                            <float Name="SrcAlpha" Value="1"/>
+                            <color Name="DestColor" Value="1 1 1"/>
+                            <float Name="DestAlpha" Value="0"/>
+                            <float Name="Duration" Value="1"/>
+                        </ref>
+                        <ref ClassName="DelayVisitor">
+                            <uint Name="ID" Value="b36e7223"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <float Name="Duration" Value="22.5"/>
+                        </ref>
+                        <ref ClassName="FadeVisitor">
+                            <uint Name="ID" Value="d003609c"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <color Name="SrcColor" Value="0 0 0"/>
+                            <float Name="SrcAlpha" Value="0"/>
+                            <color Name="DestColor" Value="0 0 0"/>
+                            <float Name="DestAlpha" Value="1"/>
+                            <float Name="Duration" Value="1"/>
+                        </ref>
+                        <ref ClassName="SendTriggerVisitor">
+                            <uint Name="ID" Value="6672f819"/>
+                            <string Name="Name" Value=""/>
+                            <bool Name="AutoStart" Value="1"/>
+                            <string Name="TriggerName" Value="INTRO_FINISHED"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+        </Entity2D>
+    </Context>
+</ContextStack>

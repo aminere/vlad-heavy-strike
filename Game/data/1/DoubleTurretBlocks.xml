@@ -1,0 +1,155 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="7bed43c4" />
+        <string Name="Name" Value="Platforms" />
+        <bool Name="Visible" Value="1" />
+        <bool Name="Enabled" Value="1" />
+        <vec3D Name="Position" Value="0 637.419 0" />
+        <vec3D Name="Rotation" Value="0 0 0" />
+        <vec3D Name="Scale" Value="1 1 1" />
+        <vec3D Name="Center" Value="0 0 0" />
+        <bool Name="AlwaysActive" Value="0" />
+    </Properties>
+    <MeshEntity TemplatePath="1/TurretCap.xml">
+        <Properties>
+            <uint Name="ID" Value="89f7323e" />
+            <vec3D Name="Position" Value="12.3941 -24.5054 -3.8147e-006" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="1/TurretBlockRight.xml">
+        <Properties>
+            <uint Name="ID" Value="ca51d420" />
+            <vec3D Name="Position" Value="12.5166 -9.9079 -3.8147e-006" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="1/Junction.xml">
+        <Properties>
+            <uint Name="ID" Value="d96689ae" />
+            <vec3D Name="Position" Value="12.5964 7.28888 -3.8147e-006" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="fc3957fb" />
+            <string Name="Name" Value="JunctionCap" />
+            <bool Name="Visible" Value="1" />
+            <bool Name="Enabled" Value="1" />
+            <vec3D Name="Position" Value="12.5065 18.0398 0.205435" />
+            <vec3D Name="Rotation" Value="0 0 180" />
+            <vec3D Name="Scale" Value="1 1 1" />
+            <vec3D Name="Center" Value="0 0 0" />
+            <bool Name="AlwaysActive" Value="0" />
+            <ref Name="Mesh" TemplatePath="1/Meshes/ML1_Junction_cap.xml" />
+        </Properties>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="fee7ebd8" />
+                <string Name="Name" Value="ML1_Junction_cap" />
+                <bool Name="Visible" Value="1" />
+                <bool Name="Enabled" Value="1" />
+                <vec3D Name="Position" Value="0 -0.514801 -4.76837e-007" />
+                <vec3D Name="Rotation" Value="0 0 0" />
+                <vec3D Name="Scale" Value="1 1 1" />
+                <vec3D Name="Center" Value="0 0 0" />
+                <bool Name="AlwaysActive" Value="0" />
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="a8a0ea26" />
+                    <string Name="Name" Value="" />
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="b96ad0a6" />
+                        <string Name="Name" Value="" />
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0" />
+                            <bool Name="AlphaBlending" Value="0" />
+                            <bool Name="DepthTest" Value="1" />
+                            <bool Name="DepthWrite" Value="1" />
+                            <enum Name="SrcBlendFactor" Value="4" />
+                            <enum Name="DestBlendFactor" Value="5" />
+                            <color Name="Color" Value="0.588 0.588 0.588" />
+                            <float Name="Alpha" Value="1" />
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="1/Meshes/ML1_Junction_cap.png" />
+                                    <bool Name="MipMaps" Value="1" />
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader" />
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0" />
+                    <enum Name="RenderingPass" Value="1" />
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity>
+        <Properties>
+            <uint Name="ID" Value="cad3c5c4" />
+            <string Name="Name" Value="JunctionCap" />
+            <bool Name="Visible" Value="1" />
+            <bool Name="Enabled" Value="1" />
+            <vec3D Name="Position" Value="-12.573 -22.7455 0.205435" />
+            <vec3D Name="Rotation" Value="0 0 0" />
+            <vec3D Name="Scale" Value="1 1 1" />
+            <vec3D Name="Center" Value="0 0 0" />
+            <bool Name="AlwaysActive" Value="0" />
+            <ref Name="Mesh" TemplatePath="1/Meshes/ML1_Junction_cap.xml" />
+        </Properties>
+        <SubMesh>
+            <Properties>
+                <uint Name="ID" Value="43808dcc" />
+                <string Name="Name" Value="ML1_Junction_cap" />
+                <bool Name="Visible" Value="1" />
+                <bool Name="Enabled" Value="1" />
+                <vec3D Name="Position" Value="0 -0.514801 -4.76837e-007" />
+                <vec3D Name="Rotation" Value="0 0 0" />
+                <vec3D Name="Scale" Value="1 1 1" />
+                <vec3D Name="Center" Value="0 0 0" />
+                <bool Name="AlwaysActive" Value="0" />
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="21ea4e11" />
+                    <string Name="Name" Value="" />
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="b96ad0a6" />
+                        <string Name="Name" Value="" />
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0" />
+                            <bool Name="AlphaBlending" Value="0" />
+                            <bool Name="DepthTest" Value="1" />
+                            <bool Name="DepthWrite" Value="1" />
+                            <enum Name="SrcBlendFactor" Value="4" />
+                            <enum Name="DestBlendFactor" Value="5" />
+                            <color Name="Color" Value="0.588 0.588 0.588" />
+                            <float Name="Alpha" Value="1" />
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value="1/Meshes/ML1_Junction_cap.png" />
+                                    <bool Name="MipMaps" Value="1" />
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader" />
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0" />
+                    <enum Name="RenderingPass" Value="1" />
+                </ref>
+            </Components>
+        </SubMesh>
+    </MeshEntity>
+    <MeshEntity TemplatePath="1/Junction.xml">
+        <Properties>
+            <uint Name="ID" Value="9057c53e" />
+            <vec3D Name="Position" Value="-12.6502 -12.104 -0.00511539" />
+        </Properties>
+    </MeshEntity>
+    <MeshEntity TemplatePath="1/TurretBlock.xml">
+        <Properties>
+            <uint Name="ID" Value="f6315834" />
+            <vec3D Name="Position" Value="-12.703 5.24957 -3.8147e-006" />
+        </Properties>
+    </MeshEntity>
+</Entity3D>

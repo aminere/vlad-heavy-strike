@@ -1,0 +1,24 @@
+<PlayerCamera>
+    <Properties>
+        <uint Name="ID" Value="9e42346f" />
+        <string Name="Name" Value="PlayerCamera" />
+        <bool Name="Visible" Value="1" />
+        <bool Name="Enabled" Value="1" />
+        <vec3D Name="Position" Value="0 139.482 34" />
+        <vec3D Name="Rotation" Value="0 0 0" />
+        <vec3D Name="Scale" Value="1 1 1" />
+        <vec3D Name="Center" Value="0 0 0" />
+        <bool Name="AlwaysActive" Value="1" />
+        <float Name="FOV" Value="45" />
+        <float Name="ZNear" Value="0.5" />
+        <float Name="ZFar" Value="300" />
+        <enum Name="Projection" Value="0" />
+        <vec3D Name="UpVector" Value="0 0 1" />
+        <vec3D Name="LookAt" Value="0 152.982 5" />
+        <size Name="TargetResolution" Value="800 600" />
+        <vec3D Name="PositionOffset" Value="0 -4.5 34" />
+        <vec3D Name="LookAtOffset" Value="0 9 5" />
+        <float Name="FollowAmount" Value="0" />
+        <float Name="FollowDuration" Value="0.35" />
+    </Properties>
+</PlayerCamera>

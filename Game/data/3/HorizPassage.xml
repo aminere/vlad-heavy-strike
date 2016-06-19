@@ -1,0 +1,398 @@
+<Entity3D>
+    <Properties>
+        <uint Name="ID" Value="efc4894"/>
+        <string Name="Name" Value="HorizPassage"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="2.41534 55.87 0"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+    </Properties>
+    <Entity3D>
+        <Properties>
+            <uint Name="ID" Value="2e910776"/>
+            <string Name="Name" Value="LaserBlocks"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="12 20 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+        </Properties>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="f26cd0cf"/>
+                <string Name="Name" Value="LaserBlock"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="12 12 1.98533"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/ML1_Laser_L.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="RigidBodyComponent">
+                    <uint Name="ID" Value="c6cdfe48"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -2.5 -1 10 5 1"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="b98f1967"/>
+                    <string Name="Name" Value="Mesh"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="1467538a"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="b357a9f9"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.588 0.588 0.588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/mesh/ML1_Laser_L.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="7b21b1ff"/>
+                <string Name="Name" Value="LaserBlock"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="32.5 12 1.98533"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/ML1_Laser_L.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="RigidBodyComponent">
+                    <uint Name="ID" Value="a0fbcc8b"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -2.5 -1 10 5 1"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="77c68639"/>
+                    <string Name="Name" Value="Mesh"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="c5abb8b3"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="b357a9f9"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.588 0.588 0.588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/mesh/ML1_Laser_L.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="4315881c"/>
+                <string Name="Name" Value="LaserBlock"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="12 -12 1.98533"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/ML1_Laser_R.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="RigidBodyComponent">
+                    <uint Name="ID" Value="991256dd"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -5 -1 10 2.5 1"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="2169f223"/>
+                    <string Name="Name" Value="Mesh_001"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="35dc5e44"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="ea154fc1"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.588 0.588 0.588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/mesh/ML1_Laser_R.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+        <MeshEntity>
+            <Properties>
+                <uint Name="ID" Value="86b3cecd"/>
+                <string Name="Name" Value="LaserBlock"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="32.5 -12 1.98533"/>
+                <vec3D Name="Rotation" Value="0 0 90"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Mesh" TemplatePath="common/mesh/ML1_Laser_R.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="RigidBodyComponent">
+                    <uint Name="ID" Value="4b2435ca"/>
+                    <string Name="Name" Value=""/>
+                    <enum Name="CollisionGroup" Value="128"/>
+                    <struct Name="CollisionMask">
+                        <bool Name="Group_1" Value="1"/>
+                        <bool Name="Group_2" Value="0"/>
+                        <bool Name="Group_3" Value="0"/>
+                        <bool Name="Group_4" Value="1"/>
+                        <bool Name="Group_5" Value="0"/>
+                        <bool Name="Group_6" Value="0"/>
+                        <bool Name="Group_7" Value="0"/>
+                        <bool Name="Group_8" Value="0"/>
+                    </struct>
+                    <uint Name="Priority" Value="0"/>
+                    <float Name="CollisionRadius" Value="0.5"/>
+                    <float Name="Mass" Value="1"/>
+                    <array Name="Shapes">
+                        <ref ClassName="CollisionShapeBox">
+                            <aabb3D Name="Box" Value="-10 -5 -1 10 2.5 1"/>
+                        </ref>
+                    </array>
+                </ref>
+            </Components>
+            <SubMesh>
+                <Properties>
+                    <uint Name="ID" Value="5eece0ca"/>
+                    <string Name="Name" Value="Mesh_001"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <vec3D Name="Position" Value="0 -0 0"/>
+                    <vec3D Name="Rotation" Value="0 0 0"/>
+                    <vec3D Name="Scale" Value="1 1 1"/>
+                    <vec3D Name="Center" Value="0 0 0"/>
+                    <bool Name="AlwaysActive" Value="0"/>
+                </Properties>
+                <Components>
+                    <ref Name="" ClassName="GraphicComponent">
+                        <uint Name="ID" Value="fac8b3ec"/>
+                        <string Name="Name" Value=""/>
+                        <ref Name="Material" ClassName="Material">
+                            <uint Name="ID" Value="ea154fc1"/>
+                            <string Name="Name" Value=""/>
+                            <struct Name="CreationInfo">
+                                <bool Name="Lighting" Value="0"/>
+                                <bool Name="AlphaBlending" Value="0"/>
+                                <bool Name="DepthTest" Value="1"/>
+                                <bool Name="DepthWrite" Value="1"/>
+                                <enum Name="SrcBlendFactor" Value="4"/>
+                                <enum Name="DestBlendFactor" Value="5"/>
+                                <enum Name="CullMode" Value="1"/>
+                                <color Name="Color" Value="0.588 0.588 0.588"/>
+                                <float Name="Alpha" Value="1"/>
+                                <array Name="Textures">
+                                    <struct>
+                                        <file Name="Path" Value="common/mesh/ML1_Laser_R.png"/>
+                                        <bool Name="MipMaps" Value="1"/>
+                                    </struct>
+                                </array>
+                                <ref Name="Shader" ClassName="Shader"/>
+                            </struct>
+                        </ref>
+                        <uint Name="RenderingPriority" Value="0"/>
+                        <enum Name="RenderingPass" Value="1"/>
+                    </ref>
+                </Components>
+            </SubMesh>
+        </MeshEntity>
+    </Entity3D>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="14be1758"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="39.248 20 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="3/HorizTightPassageActor.xml"/>
+            <ref Name="ActorSettings" ClassName="TightPassageSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <vec3D Name="LaserOffset" Value="0 2 0"/>
+                <float Name="LaserSpeed" Value="40"/>
+                <float Name="LaserDuration" Value="1"/>
+            </ref>
+            <float Name="DistToPlayer" Value="35"/>
+            <bool Name="CanReactivate" Value="1"/>
+        </Properties>
+    </TriggerSpawner>
+    <TriggerSpawner>
+        <Properties>
+            <uint Name="ID" Value="e70a01b6"/>
+            <string Name="Name" Value=""/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <vec3D Name="Position" Value="59.7693 20 0"/>
+            <vec3D Name="Rotation" Value="0 0 0"/>
+            <vec3D Name="Scale" Value="1 1 1"/>
+            <vec3D Name="Center" Value="0 0 0"/>
+            <bool Name="AlwaysActive" Value="0"/>
+            <ref Name="Actor" TemplatePath="3/HorizTightPassageActor.xml"/>
+            <ref Name="ActorSettings" ClassName="TightPassageSettings">
+                <uint Name="HitPoints" Value="3"/>
+                <vec3D Name="LaserOffset" Value="0 2 0"/>
+                <float Name="LaserSpeed" Value="40"/>
+                <float Name="LaserDuration" Value="1"/>
+            </ref>
+            <float Name="DistToPlayer" Value="35"/>
+            <bool Name="CanReactivate" Value="1"/>
+        </Properties>
+    </TriggerSpawner>
+</Entity3D>

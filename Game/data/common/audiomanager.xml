@@ -1,0 +1,39 @@
+<AudioManager>
+    <Properties>
+        <uint Name="ID" Value="10a2f6ed"/>
+        <string Name="Name" Value=""/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+		<float Name="InGameMusicFactor" Value=".3"/>
+        <array Name="SoundInfos">
+            <struct>
+                <enum Name="Sound" Value="0"/>
+                <file Name="Bank" Value="0.ckb"/>
+                <array Name="Names">
+                    <string Value="pulse"/>
+                </array>
+            </struct>
+            <struct>
+                <enum Name="Sound" Value="1"/>
+                <file Name="Bank" Value="0.ckb"/>
+                <array Name="Names">
+                    <string Value="laser"/>
+                </array>
+            </struct>
+            <struct>
+                <enum Name="Sound" Value="2"/>
+                <file Name="Bank" Value="0.ckb"/>
+                <array Name="Names">
+                    <string Value="explosion"/>
+                </array>
+            </struct>
+            <struct>
+                <enum Name="Sound" Value="3"/>
+                <file Name="Bank" Value="boss.ckb"/>
+                <array Name="Names">
+                    <string Value="longexplosion"/>
+                </array>
+            </struct>
+        </array>
+    </Properties>
+</AudioManager>

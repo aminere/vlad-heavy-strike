@@ -1,0 +1,10 @@
+<CubeMapResource>	
+	<array Name="Textures">
+		<file Value="2/cubemaps/redsky_left2.png" />
+		<file Value="2/cubemaps/redsky_right1.png" />
+		<file Value="2/cubemaps/redsky_bottom4.png" />
+		<file Value="2/cubemaps/redsky_top3.png" />
+		<file Value="2/cubemaps/redsky_front5.png" />
+		<file Value="2/cubemaps/redsky_back6.png" />		
+	</array>	
+</CubeMapResource>

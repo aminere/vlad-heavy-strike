@@ -1,0 +1,92 @@
+<CombineVisitor>
+    <uint Name="ID" Value="49102fe2" />
+    <string Name="Name" Value="" />
+    <bool Name="AutoStart" Value="1" />
+    <array Name="Visitors">
+        <ref ClassName="Rotation3DVisitor">
+            <uint Name="ID" Value="1d0f0ff2" />
+            <string Name="Name" Value="" />
+            <bool Name="AutoStart" Value="1" />
+            <enum Name="PlaybackType" Value="2" />
+            <int Name="MaxPlayCount" Value="-1" />
+            <struct Name="Src">
+                <vec3D Name="Value" Value="0 0 0" />
+                <enum Name="Type" Value="0" />
+            </struct>
+            <struct Name="Dest">
+                <vec3D Name="Value" Value="0 0 360" />
+                <enum Name="Type" Value="0" />
+            </struct>
+            <float Name="Duration" Value="1" />
+        </ref>
+		<ref ClassName="Translation3DVisitor">
+            <uint Name="ID" Value="c14543a3" />
+            <string Name="Name" Value="" />
+            <bool Name="AutoStart" Value="1" />
+            <enum Name="PlaybackType" Value="0" />
+            <int Name="MaxPlayCount" Value="-1" />
+            <struct Name="Src">
+                <vec3D Name="Value" Value="0 0 0" />
+                <enum Name="Type" Value="1" />
+            </struct>
+            <struct Name="Dest">
+                <vec3D Name="Value" Value="8 0 0" />
+                <enum Name="Type" Value="1" />
+            </struct>
+            <float Name="Duration" Value="0.2" />
+        </ref>
+        <ref ClassName="SequenceVisitor">
+            <uint Name="ID" Value="3af2c590" />
+            <string Name="Name" Value="" />
+            <bool Name="AutoStart" Value="1" />
+            <enum Name="PlaybackType" Value="0" />
+            <int Name="MaxPlayCount" Value="-1" />
+            <array Name="Visitors">
+                <ref ClassName="DelayVisitor">
+                    <uint Name="ID" Value="97ed851d" />
+                    <string Name="Name" Value="" />
+                    <bool Name="AutoStart" Value="1" />
+                    <float Name="Duration" Value="0.25" />
+                </ref>
+                <ref ClassName="Translation3DVisitor">
+                    <uint Name="ID" Value="c17503a2" />
+                    <string Name="Name" Value="" />
+                    <bool Name="AutoStart" Value="1" />
+                    <enum Name="PlaybackType" Value="1" />
+                    <int Name="MaxPlayCount" Value="2" />
+                    <struct Name="Src">
+                        <vec3D Name="Value" Value="0 0 0" />
+                        <enum Name="Type" Value="1" />
+                    </struct>
+                    <struct Name="Dest">
+                        <vec3D Name="Value" Value="0 -25 0" />
+                        <enum Name="Type" Value="1" />
+                    </struct>
+                    <float Name="Duration" Value="0.8" />
+                </ref>
+				<ref ClassName="Translation3DVisitor">
+					<uint Name="ID" Value="c14543a6" />
+					<string Name="Name" Value="" />
+					<bool Name="AutoStart" Value="1" />
+					<enum Name="PlaybackType" Value="0" />
+					<int Name="MaxPlayCount" Value="-1" />
+					<struct Name="Src">
+						<vec3D Name="Value" Value="0 0 0" />
+						<enum Name="Type" Value="1" />
+					</struct>
+					<struct Name="Dest">
+						<vec3D Name="Value" Value="-8 0 0" />
+						<enum Name="Type" Value="1" />
+					</struct>
+					<float Name="Duration" Value="0.2" />
+				</ref>
+                <ref ClassName="SendTriggerVisitor">
+                    <uint Name="ID" Value="828ef052" />
+                    <string Name="Name" Value="" />
+                    <bool Name="AutoStart" Value="1" />
+                    <string Name="TriggerName" Value="SPIN_OVER" />
+                </ref>
+            </array>
+        </ref>
+    </array>
+</CombineVisitor>

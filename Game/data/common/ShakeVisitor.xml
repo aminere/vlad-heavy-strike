@@ -1,0 +1,39 @@
+<CombineVisitor>
+    <uint Name="ID" Value="6fa05e21"/>
+    <string Name="Name" Value="ShakeVisitor"/>
+    <bool Name="AutoStart" Value="1"/>
+    <array Name="Visitors">
+        <ref ClassName="Translation3DVisitor">
+            <uint Name="ID" Value="f8b1b51b"/>
+            <string Name="Name" Value=""/>
+            <bool Name="AutoStart" Value="1"/>
+            <enum Name="PlaybackType" Value="1"/>
+            <int Name="MaxPlayCount" Value="2"/>
+            <struct Name="Src">
+                <vec3D Name="Value" Value="0 0 0"/>
+                <enum Name="Type" Value="0"/>
+            </struct>
+            <struct Name="Dest">
+                <vec3D Name="Value" Value="0.2 0 0.1"/>
+                <enum Name="Type" Value="0"/>
+            </struct>
+            <float Name="Duration" Value="0.1"/>
+        </ref>
+        <ref ClassName="Rotation3DVisitor">
+            <uint Name="ID" Value="cf90144a"/>
+            <string Name="Name" Value=""/>
+            <bool Name="AutoStart" Value="1"/>
+            <enum Name="PlaybackType" Value="1"/>
+            <int Name="MaxPlayCount" Value="2"/>
+            <struct Name="Src">
+                <vec3D Name="Value" Value="0 0 0"/>
+                <enum Name="Type" Value="0"/>
+            </struct>
+            <struct Name="Dest">
+                <vec3D Name="Value" Value="5 -3 0"/>
+                <enum Name="Type" Value="0"/>
+            </struct>
+            <float Name="Duration" Value="0.1"/>
+        </ref>
+    </array>
+</CombineVisitor>

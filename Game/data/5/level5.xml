@@ -1,0 +1,745 @@
+<ContextStack>
+    <Properties>
+        <uint Name="ID" Value="b2c88b2a"/>
+        <string Name="Name" Value="ContextStack"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+    </Properties>
+    <Context>
+        <Properties>
+            <uint Name="ID" Value="eaa262af"/>
+            <string Name="Name" Value="Context"/>
+            <bool Name="Visible" Value="1"/>
+            <bool Name="Enabled" Value="1"/>
+            <ref Name="QuadTree" ClassName="QuadTree">
+                <uint Name="ID" Value="7aeb0af3"/>
+                <string Name="Name" Value=""/>
+                <vec2D Name="NodeSize" Value="50 50"/>
+            </ref>
+            <bool Name="BlockUpdate" Value="0"/>
+        </Properties>
+        <Entity>
+            <Properties>
+                <uint Name="ID" Value="1fa622b5"/>
+                <string Name="Name" Value="Managers"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+            </Properties>
+            <ItemManager TemplatePath="common/ItemManager.xml">
+                <Properties>
+                    <uint Name="ID" Value="231bc09d"/>
+                </Properties>
+            </ItemManager>
+            <AIManager>
+                <Properties>
+                    <uint Name="ID" Value="ba1533a9"/>
+                    <string Name="Name" Value="AIManager"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <array Name="Checkpoints">
+                        <link Value="f20bd164"/>
+                        <link Value="b7f3938b"/>
+                        <link Value="14fe7be1"/>
+                        <link Value="582ceebb"/>
+                        <link Value="7a36a4c0"/>
+                        <link Value="24dc283f"/>
+                        <link Value="e4d6eebb"/>
+                        <link Value="548a3f72"/>
+                        <link Value="859069bb"/>
+                        <link Value="9076e29f"/>
+                        <link Value="5ac523fd"/>
+                        <link Value="d4c5cf90"/>
+                    </array>
+                </Properties>
+            </AIManager>
+            <ConversationManager>
+                <Properties>
+                    <uint Name="ID" Value="e0dbdb3e"/>
+                    <string Name="Name" Value="ConversationManager"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                </Properties>
+                <Image>
+                    <Properties>
+                        <uint Name="ID" Value="28776aa7"/>
+                        <string Name="Name" Value="TextEntity1"/>
+                        <bool Name="Visible" Value="0"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec2D Name="Position" Value="81.472 64.0866"/>
+                        <float Name="Rotation" Value="0"/>
+                        <vec2D Name="Scale" Value="1 1"/>
+                        <vec2D Name="Center" Value="0 0"/>
+                        <aabb2D Name="BBox" Value="0 0 320 200"/>
+                        <bool Name="HFlip" Value="0"/>
+                        <bool Name="VFlip" Value="0"/>
+                    </Properties>
+                    <Components>
+                        <ref Name="" ClassName="GraphicComponent">
+                            <uint Name="ID" Value="ca9f093e"/>
+                            <string Name="Name" Value=""/>
+                            <ref Name="Material" ClassName="Material">
+                                <uint Name="ID" Value="975e19b2"/>
+                                <string Name="Name" Value=""/>
+                                <struct Name="CreationInfo">
+                                    <bool Name="Lighting" Value="0"/>
+                                    <bool Name="AlphaBlending" Value="1"/>
+                                    <bool Name="DepthTest" Value="1"/>
+                                    <bool Name="DepthWrite" Value="1"/>
+                                    <enum Name="SrcBlendFactor" Value="4"/>
+                                    <enum Name="DestBlendFactor" Value="5"/>
+                                    <enum Name="CullMode" Value="1"/>
+                                    <color Name="Color" Value="1 0 1"/>
+                                    <float Name="Alpha" Value="1"/>
+                                    <array Name="Textures">
+                                        <struct>
+                                            <file Name="Path" Value="common/tex/TextBG.png"/>
+                                            <bool Name="MipMaps" Value="0"/>
+                                        </struct>
+                                    </array>
+                                    <ref Name="Shader" ClassName="Shader"/>
+                                </struct>
+                            </ref>
+                            <uint Name="RenderingPriority" Value="0"/>
+                            <enum Name="RenderingPass" Value="3"/>
+                        </ref>
+                    </Components>
+                    <Text>
+                        <Properties>
+                            <uint Name="ID" Value="96517bdf"/>
+                            <string Name="Name" Value="Text"/>
+                            <bool Name="Visible" Value="1"/>
+                            <bool Name="Enabled" Value="1"/>
+                            <vec2D Name="Position" Value="10 10"/>
+                            <float Name="Rotation" Value="0"/>
+                            <vec2D Name="Scale" Value="1 1"/>
+                            <vec2D Name="Center" Value="0 0"/>
+                            <aabb2D Name="BBox" Value="0 0 0 0"/>
+                            <bool Name="HFlip" Value="0"/>
+                            <bool Name="VFlip" Value="0"/>
+                            <string Name="Text" Value="I WILL BE BACK!"/>
+                            <size Name="Size" Value="300 200"/>
+                            <enum Name="Alignement" Value="0"/>
+                            <uint Name="LineSpacing" Value="20"/>
+                            <ref Name="Font" TemplatePath="common/fixedBig.xml"/>
+                            <color Name="Color" Value="1 1 1"/>
+                        </Properties>
+                        <Components>
+                            <ref Name="" ClassName="GraphicComponent">
+                                <uint Name="ID" Value="40ecef24"/>
+                                <string Name="Name" Value=""/>
+                                <ref Name="Material" ClassName="Material">
+                                    <uint Name="ID" Value="584eb11f"/>
+                                    <string Name="Name" Value=""/>
+                                    <struct Name="CreationInfo">
+                                        <bool Name="Lighting" Value="0"/>
+                                        <bool Name="AlphaBlending" Value="1"/>
+                                        <bool Name="DepthTest" Value="1"/>
+                                        <bool Name="DepthWrite" Value="1"/>
+                                        <enum Name="SrcBlendFactor" Value="4"/>
+                                        <enum Name="DestBlendFactor" Value="5"/>
+                                        <enum Name="CullMode" Value="1"/>
+                                        <color Name="Color" Value="1 1 1"/>
+                                        <float Name="Alpha" Value="1"/>
+                                        <array Name="Textures">
+                                            <struct>
+                                                <file Name="Path" Value="common/fixedBig.png"/>
+                                                <bool Name="MipMaps" Value="0"/>
+                                            </struct>
+                                        </array>
+                                        <ref Name="Shader" ClassName="Shader"/>
+                                    </struct>
+                                </ref>
+                                <uint Name="RenderingPriority" Value="1"/>
+                                <enum Name="RenderingPass" Value="3"/>
+                            </ref>
+                        </Components>
+                    </Text>
+                </Image>
+                <Image>
+                    <Properties>
+                        <uint Name="ID" Value="a677c615"/>
+                        <string Name="Name" Value="TextEntity2"/>
+                        <bool Name="Visible" Value="0"/>
+                        <bool Name="Enabled" Value="1"/>
+                        <vec2D Name="Position" Value="81.5586 281.039"/>
+                        <float Name="Rotation" Value="0"/>
+                        <vec2D Name="Scale" Value="1 1"/>
+                        <vec2D Name="Center" Value="0 0"/>
+                        <aabb2D Name="BBox" Value="0 0 320 200"/>
+                        <bool Name="HFlip" Value="0"/>
+                        <bool Name="VFlip" Value="0"/>
+                    </Properties>
+                    <Components>
+                        <ref Name="" ClassName="GraphicComponent">
+                            <uint Name="ID" Value="fd30f545"/>
+                            <string Name="Name" Value=""/>
+                            <ref Name="Material" ClassName="Material">
+                                <uint Name="ID" Value="17bf5c55"/>
+                                <string Name="Name" Value=""/>
+                                <struct Name="CreationInfo">
+                                    <bool Name="Lighting" Value="0"/>
+                                    <bool Name="AlphaBlending" Value="1"/>
+                                    <bool Name="DepthTest" Value="1"/>
+                                    <bool Name="DepthWrite" Value="1"/>
+                                    <enum Name="SrcBlendFactor" Value="4"/>
+                                    <enum Name="DestBlendFactor" Value="5"/>
+                                    <enum Name="CullMode" Value="1"/>
+                                    <color Name="Color" Value="1 1 1"/>
+                                    <float Name="Alpha" Value="1"/>
+                                    <array Name="Textures">
+                                        <struct>
+                                            <file Name="Path" Value="common/tex/TextBG.png"/>
+                                            <bool Name="MipMaps" Value="0"/>
+                                        </struct>
+                                    </array>
+                                    <ref Name="Shader" ClassName="Shader"/>
+                                </struct>
+                            </ref>
+                            <uint Name="RenderingPriority" Value="0"/>
+                            <enum Name="RenderingPass" Value="3"/>
+                        </ref>
+                    </Components>
+                    <Text>
+                        <Properties>
+                            <uint Name="ID" Value="c315d379"/>
+                            <string Name="Name" Value="Text"/>
+                            <bool Name="Visible" Value="1"/>
+                            <bool Name="Enabled" Value="1"/>
+                            <vec2D Name="Position" Value="10 10"/>
+                            <float Name="Rotation" Value="0"/>
+                            <vec2D Name="Scale" Value="1 1"/>
+                            <vec2D Name="Center" Value="0 0"/>
+                            <aabb2D Name="BBox" Value="0 0 0 0"/>
+                            <bool Name="HFlip" Value="0"/>
+                            <bool Name="VFlip" Value="0"/>
+                            <string Name="Text" Value="OH, PLEASE.. (FACEPALM)"/>
+                            <size Name="Size" Value="300 200"/>
+                            <enum Name="Alignement" Value="0"/>
+                            <uint Name="LineSpacing" Value="20"/>
+                            <ref Name="Font" TemplatePath="common/fixedBig.xml"/>
+                            <color Name="Color" Value="1 1 1"/>
+                        </Properties>
+                        <Components>
+                            <ref Name="" ClassName="GraphicComponent">
+                                <uint Name="ID" Value="31846237"/>
+                                <string Name="Name" Value=""/>
+                                <ref Name="Material" ClassName="Material">
+                                    <uint Name="ID" Value="584eb11f"/>
+                                    <string Name="Name" Value=""/>
+                                    <struct Name="CreationInfo">
+                                        <bool Name="Lighting" Value="0"/>
+                                        <bool Name="AlphaBlending" Value="1"/>
+                                        <bool Name="DepthTest" Value="1"/>
+                                        <bool Name="DepthWrite" Value="1"/>
+                                        <enum Name="SrcBlendFactor" Value="4"/>
+                                        <enum Name="DestBlendFactor" Value="5"/>
+                                        <enum Name="CullMode" Value="1"/>
+                                        <color Name="Color" Value="1 1 1"/>
+                                        <float Name="Alpha" Value="1"/>
+                                        <array Name="Textures">
+                                            <struct>
+                                                <file Name="Path" Value="common/fixedBig.png"/>
+                                                <bool Name="MipMaps" Value="0"/>
+                                            </struct>
+                                        </array>
+                                        <ref Name="Shader" ClassName="Shader"/>
+                                    </struct>
+                                </ref>
+                                <uint Name="RenderingPriority" Value="1"/>
+                                <enum Name="RenderingPass" Value="3"/>
+                            </ref>
+                        </Components>
+                    </Text>
+                </Image>
+            </ConversationManager>
+            <SFXManager>
+                <Properties>
+                    <uint Name="ID" Value="c3fbde1c"/>
+                    <string Name="Name" Value="SFXManager"/>
+                    <bool Name="Visible" Value="1"/>
+                    <bool Name="Enabled" Value="1"/>
+                    <float Name="ExplosionIntensity" Value="10"/>
+                    <float Name="ExplosionDuration" Value="1"/>
+                    <float Name="SkyBoxAnimDuration" Value="1.5"/>
+                    <float Name="CameraShakeIntensity" Value="1"/>
+                    <float Name="CameraShakeFrequency" Value="0.02"/>
+                    <array Name="PreloadedObjects">
+                        <ref TemplatePath="common/HitEntity.xml"/>
+                        <ref TemplatePath="common/ShakeVisitor.xml"/>
+                        <ref TemplatePath="common/ExplosionEntity.xml"/>
+                        <ref TemplatePath="common/NoHitPulse.xml"/>
+                        <ref TemplatePath="common/NoHitLaser.xml"/>
+                        <ref TemplatePath="common/NoHitPellet.xml"/>
+                        <ref TemplatePath="5/bossexplosionentity.xml"/>
+                        <ref TemplatePath="common/playerexplosionentity.xml"/>
+                    </array>
+                    <array Name="ExplosionInfos">
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/AsteroidExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="common/Asteroid.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss1/Boss1CannonExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss1/Boss1Cannon.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/FighterExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="common/Player.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/BasicShooterExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="common/BasicShooter.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="5/boss1explosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss1/Boss1.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="5/Boss2Explosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss2/Boss2.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss2/Boss2HookExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss2/Boss2Hook.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/BasicTowerExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss2/Boss2Tower.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="5/boss3explosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss3/Boss3.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss3/Boss3CannonExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss3/Boss3Cannon.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss3/Boss3CoreExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss3/Boss3Core.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss3/Boss3RadialExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss3/Boss3Radial.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="5/boss4explosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss4/boss4actor.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss4/boss4cannonexplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss4/Boss4Cannon.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss4/boss4lasercannonexplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss4/Boss4LaserCannon.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="boss4/boss4towerexplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="boss4/Boss4Tower.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/SpinShooterExplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="common/SpinShooter.xml"/>
+                            </array>
+                        </struct>
+                        <struct>
+                            <ref Name="Explosion" TemplatePath="common/visitors/kamikazeexplosion.xml"/>
+                            <array Name="TemplatePaths">
+                                <file Value="common/Kamikaze.xml"/>
+                            </array>
+                        </struct>
+                    </array>
+                </Properties>
+                <Entity TemplatePath="common/CommonEffects.xml">
+                    <Properties>
+                        <uint Name="ID" Value="c3fbde1d"/>
+                    </Properties>
+                </Entity>
+            </SFXManager>
+        </Entity>
+        <Player TemplatePath="common/Player.xml">
+            <Properties>
+                <uint Name="ID" Value="bebe0380"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+            </Properties>
+        </Player>
+        <SkyBoxEntity>
+            <Properties>
+                <uint Name="ID" Value="b681959b"/>
+                <string Name="Name" Value="SkyBoxEntity"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="1"/>
+                <ref Name="CubeMap" TemplatePath="common/Cubemaps/bluestars.xml"/>
+            </Properties>
+            <Components>
+                <ref Name="" ClassName="GraphicComponent">
+                    <uint Name="ID" Value="b181026c"/>
+                    <string Name="Name" Value=""/>
+                    <ref Name="Material" ClassName="Material">
+                        <uint Name="ID" Value="e6ec61b0"/>
+                        <string Name="Name" Value=""/>
+                        <struct Name="CreationInfo">
+                            <bool Name="Lighting" Value="0"/>
+                            <bool Name="AlphaBlending" Value="0"/>
+                            <bool Name="DepthTest" Value="1"/>
+                            <bool Name="DepthWrite" Value="0"/>
+                            <enum Name="SrcBlendFactor" Value="4"/>
+                            <enum Name="DestBlendFactor" Value="5"/>
+                            <enum Name="CullMode" Value="1"/>
+                            <color Name="Color" Value="1 0 0.501961"/>
+                            <float Name="Alpha" Value="1"/>
+                            <array Name="Textures">
+                                <struct>
+                                    <file Name="Path" Value=""/>
+                                    <bool Name="MipMaps" Value="0"/>
+                                </struct>
+                            </array>
+                            <ref Name="Shader" ClassName="Shader"/>
+                        </struct>
+                    </ref>
+                    <uint Name="RenderingPriority" Value="0"/>
+                    <enum Name="RenderingPass" Value="0"/>
+                </ref>
+            </Components>
+        </SkyBoxEntity>
+        <Starfield TemplatePath="common/Starfield.xml">
+            <Properties>
+                <uint Name="ID" Value="a1ce644a"/>
+            </Properties>
+        </Starfield>
+        <PlayerCamera TemplatePath="common/PlayerCamera.xml">
+            <Properties>
+                <uint Name="ID" Value="9e42346f"/>
+                <vec3D Name="Position" Value="0 407.23 34"/>
+                <vec3D Name="LookAt" Value="0 420.73 5"/>
+            </Properties>
+        </PlayerCamera>
+        <Camera>
+            <Properties>
+                <uint Name="ID" Value="22c219b1"/>
+                <string Name="Name" Value="2DCamera"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="1"/>
+                <float Name="FOV" Value="45"/>
+                <float Name="ZNear" Value="0.1"/>
+                <float Name="ZFar" Value="1000"/>
+                <enum Name="Projection" Value="2"/>
+                <vec3D Name="UpVector" Value="0 0 1"/>
+                <vec3D Name="LookAt" Value="0 0 0"/>
+                <size Name="TargetResolution" Value="480 640"/>
+            </Properties>
+        </Camera>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="f20bd164"/>
+                <string Name="Name" Value="StartingPoint"/>
+                <vec3D Name="Position" Value="0 0 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="4"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="0"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <AreaSpawner>
+            <Properties>
+                <uint Name="ID" Value="fe68b5a2"/>
+                <string Name="Name" Value="BasicShooters"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 55.2027 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Actor" TemplatePath="common/BasicShooter.xml"/>
+                <ref Name="ActorSettings" ClassName="BasicShooterSettings">
+                    <uint Name="HitPoints" Value="3"/>
+                    <float Name="Speed" Value="16"/>
+                    <float Name="HomingFactor" Value="0.5"/>
+                    <float Name="BulletFrequency" Value="1"/>
+                    <float Name="BulletSpeed" Value="20"/>
+                    <float Name="BulletLife" Value="4"/>
+                    <float Name="FirstShotDelay" Value="0.5"/>
+                </ref>
+                <float Name="Frequency" Value="0.7"/>
+                <float Name="Radius" Value="35"/>
+            </Properties>
+        </AreaSpawner>
+        <Boss1 TemplatePath="boss1/Boss1.xml">
+            <Properties>
+                <uint Name="ID" Value="65556045"/>
+                <vec3D Name="Position" Value="0 147.381 2.2"/>
+                <bool Name="DestroyWhenDone" Value="1"/>
+            </Properties>
+        </Boss1>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="14fe7be1"/>
+                <string Name="Name" Value="CheckPoint1"/>
+                <vec3D Name="Position" Value="0 118.39 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="2"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="1"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="582ceebb"/>
+                <string Name="Name" Value="CheckPoint1.5"/>
+                <vec3D Name="Position" Value="0 167.272 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="2"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="0"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <AreaSpawner>
+            <Properties>
+                <uint Name="ID" Value="37c52751"/>
+                <string Name="Name" Value="Asteroids"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 206.031 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Actor" TemplatePath="common/Asteroid.xml"/>
+                <ref Name="ActorSettings" ClassName="AsteroidSettings">
+                    <range Name="Size" Value="0.6 2"/>
+                    <range Name="HitPointsRange" Value="2 6"/>
+                    <range Name="Speed" Value="8 15"/>
+                    <float Name="AngleRange" Value="60"/>
+                    <float Name="MaxRotationOffset" Value="60"/>
+                </ref>
+                <float Name="Frequency" Value="0.7"/>
+                <float Name="Radius" Value="35"/>
+            </Properties>
+        </AreaSpawner>
+        <Boss2 TemplatePath="boss2/Boss2.xml">
+            <Properties>
+                <uint Name="ID" Value="cf5622b5"/>
+                <vec3D Name="Position" Value="0 309.803 0"/>
+                <bool Name="DestroyWhenDone" Value="1"/>
+            </Properties>
+        </Boss2>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="24dc283f"/>
+                <string Name="Name" Value="CheckPoint2"/>
+                <vec3D Name="Position" Value="0 277.551 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="4"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="1"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="e4d6eebb"/>
+                <string Name="Name" Value="CheckPoint2.5"/>
+                <vec3D Name="Position" Value="0 323.329 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="2"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="0"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <AreaSpawner>
+            <Properties>
+                <uint Name="ID" Value="57c54cc3"/>
+                <string Name="Name" Value="SpinShooters"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 362.651 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Actor" TemplatePath="common/SpinShooter.xml"/>
+                <ref Name="ActorSettings" ClassName="SpinShooterSettings">
+                    <uint Name="HitPoints" Value="3"/>
+                    <float Name="Speed" Value="8"/>
+                    <float Name="HomingFactor" Value="0.5"/>
+                    <float Name="BulletFrequency" Value="0.15"/>
+                    <float Name="BulletSpeed" Value="15"/>
+                    <float Name="BulletLife" Value="4"/>
+                    <float Name="FirstShotDelay" Value="0.2"/>
+                    <float Name="RotationSpeed" Value="140"/>
+                    <float Name="BulletOffset" Value="3.47"/>
+                </ref>
+                <float Name="Frequency" Value="1"/>
+                <float Name="Radius" Value="35"/>
+            </Properties>
+        </AreaSpawner>
+        <Boss3 TemplatePath="boss3/Boss3.xml">
+            <Properties>
+                <uint Name="ID" Value="6c351280"/>
+                <vec3D Name="Position" Value="0 454.519 1.80855"/>
+                <float Name="ExplosionScaleFactor" Value="0.4"/>
+                <bool Name="DestroyWhenDone" Value="1"/>
+            </Properties>
+        </Boss3>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="859069bb"/>
+                <string Name="Name" Value="CheckPoint3"/>
+                <vec3D Name="Position" Value="0 429.952 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="4"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="1"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="9076e29f"/>
+                <string Name="Name" Value="CheckPoint3.5"/>
+                <vec3D Name="Position" Value="0 475.767 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="2"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="0"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+        <AreaSpawner>
+            <Properties>
+                <uint Name="ID" Value="c915b7a7"/>
+                <string Name="Name" Value="Kamikazes"/>
+                <bool Name="Visible" Value="1"/>
+                <bool Name="Enabled" Value="1"/>
+                <vec3D Name="Position" Value="0 513.341 0"/>
+                <vec3D Name="Rotation" Value="0 0 0"/>
+                <vec3D Name="Scale" Value="1 1 1"/>
+                <vec3D Name="Center" Value="0 0 0"/>
+                <bool Name="AlwaysActive" Value="0"/>
+                <ref Name="Actor" TemplatePath="common/Kamikaze.xml"/>
+                <ref Name="ActorSettings" ClassName="KamikazeSettings">
+                    <uint Name="HitPoints" Value="6"/>
+                    <float Name="Speed" Value="16"/>
+                    <float Name="HomingFactor" Value="0.5"/>
+                    <float Name="Duration" Value="1.5"/>
+                </ref>
+                <float Name="Frequency" Value="0.7"/>
+                <float Name="Radius" Value="35"/>
+            </Properties>
+        </AreaSpawner>
+        <Boss4 TemplatePath="boss4/boss4actor.xml">
+            <Properties>
+                <uint Name="ID" Value="3e3ff223"/>
+                <vec3D Name="Position" Value="0 599.074 0"/>
+                <bool Name="DestroyWhenDone" Value="1"/>
+            </Properties>
+        </Boss4>
+        <ConfigPoint>
+            <Properties>
+                <uint Name="ID" Value="d4c5cf90"/>
+                <string Name="Name" Value="CheckPoint4"/>
+                <vec3D Name="Position" Value="0 567.648 0"/>
+                <float Name="PlayerMotionWidth" Value="20"/>
+                <float Name="SpawnWidth" Value="20"/>
+                <float Name="PlayerCameraFollowAmount" Value="0.4"/>
+                <vec3D Name="BaseSpeed" Value="0 4 0"/>
+                <float Name="FollowPathDuration" Value="4"/>
+                <color Name="SkyBoxColor" Value="1 1 1"/>
+                <bool Name="CameraFollowOnXAxis" Value="1"/>
+                <bool Name="CameraFollowOnYAxis" Value="0"/>
+                <bool Name="AlwaysShowShield" Value="1"/>
+                <bool Name="CanRespawnHere" Value="1"/>
+            </Properties>
+        </ConfigPoint>
+    </Context>
+    <UIContext TemplatePath="common/menuingame.xml">
+        <Properties>
+            <uint Name="ID" Value="6e2e9b6f"/>
+        </Properties>
+    </UIContext>
+</ContextStack>

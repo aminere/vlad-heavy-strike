@@ -1,0 +1,31 @@
+<SequenceVisitor>
+    <uint Name="ID" Value="3f56140c" />
+    <string Name="Name" Value="" />
+    <bool Name="AutoStart" Value="1" />
+    <enum Name="PlaybackType" Value="0" />
+    <int Name="MaxPlayCount" Value="-1" />
+    <array Name="Visitors">
+        <ref ClassName="DelayVisitor">
+            <uint Name="ID" Value="40f49052" />
+            <string Name="Name" Value="" />
+            <bool Name="AutoStart" Value="1" />
+            <float Name="Duration" Value="1" />
+        </ref>
+        <ref ClassName="Translation3DVisitor">
+            <uint Name="ID" Value="85286c43" />
+            <string Name="Name" Value="" />
+            <bool Name="AutoStart" Value="1" />
+            <enum Name="PlaybackType" Value="0" />
+            <int Name="MaxPlayCount" Value="-1" />
+            <struct Name="Src">
+                <vec3D Name="Value" Value="0 0 0" />
+                <enum Name="Type" Value="1" />
+            </struct>
+            <struct Name="Dest">
+                <vec3D Name="Value" Value="0 30 0" />
+                <enum Name="Type" Value="1" />
+            </struct>
+            <float Name="Duration" Value="1.5" />
+        </ref>
+    </array>
+</SequenceVisitor>

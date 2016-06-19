@@ -1,0 +1,45 @@
+<Camera>
+    <Properties>
+        <uint Name="ID" Value="d8d4f27f"/>
+        <string Name="Name" Value="3DCamera"/>
+        <bool Name="Visible" Value="1"/>
+        <bool Name="Enabled" Value="1"/>
+        <vec3D Name="Position" Value="6.77311 -49.5284 17.2736"/>
+        <vec3D Name="Rotation" Value="0 0 0"/>
+        <vec3D Name="Scale" Value="1 1 1"/>
+        <vec3D Name="Center" Value="0 0 0"/>
+        <bool Name="AlwaysActive" Value="0"/>
+        <float Name="FOV" Value="45"/>
+        <float Name="ZNear" Value="0.5"/>
+        <float Name="ZFar" Value="300"/>
+        <enum Name="Projection" Value="0"/>
+        <vec3D Name="UpVector" Value="0 0 1"/>
+        <vec3D Name="LookAt" Value="-4.15 -15.79 -7.77"/>
+        <size Name="TargetResolution" Value="800 600"/>
+    </Properties>
+    <Components>
+        <ref Name="" ClassName="SequenceVisitor">
+            <uint Name="ID" Value="183a7223"/>
+            <string Name="Name" Value=""/>
+            <bool Name="AutoStart" Value="1"/>
+            <enum Name="PlaybackType" Value="0"/>
+            <int Name="MaxPlayCount" Value="-1"/>
+            <array Name="Visitors">
+                <ref ClassName="DelayVisitor">
+                    <uint Name="ID" Value="f2f8609c"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <float Name="Duration" Value="2"/>
+                </ref>
+                <ref ClassName="FollowCameraPathVisitor">
+                    <uint Name="ID" Value="3562f819"/>
+                    <string Name="Name" Value=""/>
+                    <bool Name="AutoStart" Value="1"/>
+                    <enum Name="PlaybackType" Value="0"/>
+                    <int Name="MaxPlayCount" Value="-1"/>
+                    <link Name="CameraPath" Value="8d5d797f"/>
+                </ref>
+            </array>
+        </ref>
+    </Components>
+</Camera>

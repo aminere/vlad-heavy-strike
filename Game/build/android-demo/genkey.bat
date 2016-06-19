@@ -1,0 +1,1 @@
+keytool -genkey -v -keystore amine-demo.keystore -alias aminedemo -keyalg RSA -keysize 2048 -validity 10000

@@ -1,0 +1,52 @@
+<ExplosionVisitor>
+    <float Name="Intensity" Value="-1"/>
+    <float Name="Duration" Value="-1"/>
+    <bool Name="DepthTest" Value="0"/>
+    <ref Name="Mesh" TemplatePath="boss4/Gun_01_L.xml"/>
+    <array Name="ChunkGroups">
+        <struct>
+            <array Name="Chunks">
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="2a"/>
+                        <uint Value="29"/>
+                        <uint Value="36"/>
+                        <uint Value="35"/>
+                        <uint Value="13"/>
+                        <uint Value="12"/>
+                        <uint Value="7"/>
+                        <uint Value="6"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="23"/>
+                        <uint Value="24"/>
+                        <uint Value="1"/>
+                        <uint Value="0"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="40"/>
+                        <uint Value="3f"/>
+                        <uint Value="41"/>
+                        <uint Value="42"/>
+                        <uint Value="1e"/>
+                        <uint Value="1d"/>
+                        <uint Value="1f"/>
+                        <uint Value="1c"/>
+                    </array>
+                </struct>
+                <struct>
+                    <array Name="Triangles">
+                        <uint Value="3e"/>
+                        <uint Value="3d"/>
+                        <uint Value="1b"/>
+                        <uint Value="1a"/>
+                    </array>
+                </struct>
+            </array>
+        </struct>
+    </array>
+</ExplosionVisitor>
