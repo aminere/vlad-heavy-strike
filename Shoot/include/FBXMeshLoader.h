@@ -11,7 +11,7 @@ Created: July 17th 2013
 #include "MeshResource.h"
 
 // forwards
-namespace fbxsdk_2015_1
+namespace fbxsdk
 {
 	class FbxManager;
 	class FbxNode;
@@ -39,13 +39,13 @@ namespace shoot
 	private:
 
 		//! Load meshes
-		void LoadMeshes(fbxsdk_2015_1::FbxNode* pNode);
+		void LoadMeshes(fbxsdk::FbxNode* pNode);
 				
 		MeshResource* m_pMesh;
 		std::vector<MeshResource::SubMesh> m_aUnusedSubMeshes;
 		std::string m_strPath;
 
-		static fbxsdk_2015_1::FbxManager* ms_pManager;
+		static fbxsdk::FbxManager* ms_pManager;
 	};
 }
 

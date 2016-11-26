@@ -55,7 +55,7 @@ void wxReferenceProperty::Fill(ReferenceProperty* pProperty)
 			if(pProperty->GetName() == "ID")
 			{
 				pWxProperty->SetAttribute(wxPG_UINT_BASE, wxPG_BASE_HEX);
-				pWxProperty->SetFlag(wxPG_PROP_DISABLED);
+				pWxProperty->Enable(false);
 			}
 		}		
 	}
@@ -96,7 +96,7 @@ void wxReferenceProperty::UpdateValue(ReferenceProperty* pProperty)
 }
 
 //! implement the reference property editor
-WX_PG_IMPLEMENT_EDITOR_CLASS(ReferencePropertyEditor, wxReferencePropertyEditor, wxPGTextCtrlEditor)
+IMPLEMENT_DYNAMIC_CLASS(wxReferencePropertyEditor, wxPGTextCtrlEditor)
 
 wxPGWindowList wxReferencePropertyEditor::CreateControls( wxPropertyGrid* propGrid,
 														  wxPGProperty* property,
@@ -115,7 +115,7 @@ wxPGWindowList wxReferencePropertyEditor::CreateControls( wxPropertyGrid* propGr
 
     // Finally, move buttons-subwindow to correct position and make sure
     // returned wxPGWindowList contains our custom button list.
-    buttons->FinalizePosition(pos);
+    buttons->Finalize(propGrid, pos);
 
     wndList.SetSecondary( buttons );
     return wndList;

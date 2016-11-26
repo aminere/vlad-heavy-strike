@@ -68,6 +68,9 @@ namespace shoot
 		//! returns the selected object
 		Object* GetSelectedObject() { return m_pSelectedObject; }
 
+		wxPGEditor* ArrayEditor;
+		wxPGEditor* ReferenceEditor;
+
 		// Event handlers
 		void OnPropertyGridChange(wxPropertyGridEvent& event); 
 		void OnPropertyGridChanging(wxPropertyGridEvent& event);

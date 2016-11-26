@@ -17,9 +17,7 @@ Created: June 26th 2013
 #include "wx/window.h"
 #include "wx/frame.h"
 #include "wx/propgrid/propgrid.h"
-#include "wx/propgrid/propdev.h"
 #include "wx/propgrid/advprops.h"
-#include "wx/propgrid/extras.h"
 
 #include "TreeView.h"
 #include "ObjectInspector.h"

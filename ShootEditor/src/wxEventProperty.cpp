@@ -15,7 +15,7 @@ Created: August 7th 2011
 // -----------------------------------------------------------------------
 // wxEventProperty
 // -----------------------------------------------------------------------
-WX_PG_IMPLEMENT_STRING_PROPERTY_WITH_VALIDATOR(wxEventProperty, wxPG_NO_ESCAPE)
+WX_PG_IMPLEMENT_PROPERTY_CLASS(wxEventProperty, wxPGProperty, wxString, const wxString&, TextCtrlAndButton)
 
 //! button click callback
 bool wxEventProperty::OnButtonClick(wxPropertyGrid* propgrid, wxString& value)
@@ -27,8 +27,4 @@ bool wxEventProperty::OnButtonClick(wxPropertyGrid* propgrid, wxString& value)
     return true;
 }
 
-wxValidator* wxEventProperty::DoGetValidator() const
-{
-    return NULL;
-}
 

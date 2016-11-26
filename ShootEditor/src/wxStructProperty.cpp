@@ -14,15 +14,14 @@ Created: May 27th 2010
 // -----------------------------------------------------------------------
 // wxStructProperty
 // -----------------------------------------------------------------------
-WX_PG_IMPLEMENT_VARIANT_DATA(wxPGChildChangeInfoVariantData, wxPGChildChangeInfo)
-
+WX_PG_IMPLEMENT_VARIANT_DATA_DUMMY_EQ(wxPGChildChangeInfo)
 WX_PG_IMPLEMENT_PROPERTY_CLASS(wxStructProperty, wxPGProperty, wxPGChildChangeInfo, const wxPGChildChangeInfo&, TextCtrl)
 
 wxStructProperty::wxStructProperty(PropertyList* pParent, const wxString& label, const wxString& name, PropertyStream& stream) 
 : wxPGProperty(label, name)
 {
 	wxPGChildChangeInfo childChangeInfo;
-	SetValue(wxPGChildChangeInfoToVariant(childChangeInfo));
+	SetValue(WXVARIANT(childChangeInfo));
 
 	for(u32 i=0; i<stream.GetNumProperties(); ++i)
 	{
@@ -43,14 +42,17 @@ wxStructProperty::wxStructProperty(PropertyList* pParent, const wxString& label,
 
 void wxStructProperty::RefreshChildren()
 {
-	wxPGChildChangeInfo& childChangeInfo = wxPGChildChangeInfoFromVariant(m_value);
+	wxPGChildChangeInfo& childChangeInfo = wxPGChildChangeInfoRefFromVariant(m_value);
 	Item(childChangeInfo.childIndex)->SetValue(childChangeInfo.childValue);
 }
 
-void wxStructProperty::ChildChanged( wxVariant& thisValue, int childIndex, wxVariant& childValue ) const
+wxVariant wxStructProperty::ChildChanged( wxVariant& thisValue, int childIndex, wxVariant& childValue ) const
 {	
-	wxPGChildChangeInfo& childChangeInfo = wxPGChildChangeInfoFromVariant(thisValue);
+	wxPGChildChangeInfo& childChangeInfo = wxPGChildChangeInfoRefFromVariant(thisValue);
 	childChangeInfo.childIndex = childIndex;
 	childChangeInfo.childValue = childValue;
+	wxVariant newVariant;
+	newVariant << childChangeInfo;
+	return newVariant;
 }
 

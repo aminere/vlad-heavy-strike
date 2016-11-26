@@ -51,13 +51,13 @@ namespace shoot
 	END_EVENT_TABLE()
 
 	//! Constructor
-	ViewPort::ViewPort(wxWindow *parent,
-					   wxGLContext* pGLContext /*= NULL*/)
-	: super(parent, pGLContext, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxFULL_REPAINT_ON_RESIZE)
+	ViewPort::ViewPort(wxWindow *parent)
+	: super(parent, wxID_ANY, NULL, wxDefaultPosition, wxDefaultSize, wxFULL_REPAINT_ON_RESIZE)
 	, m_bDraggingStarted(false)
 	, m_bZoomingStarted(false)
 	, m_bStrafingStarted(false)
 	, m_bLookingStarted(false)
+	, m_pGLContext(NULL)
 	{	
 		m_Default3DCamera = snew Camera();
 		m_Default3DCamera->SetZNear(.1f);
@@ -65,10 +65,10 @@ namespace shoot
 
 		m_Default2DCamera = snew Camera();
 
-		if(GraphicsDriver::Instance()->GetType() == GraphicsDriver::DT_OpenGL)
-		{
-			SetCurrent();
-		}
+#ifndef DX11
+		m_pGLContext = new wxGLContext(this);
+		m_pGLContext->SetCurrent(*this);
+#endif // DX11
 
 		ResetView();
 	}
@@ -530,9 +530,9 @@ namespace shoot
 		{
 			if(Entity2D* pEntity2D = DYNAMIC_CAST(ShootEditor::Instance()->GetSelectedEntity(), Entity2D))
 			{
-				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector2ToVariant(pEntity2D->GetPosition())); 
-				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Rotation", wxVariant(pEntity2D->GetRotation())); 
-				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Scale", Vector2ToVariant(pEntity2D->GetScale())); 
+				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(pEntity2D->GetPosition()));
+				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Rotation", WXVARIANT(pEntity2D->GetRotation()));
+				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Scale", WXVARIANT(pEntity2D->GetScale()));
 			}
 		}
 		m_bDraggingStarted = false;
@@ -646,7 +646,7 @@ namespace shoot
 		{			
 			if(Entity2D* pEntity2D = DYNAMIC_CAST(ShootEditor::Instance()->GetSelectedEntity(), Entity2D))
 			{
-				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector2ToVariant(pEntity2D->GetPosition())); 
+				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(pEntity2D->GetPosition()));
 			}
 		}
 		m_bDraggingStarted = false;
@@ -657,14 +657,14 @@ namespace shoot
 
 	void ViewPort::OnResized(wxSizeEvent& event)
 	{
-		super::OnSize(event);
+		event.Skip();
 		
-		if(GetContext())	
-		{
-			SetCurrent();
-			Size newSize(event.GetSize().x, event.GetSize().y);	
-			Engine::Instance()->ResizeScreen(newSize);
-		}
+		if (!m_pGLContext)
+			return;
+
+		m_pGLContext->SetCurrent(*this);
+		Size newSize(event.GetSize().x, event.GetSize().y);
+		Engine::Instance()->ResizeScreen(newSize);
 	}
 
 	void ViewPort::OnFocusGained(wxFocusEvent& event)
@@ -680,17 +680,8 @@ namespace shoot
 	{
 		wxPaintDC dc(this);
 
-		if(GraphicsDriver::Instance()->GetType() == GraphicsDriver::DT_OpenGL)
-		{
-			if(GetContext())
-			{
-				SetCurrent();
-			}
-			else
-			{
-				return;
-			}
-		}
+		if (m_pGLContext)
+			m_pGLContext->SetCurrent(*this);
 			
 		GraphicsDriver::Instance()->SetViewPort(AABBox2D(Vector2(0.0f, 0.0f), Vector2(f32(GetSize().x), f32(GetSize().y))));
 
@@ -712,11 +703,12 @@ namespace shoot
 		EditorRenderer::Instance()->Render();
 		GraphicsDriver::Instance()->Present();
 
-		if(GraphicsDriver::Instance()->GetType() == GraphicsDriver::DT_OpenGL)
+#ifndef DX11
 		{
 			glFlush();
 			SwapBuffers();
 		}
+#endif // DX11
 
 		f32 fDeltaTime = f32(m_StopWatch.Time())/1000.0f;
 		fDeltaTime = Math::Min(fDeltaTime, 0.1f);

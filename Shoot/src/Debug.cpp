@@ -34,7 +34,7 @@ namespace shoot
 			Log << "*** Assert failed ***\n" << message << "\n";
 
 #if SHOOT_PLATFORM == SHOOT_PLATFORM_WIN32
-			MessageBox(NULL, message, "Assert failed", MB_OK);
+			MessageBoxA(NULL, message, "Assert failed", MB_OK);
 			DebugBreak();
 #endif
 		}
@@ -80,13 +80,13 @@ namespace shoot
 			{
 				if(!m_WarningInfos[index].bDisabled)
 				{
-					m_WarningInfos[index].bDisabled = (MessageBox(NULL, message, "Warning - Do you want to keep having it?", MB_YESNO) == IDNO);
+					m_WarningInfos[index].bDisabled = (MessageBoxA(NULL, message, "Warning - Do you want to keep having it?", MB_YESNO) == IDNO);
 					m_WarningInfos[index].bFree = !m_WarningInfos[index].bDisabled;
 				}
 			}
 			else
 			{
-				MessageBox(NULL, message, "Warning", MB_OK);
+				MessageBoxA(NULL, message, "Warning", MB_OK);
 			}				
 #endif
 		}

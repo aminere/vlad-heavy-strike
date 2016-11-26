@@ -15,15 +15,15 @@ using namespace shoot;
 // -----------------------------------------------------------------------
 class wxLinkProperty : public wxLongStringProperty
 {
-    WX_PG_DECLARE_DERIVED_PROPERTY_CLASS(wxLinkProperty)
+	WX_PG_DECLARE_PROPERTY_CLASS(wxLinkProperty)
 
 public:
 
 	//! constructor
-    wxLinkProperty( const wxString& name = wxPG_LABEL, const wxString& label = wxPG_LABEL, const wxString& value = wxEmptyString);
-
-	//! destructor
-    virtual ~wxLinkProperty();
+	wxLinkProperty(const wxString& name = wxPG_LABEL, const wxString& label = wxPG_LABEL, const wxString& value = wxEmptyString)
+		: wxLongStringProperty(name, label, value)
+	{
+	}
 
 	//! button click callback
     virtual bool OnButtonClick( wxPropertyGrid* propgrid, wxString& value );
@@ -43,8 +43,6 @@ public:
 
 	//! sets the target base type
 	void SetBaseType(const char* strBaseType) { m_strBaseType = strBaseType; }
-
-    WX_PG_DECLARE_VALIDATOR_METHODS()
 
 private:
 

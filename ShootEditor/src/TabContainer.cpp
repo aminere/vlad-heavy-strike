@@ -39,7 +39,6 @@ namespace shoot
 
 	//! Constructor
 	TabContainer::TabContainer(wxWindow* pParent,
-							   wxGLContext* pGLContext /*= NULL*/,
 							   wxWindowID id /*= wxID_ANY*/, 
 							   const wxPoint& pos /*= wxDefaultPosition*/, 
 							   const wxSize& size /*= wxSize(800, 600)*/, 
@@ -77,7 +76,7 @@ namespace shoot
 		pToolBarSizer->Add(new wxButton(this, ID_Tab_ClearFade, "CF", wxDefaultPosition, iconSize), 0, wxALIGN_CENTRE_VERTICAL);
 		pToolBarSizer->Add(new wxButton(this, ID_Tab_ToggleBlackBars, "TB", wxDefaultPosition, iconSize), 0, wxALIGN_CENTRE_VERTICAL);		
 		
-		m_pViewPortContainer = new ViewPortContainer(this, pGLContext);
+		m_pViewPortContainer = new ViewPortContainer(this);
 		m_p3DCamera = m_pViewPortContainer->GetViewPort()->Get3DCamera();
 		m_p2DCamera = m_pViewPortContainer->GetViewPort()->Get2DCamera();
 

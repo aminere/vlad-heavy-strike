@@ -26,8 +26,7 @@ namespace shoot
 	public:
 
 		//! Constructor
-		ViewPort(wxWindow *parent,
-				 wxGLContext* pGLContext = NULL);
+		ViewPort(wxWindow *parent);
 
 		//! Destructor
 		virtual ~ViewPort();
@@ -85,6 +84,7 @@ namespace shoot
 		Reference<Camera> m_Default2DCamera;
 
 		wxStopWatch m_StopWatch;
+		wxGLContext* m_pGLContext;
 		
 		DECLARE_EVENT_TABLE();
 	};

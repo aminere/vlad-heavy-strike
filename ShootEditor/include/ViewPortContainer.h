@@ -20,8 +20,7 @@ namespace shoot
 	public:
 		
 		//! Constructor
-		ViewPortContainer(wxWindow *parent,
-						  wxGLContext* pGLContext = NULL);
+		ViewPortContainer(wxWindow *parent);
 
 		//! returns the view port
 		ViewPort* GetViewPort() { return m_pViewPort; }

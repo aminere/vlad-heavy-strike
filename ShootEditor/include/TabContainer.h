@@ -34,7 +34,6 @@ namespace shoot
 
 		//! Constructor
 		TabContainer(wxWindow* pParent,
-					 wxGLContext* pGLContext = NULL,
 					 wxWindowID id = wxID_ANY, 
 					 const wxPoint& pos = wxDefaultPosition, 
 					 const wxSize& size = wxSize(800, 600), 

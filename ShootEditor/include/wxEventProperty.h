@@ -15,15 +15,15 @@ using namespace shoot;
 // -----------------------------------------------------------------------
 class wxEventProperty : public wxLongStringProperty
 {
-    WX_PG_DECLARE_DERIVED_PROPERTY_CLASS(wxEventProperty)
+	WX_PG_DECLARE_PROPERTY_CLASS(wxEventProperty)
 
 public:
 
 	//! constructor
-    wxEventProperty(const wxString& name = wxPG_LABEL, const wxString& label = wxPG_LABEL, const wxString& value = wxEmptyString);
-
-	//! destructor
-    virtual ~wxEventProperty();
+    wxEventProperty(const wxString& name = wxPG_LABEL, const wxString& label = wxPG_LABEL, const wxString& value = wxEmptyString)
+		: wxLongStringProperty(name, label, value)
+	{
+	}
 
 	//! button click callback
     virtual bool OnButtonClick( wxPropertyGrid* propgrid, wxString& value );
@@ -33,8 +33,6 @@ public:
 
 	//! returns the ID pointed at by this property
 	std::string GetEventName() const { return m_strEventName; }
-
-    WX_PG_DECLARE_VALIDATOR_METHODS()
 
 private:
 

@@ -17,7 +17,7 @@ wxLinkProperty* wxLinkProperty::ms_pCurrentProperty = NULL;
 // -----------------------------------------------------------------------
 // wxLinkProperty
 // -----------------------------------------------------------------------
-WX_PG_IMPLEMENT_STRING_PROPERTY_WITH_VALIDATOR(wxLinkProperty, wxPG_NO_ESCAPE)
+WX_PG_IMPLEMENT_PROPERTY_CLASS(wxLinkProperty, wxPGProperty, wxString, const wxString&, TextCtrlAndButton)
 
 //! button click callback
 bool wxLinkProperty::OnButtonClick(wxPropertyGrid* propgrid, wxString& value)
@@ -29,11 +29,6 @@ bool wxLinkProperty::OnButtonClick(wxPropertyGrid* propgrid, wxString& value)
 
 	ms_pCurrentProperty = NULL;	
     return true;
-}
-
-wxValidator* wxLinkProperty::DoGetValidator() const
-{
-    return NULL;
 }
 
 //! is called after an the entity link has been changed

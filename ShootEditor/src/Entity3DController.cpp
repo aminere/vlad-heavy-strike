@@ -187,21 +187,21 @@ namespace shoot
 					m_Entity->Translate(delta);
 
 					// update position in property list
-					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector3ToVariant(m_Entity->GetPosition())); 
+					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(m_Entity->GetPosition()));
 					break;
 
 				case ShootEditor::ControlMode_Rotate:
 					m_Entity->Rotate(delta*m_fRotationStep);
 
 					// update rotation in property list
-					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Rotation", Vector3ToVariant(m_Entity->GetRotation())); 
+					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Rotation", WXVARIANT(m_Entity->GetRotation()));
 					break;
 
 				case ShootEditor::ControlMode_Scale:
 					m_Entity->Scale(delta);
 
 					// update scale in property list
-					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Scale", Vector3ToVariant(m_Entity->GetScale())); 
+					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Scale", WXVARIANT(m_Entity->GetScale()));
 					break;				
 				}
 			}

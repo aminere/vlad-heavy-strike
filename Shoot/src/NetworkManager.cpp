@@ -13,6 +13,8 @@ Created: September 21st 2013
 
 #include "Mutex.h"
 
+#include <iterator>
+
 #if SHOOT_PLATFORM == SHOOT_PLATFORM_WIN32 || SHOOT_PLATFORM == SHOOT_PLATFORM_WP8
 #define USE_WINSOCK2
 #include <WS2tcpip.h>

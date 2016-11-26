@@ -70,7 +70,7 @@ namespace shoot
 		{
 			Entity* pEntity = DYNAMIC_CAST(m_pPropertyList->GetSelectedObject(), Entity);
 			bool bIsTemplate = pEntity && !pEntity->GetTemplatePath().empty();			
-			bool bOverriden = (pEntity->GetOverridenProperties().GetProperty(pWxProperty->GetLabel().c_str()) != NULL);
+			bool bOverriden = (pEntity->GetOverridenProperties().GetProperty(std::string(pWxProperty->GetName())) != NULL);
 			m_pOverrideToggle->Enable(bIsTemplate);
 			m_pOverrideToggle->SetValue(bOverriden);
 		}

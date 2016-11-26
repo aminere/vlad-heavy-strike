@@ -69,7 +69,9 @@ namespace shoot
 		std::cout << str;
 
 		#if SHOOT_PLATFORM == SHOOT_PLATFORM_WIN32 || SHOOT_PLATFORM == SHOOT_PLATFORM_WP8
-		OutputDebugString(str);
+		wchar_t buf[1024];
+		mbstowcs(buf, str, 1024);
+		OutputDebugString(buf);
 		#endif
 
 		#if defined(SHOOT_EDITOR)

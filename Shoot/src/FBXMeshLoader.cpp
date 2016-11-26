@@ -20,7 +20,7 @@ Created:  July 17th 2013
 namespace shoot
 {
 	// statics
-	fbxsdk_2015_1::FbxManager* FBXMeshLoader::ms_pManager = NULL;
+	fbxsdk::FbxManager* FBXMeshLoader::ms_pManager = NULL;
 
 	//! loads a mesh from a file
 	void FBXMeshLoader::Load(const char* strPath)

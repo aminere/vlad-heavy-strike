@@ -83,22 +83,20 @@ private:
 //! wxArrayProperty editor
 class wxArrayPropertyEditor : public wxPGTextCtrlEditor
 {
-    WX_PG_DECLARE_EDITOR_CLASS(wxArrayPropertyEditor)
+	wxDECLARE_DYNAMIC_CLASS(wxArrayPropertyEditor);
 
 public:
 
-    wxArrayPropertyEditor() { }
-    virtual ~wxArrayPropertyEditor() { }
+	wxPGWindowList CreateControls(wxPropertyGrid* propGrid,
+		wxPGProperty* property,
+		const wxPoint& pos,
+		const wxSize& sz) const;
 
-    wxPG_DECLARE_CREATECONTROLS
-    virtual bool OnEvent( wxPropertyGrid* propGrid,
+	virtual bool OnEvent(wxPropertyGrid* propGrid,
                           wxPGProperty* property,
                           wxWindow* ctrl,
                           wxEvent& event ) const;
 };
-
-extern wxPGEditor* wxPGEditor_ArrayPropertyEditor;
-extern wxPGEditor* wxPGConstructArrayPropertyEditorEditorClass();
 
 #endif // _WX_ARRAY_PROPERTY_H_INCLUDED_
 

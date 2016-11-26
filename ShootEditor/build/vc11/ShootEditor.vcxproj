@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release OptimOff|Win32">
       <Configuration>Release OptimOff</Configuration>
@@ -10,12 +10,13 @@
     <ProjectGuid>{C2E272D4-6B40-419A-A7A9-DE95938B769A}</ProjectGuid>
     <RootNamespace>ShootEditor</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release OptimOff|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>true</CLRSupport>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -37,8 +38,8 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>.\..\..\include;.\..\..\..\shoot\include;.\..\..\..\shoot\include\OpenGL;.\..\..\..\shoot\include\DX11;.\..\..\..\extern\wxWidgets-2.8.11\include;.\..\..\..\extern\wxWidgets-2.8.11\components\propgrid\include;.\..\..\..\extern\wxWidgets-2.8.11\lib\vc_lib\msw;.\..\..\..\extern\SDL-1.2.14\include;.\..\..\..\extern\OpenCV2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;__WXMSW__;_WINDOWS;NOPCH;SHOOT_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\..\..\include;.\..\..\..\shoot\include;.\..\..\..\shoot\include\OpenGL;.\..\..\..\shoot\include\DX11;.\..\..\..\extern\wxWidgets\include;.\..\..\..\extern\wxWidgets\lib\vc_dll\mswu;.\..\..\..\extern\SDL\include;.\..\..\..\extern\OpenCV2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WXUSINGDLL;SHOOT_EDITOR;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>

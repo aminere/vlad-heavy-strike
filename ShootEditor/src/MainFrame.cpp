@@ -366,7 +366,7 @@ namespace shoot
 				if(Entity3D* pEntity3D = DYNAMIC_CAST(pEntity, Entity3D))
 				{
 					pEntity3D->SetAbsolutePosition(ShootEditor::Instance()->GetPinPosition());
-					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector3ToVariant(pEntity3D->GetPosition()), pEntity3D);
+					ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(pEntity3D->GetPosition()), pEntity3D);
 				}
 			}
 
@@ -542,7 +542,7 @@ namespace shoot
 			{
 				UndoManager::Instance()->RecordTransformState(pEntity3D);
 				pEntity3D->SetAbsolutePosition(ShootEditor::Instance()->GetPinPosition());
-				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector3ToVariant(pEntity3D->GetPosition())); 
+				ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(pEntity3D->GetPosition()));
 			}
 			else
 			{

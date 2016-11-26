@@ -103,7 +103,7 @@ void wxArrayProperty::UpdateValue()
 }
 
 //! implement the array property editor
-WX_PG_IMPLEMENT_EDITOR_CLASS(ArrayPropertyEditor, wxArrayPropertyEditor, wxPGTextCtrlEditor)
+IMPLEMENT_DYNAMIC_CLASS(wxArrayPropertyEditor, wxPGTextCtrlEditor)
 
 wxPGWindowList wxArrayPropertyEditor::CreateControls( wxPropertyGrid* propGrid,
                                                       wxPGProperty* property,
@@ -120,7 +120,7 @@ wxPGWindowList wxArrayPropertyEditor::CreateControls( wxPropertyGrid* propGrid,
 
     // Finally, move buttons-subwindow to correct position and make sure
     // returned wxPGWindowList contains our custom button list.
-    buttons->FinalizePosition(pos);
+    buttons->Finalize(propGrid, pos);
 
     wndList.SetSecondary( buttons );
     return wndList;

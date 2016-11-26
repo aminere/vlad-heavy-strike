@@ -1,6 +1,6 @@
 <GameData>
     <Properties>
-        <uint Name="PlayCount" Value="2"/>
+        <uint Name="PlayCount" Value="3"/>
         <bool Name="IntroPlayed" Value="0"/>
         <bool Name="OutroPlayed" Value="0"/>
         <string Name="PlayerName" Value=""/>

@@ -78,22 +78,20 @@ private:
 //! wxReferenceProperty editor
 class wxReferencePropertyEditor : public wxPGTextCtrlEditor
 {
-    WX_PG_DECLARE_EDITOR_CLASS(wxReferencePropertyEditor)
+	wxDECLARE_DYNAMIC_CLASS(wxReferencePropertyEditor);
 
 public:
 
-    wxReferencePropertyEditor() { }
-    virtual ~wxReferencePropertyEditor() { }
+	wxPGWindowList CreateControls(wxPropertyGrid* propGrid,
+		wxPGProperty* property,
+		const wxPoint& pos,
+		const wxSize& sz) const;
 
-    wxPG_DECLARE_CREATECONTROLS
-    virtual bool OnEvent( wxPropertyGrid* propGrid,
+	virtual bool OnEvent(wxPropertyGrid* propGrid,
                           wxPGProperty* property,
                           wxWindow* ctrl,
                           wxEvent& event ) const;
 };
-
-extern wxPGEditor* wxPGEditor_ReferencePropertyEditor;
-extern wxPGEditor* wxPGConstructReferencePropertyEditorEditorClass();
 
 #endif // _WX_REFERENCE_PROPERTY_H_INCLUDED_
 

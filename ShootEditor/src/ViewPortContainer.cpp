@@ -19,17 +19,16 @@ namespace shoot
 	END_EVENT_TABLE()
 
 	//! Constructor
-	ViewPortContainer::ViewPortContainer(wxWindow *parent,
-										 wxGLContext* pGLContext /*= NULL*/)
+	ViewPortContainer::ViewPortContainer(wxWindow *parent)
 		: super(parent, wxID_ANY, wxDefaultPosition, wxSize(800, 600))
 	{
-		m_pViewPort = new ViewPort(this, pGLContext);
+		m_pViewPort = new ViewPort(this);
 	}
 
 	// event handlers
 	void ViewPortContainer::OnResized(wxSizeEvent& event)
 	{
-		super::OnSize(event);
+		event.Skip();
 
 		if(EditorSettings::Instance()->WindowSize == EditorSettings::WS_Stretch)
 		{

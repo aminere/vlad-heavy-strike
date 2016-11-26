@@ -183,8 +183,8 @@ namespace shoot
 	{
 		if(pCamera == ShootEditor::Instance()->GetSelectedEntity())
 		{
-			ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", Vector3ToVariant(pCamera->GetPosition()));
-			ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("LookAt", Vector3ToVariant(pCamera->GetLookAt()));
+			ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("Position", WXVARIANT(pCamera->GetPosition()));
+			ShootEditor::Instance()->GetObjectInspector()->UpdateProperty("LookAt", WXVARIANT(pCamera->GetLookAt()));
 		}
 		else
 		{

@@ -40,9 +40,8 @@ namespace shoot
 	, m_pListener(pListener)
 	, m_pSelectedObject(NULL)
 	{
-		// register custom property editors
-		wxPGRegisterEditorClass( ArrayPropertyEditor );
-		wxPGRegisterEditorClass( ReferencePropertyEditor );
+		ReferenceEditor = wxPropertyGrid::RegisterEditorClass(new wxReferencePropertyEditor());
+		ArrayEditor = wxPropertyGrid::RegisterEditorClass(new wxArrayPropertyEditor());
 	}
 
 	//! Fills the list with the properties from an object
@@ -98,7 +97,7 @@ namespace shoot
 					if(pProperty->GetName() == "ID")
 					{
 						pWxProperty->SetAttribute(wxPG_UINT_BASE, wxPG_BASE_HEX);
-						pWxProperty->SetFlag(wxPG_PROP_DISABLED);
+						pWxProperty->Enable(false);
 					}
 				}
 			}
@@ -174,18 +173,6 @@ namespace shoot
 				pWxProperty->Item(0)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
 				pWxProperty->Item(1)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
 				pWxProperty->Item(2)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
-			}
-			break;
-
-		case PT_Vec4:
-			{
-				Vector4 value;
-				pProperty->GetData(&value);
-				pWxProperty = new wxVector4Property(pProperty->GetName(), wxPG_LABEL, value);
-				pWxProperty->Item(0)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
-				pWxProperty->Item(1)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
-				pWxProperty->Item(2)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
-				pWxProperty->Item(3)->SetAttribute(wxPG_FLOAT_PRECISION, 2);
 			}
 			break;
 
@@ -297,16 +284,16 @@ namespace shoot
 			{
 				ArrayProperty* pArrayProperty = static_cast<ArrayProperty*>(pProperty);
 				pWxProperty = new wxArrayProperty(pProperty->GetName(), pArrayProperty, pInstance);
-				pInstance->SetPropertyEditor(pWxProperty, wxPG_EDITOR(ArrayPropertyEditor));
-			}
+				pInstance->SetPropertyEditor(pWxProperty, pInstance->ArrayEditor);
+		}
 			break;
 
 		case PT_Reference:
 			{
 				ReferenceProperty* pRefProperty = static_cast<ReferenceProperty*>(pProperty);
 				pWxProperty = new wxReferenceProperty(pProperty->GetName(), pRefProperty, pInstance);
-				pInstance->SetPropertyEditor(pWxProperty, wxPG_EDITOR(ReferencePropertyEditor));
-			}
+				pInstance->SetPropertyEditor(pWxProperty, pInstance->ReferenceEditor);
+		}
 			break;
 
 		case PT_Range:
@@ -405,42 +392,35 @@ namespace shoot
 
 		case PT_Vec2:
 			{
-				Vector2 vec = Vector2FromVariant(pWxProperty->GetValue());
+				Vector2 vec = Vector2RefFromVariant(pWxProperty->GetValue());
 				pProperty->SetData(&vec);
 			}
 			break;
 
 		case PT_Vec3:
 			{
-				Vector3 vec = Vector3FromVariant(pWxProperty->GetValue());
-				pProperty->SetData(&vec);
-			}
-			break;
-
-		case PT_Vec4:
-			{
-				Vector4 vec = Vector4FromVariant(pWxProperty->GetValue());
+				Vector3 vec = Vector3RefFromVariant(pWxProperty->GetValue());
 				pProperty->SetData(&vec);
 			}
 			break;
 
 		case PT_Point:
 			{
-				Point point = PointFromVariant(pWxProperty->GetValue());
+				Point point = PointRefFromVariant(pWxProperty->GetValue());
 				pProperty->SetData(&point);
 			}
 			break;
 
 		case PT_AABBox2D:
 			{
-				AABBox2D box = AABBox2DFromVariant(pWxProperty->GetValue());						
+				AABBox2D box = AABBox2DRefFromVariant(pWxProperty->GetValue());						
 				pProperty->SetData(&box);
 			}
 			break;
 
 		case PT_AABBox3D:
 			{
-				AABBox3D box = AABBox3DFromVariant(pWxProperty->GetValue());						
+				AABBox3D box = AABBox3DRefFromVariant(pWxProperty->GetValue());						
 				pProperty->SetData(&box);
 			}
 			break;
@@ -456,7 +436,7 @@ namespace shoot
 
 		case PT_Size:
 			{
-				Size size = SizeFromVariant(pWxProperty->GetValue());
+				Size size = SizeRefFromVariant(pWxProperty->GetValue());
 				pProperty->SetData(&size);
 			}
 			break;
@@ -627,7 +607,7 @@ namespace shoot
 
 		case PT_Range:
 			{
-				Range range = RangeFromVariant(pWxProperty->GetValue());
+				Range range = RangeRefFromVariant(pWxProperty->GetValue());
 				pProperty->SetData(&range);
 			}
 			break;
