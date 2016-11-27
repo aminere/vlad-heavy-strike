@@ -57,23 +57,29 @@ namespace shoot
 
 		m_MaterialCreationInfos.clear();
 
-		if(Utils::Equals(extension.c_str(), "ms3d"))
+#ifndef SHOOT_EDITOR
+		LoadFS(m_MeshPath.c_str());
+#else
 		{
-			MS3DMeshLoader(this).Load(m_MeshPath.c_str());
+			if (Utils::Equals(extension.c_str(), "ms3d"))
+			{
+				MS3DMeshLoader(this).Load(m_MeshPath.c_str());
+			}
+			else if (Utils::Equals(extension.c_str(), "x"))
+			{
+				XMeshLoader(this).Load(m_MeshPath.c_str());
+			}
+			else if (Utils::Equals(extension.c_str(), "fbx"))
+			{
+				FBXMeshLoader(this).Load(m_MeshPath.c_str());
+			}
+			else
+			{
+				SHOOT_ASSERT(false, "Unsupported mesh format: '%s'", m_MeshPath.c_str());
+			}
 		}
-		else if(Utils::Equals(extension.c_str(), "x"))
-		{
-			XMeshLoader(this).Load(m_MeshPath.c_str());
-		}
-		else if(Utils::Equals(extension.c_str(), "fbx"))
-		{
-			FBXMeshLoader(this).Load(m_MeshPath.c_str());
-		}
-		else
-		{
-			SHOOT_ASSERT(false, "Unsupported mesh format: '%s'", m_MeshPath.c_str());
-		}
-
+#endif
+		
 		for(u32 i=0; i<m_SubMeshes.size(); ++i)
 		{
 			m_SubMeshes[i].m_VertexBuffer->SetDynamic(m_bDynamic);

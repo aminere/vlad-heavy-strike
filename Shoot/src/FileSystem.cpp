@@ -18,9 +18,9 @@ namespace shoot
 	//! constructor
 	FileSystem::FileSystem()
 	{
-#ifdef SHOOT_FILE_SYSTEM
+#ifndef SHOOT_EDITOR
 		Init();
-#endif // SHOOT_FILE_SYSTEM
+#endif
 	}
 
 	//! destructor

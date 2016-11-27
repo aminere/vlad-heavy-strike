@@ -13,9 +13,7 @@ Created: July 30th 2013
 
 #include "File.h"
 
-#ifndef SHOOT_FILE_SYSTEM
 #include <d3dcompiler.h>
-#endif // SHOOT_FILE_SYSTEM
 
 namespace shoot
 {
@@ -37,7 +35,7 @@ namespace shoot
 		u8* pVSData = NULL;
 		u8* pPSData = NULL;
 		
-#ifdef SHOOT_FILE_SYSTEM
+#ifndef SHOOT_EDITOR
 		pVSData = GetCompiledHLSL(m_pSource->m_VS.c_str(), VSSize);
 		pPSData = GetCompiledHLSL(m_pSource->m_PS.c_str(), PSSize);
 #else
@@ -72,7 +70,7 @@ namespace shoot
 		DX_ASSERT(pDevice->CreateInputLayout(layout, numElements, pVSData, VSSize, &pInputLayout));
 		m_VertexLayout = pInputLayout;
 
-#ifdef SHOOT_FILE_SYSTEM
+#ifndef SHOOT_EDITOR
 		sdelete_array(pVSData);
 		sdelete_array(pPSData);
 #endif
@@ -136,7 +134,6 @@ namespace shoot
 		// TODO unset VS/PS ?
 	}
 
-#ifndef SHOOT_FILE_SYSTEM
 	//! compile HLSL code
 	ID3DBlob* ShaderDX11::CompileHLSL(const char* strSource, const char* strEntryPoint, const char* strShaderModel)
 	{
@@ -170,7 +167,6 @@ namespace shoot
 		}
 		return pShaderBlob;
 	}
-#endif // SHOOT_FILE_SYSTEM
 
 	//! returns compiled HLSL
 	u8* ShaderDX11::GetCompiledHLSL(const char* strSource, s32& size)

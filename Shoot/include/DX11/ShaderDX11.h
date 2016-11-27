@@ -32,10 +32,7 @@ namespace shoot
 		//! ends rendering using this shader
 		void End();
 
-#ifndef SHOOT_FILE_SYSTEM
-		//! compile HLSL code
 		static ID3DBlob* CompileHLSL(const char* strSource, const char* strEntryPoint, const char* strShaderModel);
-#endif // SHOOT_FILE_SYSTEM
 
 	private:
 

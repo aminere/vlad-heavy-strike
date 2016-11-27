@@ -19,6 +19,8 @@ namespace shoot
 		//! Return the unique instance of class T
 		inline static T* Instance() 
 		{
+			if (!m_spInstance)
+				DebugBreak();
 			SHOOT_ASSERT(m_spInstance, "%s singleton instance not created yet", T::GetSingletonClassName());
 			return m_spInstance;
 		}

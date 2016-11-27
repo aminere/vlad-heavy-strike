@@ -27,6 +27,7 @@ namespace shoot
 	std::string File::m_strExternalWritablePath;
 	bool File::ms_bUseWritablePath = false;
 	bool File::ms_bUseExternalWritablePath = false;	
+	bool File::ms_bUseDataFolder = false;
 
 	//! constructor
 	File::File(const char* strPath, E_Mode eMode)
@@ -41,12 +42,10 @@ namespace shoot
 	{
 		if(eMode == M_ReadBinary)
 		{
-#if defined(SHOOT_FILE_SYSTEM)
-			if(!ms_bUseWritablePath && !ms_bUseExternalWritablePath)
+			if(!ms_bUseWritablePath && !ms_bUseExternalWritablePath && !ms_bUseDataFolder)
 			{
 				return snew FileFS(strPath);
 			}
-#endif // SHOOT_FILE_SYSTEM
 		}
 
 		return CreateNative(strPath, eMode);
@@ -69,12 +68,10 @@ namespace shoot
 	//! returns true if a file exists
 	bool File::Exists(const char* strPath)
 	{
-#ifdef SHOOT_FILE_SYSTEM
-		if(!ms_bUseWritablePath && !ms_bUseExternalWritablePath)
+		if(!ms_bUseWritablePath && !ms_bUseExternalWritablePath && !ms_bUseDataFolder)
 		{
 			return FileSystem::Instance()->Exists(strPath);
 		}
-#endif // SHOOT_FILE_SYSTEM
 
 		File* pFile = CreateNative(strPath, M_Read);
 		bool bExists = pFile->Open(false);

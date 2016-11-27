@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShootTest", "ShootTest.vcxproj", "{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}"
 EndProject
@@ -26,20 +26,20 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|ARM.ActiveCfg = Release OptimOff|ARM
 		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|ARM.Build.0 = Release OptimOff|ARM
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|Win32.ActiveCfg = Release Editor|Win32
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|Win32.Build.0 = Release Editor|Win32
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|ARM.ActiveCfg = Release|ARM
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|ARM.Build.0 = Release|ARM
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|Win32.ActiveCfg = Release|Win32
-		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|Win32.Build.0 = Release|Win32
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|Win32.ActiveCfg = Release OptimOff|Win32
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release WP8|Win32.Build.0 = Release OptimOff|Win32
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|ARM.ActiveCfg = Release OptimOff|ARM
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|ARM.Build.0 = Release OptimOff|ARM
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|Win32.ActiveCfg = Release OptimOff|Win32
+		{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}.Release|Win32.Build.0 = Release OptimOff|Win32
 		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|ARM.ActiveCfg = Release Optim Off|ARM
 		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|ARM.Build.0 = Release Optim Off|ARM
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|Win32.ActiveCfg = Release Editor|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|Win32.Build.0 = Release Editor|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|ARM.ActiveCfg = Release|ARM
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|ARM.Build.0 = Release|ARM
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.ActiveCfg = Release|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.Build.0 = Release|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|Win32.ActiveCfg = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release WP8|Win32.Build.0 = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|ARM.ActiveCfg = Release Optim Off|ARM
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|ARM.Build.0 = Release Optim Off|ARM
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.ActiveCfg = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.Build.0 = Release Optim Off|Win32
 		{65F1FE0F-7C70-451A-9FE2-B25535AA1185}.Release WP8|ARM.ActiveCfg = Release|ARM
 		{65F1FE0F-7C70-451A-9FE2-B25535AA1185}.Release WP8|ARM.Build.0 = Release|ARM
 		{65F1FE0F-7C70-451A-9FE2-B25535AA1185}.Release WP8|Win32.ActiveCfg = Release|Win32

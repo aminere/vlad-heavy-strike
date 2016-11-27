@@ -34,6 +34,8 @@ namespace shoot
 		File* pFile = File::CreateNative(strPath, File::M_WriteBinary);
 		pFile->Open();
 
+		File::SetBasePath("data");
+
 		std::vector<PartitionInfo> aPartitions;
 		ReadPartitions("data", aPartitions);
 
@@ -145,9 +147,9 @@ namespace shoot
 	//! reads the partitions
 	void FileSystemGenerator::ReadPartitions(const std::string& strDirectory, std::vector<PartitionInfo>& aPartitions, s32 currentPartition /*= -1*/)
 	{
-		WIN32_FIND_DATA findData;
+		WIN32_FIND_DATAA findData;
 		std::string filter = strDirectory + "/" + "*.*";
-		HANDLE hFind = FindFirstFile(filter.c_str(), &findData);
+		HANDLE hFind = FindFirstFileA(filter.c_str(), &findData);
 		static std::map<std::string, u32> fileDuplicateChecker;
 
 		if(hFind != INVALID_HANDLE_VALUE)
@@ -199,7 +201,7 @@ namespace shoot
 						fileDuplicateChecker[filePath] = 0;
 					}
 				}
-			} while(FindNextFile(hFind, &findData) != 0);
+			} while(FindNextFileA(hFind, &findData) != 0);
 			FindClose(hFind);
 		}		
 	}

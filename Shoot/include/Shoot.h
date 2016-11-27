@@ -82,10 +82,6 @@ Created: February 5th 2010
 #include "OpenGL.h"
 #endif
 
-#if !defined(SHOOT_EDITOR) && !defined(FILE_SYSTEM_GENERATOR)
-#define SHOOT_FILE_SYSTEM
-#endif
-
 namespace shoot
 {
 	extern f32 g_fDeltaTime;

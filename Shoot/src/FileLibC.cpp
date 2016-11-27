@@ -33,16 +33,14 @@ namespace shoot
 				path = writablePath + std::string("/");
 			}			
 		}
+		else if (ms_bUseDataFolder)
+		{
+			path = "data/";
+		}
 		else if(!m_strBasePath.empty())
 		{
 			path = m_strBasePath + std::string("/");
-		}
-		else
-		{
-			#ifndef SHOOT_FILE_SYSTEM
-			path = "data/";
-			#endif // SHOOT_FILE_SYSTEM
-		}
+		}		
 
 		path = path + m_strPath;
 		m_pFile = fopen(path.c_str(), strModes[m_eMode]);

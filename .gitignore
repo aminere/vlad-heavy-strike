@@ -1,5 +1,8 @@
 *.opensdf
 *.sdf
+*.VC.db
+*.VC.opendb
+*.ipch
 Shoot/build/vc11/Release Editor OptimOff/
 Shoot/build/vc11/Release/
 Game/build/vc11/editor/Release OptimOff/
@@ -12,7 +15,10 @@ Game/build/vc11/editor/Win32/
 Game/build/vc11/editor/ipch/
 Game/build/vc11/game/Release/
 /Game/build/vc11/editor/Release Editor OptimOff
-/Game/build/vc11/editor/ShootTestEditorLauncher.VC.db
-/Game/build/vc11/editor/ShootTestEditorLauncher.VC.VC.opendb
 /Game/ShootTestEditorLauncherRelease OptimOff.map
 /Game/build/vc11/editor/Release
+/Shoot/tools/FileSystemGenerator/vc11/Release Optim Off
+/Shoot/tools/FileSystemGenerator/vc11/Release
+/Game/build/vc11/game/Release Optim Off
+/Game/build/vc11/game/Release OptimOff
+/Game/data.fs

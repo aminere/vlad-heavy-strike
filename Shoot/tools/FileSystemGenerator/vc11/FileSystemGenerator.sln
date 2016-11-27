@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileSystemGenerator", "FileSystemGenerator.vcxproj", "{319AC38E-D4ED-4352-B998-AA2E1E1A0326}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -24,10 +24,10 @@ Global
 		{319AC38E-D4ED-4352-B998-AA2E1E1A0326}.Release DX11|Win32.Build.0 = Release|Win32
 		{319AC38E-D4ED-4352-B998-AA2E1E1A0326}.Release|Win32.ActiveCfg = Release|Win32
 		{319AC38E-D4ED-4352-B998-AA2E1E1A0326}.Release|Win32.Build.0 = Release|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release DX11|Win32.ActiveCfg = Release|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release DX11|Win32.Build.0 = Release|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.ActiveCfg = Release|Win32
-		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.Build.0 = Release|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release DX11|Win32.ActiveCfg = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release DX11|Win32.Build.0 = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.ActiveCfg = Release Optim Off|Win32
+		{18CA3F84-75A7-43C4-8388-34C2E384C80F}.Release|Win32.Build.0 = Release Optim Off|Win32
 		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}.Release DX11|Win32.ActiveCfg = Release|Win32
 		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}.Release DX11|Win32.Build.0 = Release|Win32
 		{145E8C22-BFC3-45A7-A30D-F88D61C8BF11}.Release|Win32.ActiveCfg = Release|Win32

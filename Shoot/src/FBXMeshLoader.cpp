@@ -13,9 +13,7 @@ Created:  July 17th 2013
 
 #include "File.h"
 
-#ifndef SHOOT_FILE_SYSTEM
 #include "fbxsdk.h"
-#endif // SHOOT_FILE_SYSTEM
 
 namespace shoot
 {
@@ -25,9 +23,6 @@ namespace shoot
 	//! loads a mesh from a file
 	void FBXMeshLoader::Load(const char* strPath)
 	{
-#ifdef SHOOT_FILE_SYSTEM
-		m_pMesh->LoadFS(strPath);
-#else
 		m_strPath = strPath;
 
 		if(!ms_pManager)
@@ -74,10 +69,8 @@ namespace shoot
 		}
 				
 		pScene->Destroy();
-#endif // SHOOT_FILE_SYSTEM
 	}
 
-#ifndef SHOOT_FILE_SYSTEM
 	//! Load meshes
 	void FBXMeshLoader::LoadMeshes(FbxNode* pNode)
 	{
@@ -243,18 +236,15 @@ namespace shoot
 			LoadMeshes(pNode->GetChild(i));
 		}				
 	}
-#endif // SHOOT_FILE_SYSTEM	
 
 	//! static uninitialization
 	void FBXMeshLoader::Uninit()
 	{
-#ifndef SHOOT_FILE_SYSTEM
 		if(ms_pManager)
 		{
 			ms_pManager->Destroy();
 			ms_pManager = NULL;
 		}
-#endif // SHOOT_FILE_SYSTEM
 	}
 }
 

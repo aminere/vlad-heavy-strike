@@ -49,9 +49,12 @@ namespace shoot
 	//! loads a mesh from a file
 	void XMeshLoader::Load(const char* strPath)
 	{
-#ifdef SHOOT_FILE_SYSTEM
-		m_pMesh->LoadFS(strPath);
-#else
+		if (!File::GetUseDataFolder())
+		{
+			m_pMesh->LoadFS(strPath);
+			return;
+		}
+		
 		File* pFile = File::Create(strPath, File::M_ReadBinary);
 		pFile->Open();
 
@@ -67,7 +70,6 @@ namespace shoot
 	
 		pFile->Close();
 		delete pFile;
-#endif // SHOOT_FILE_SYSTEM
 	}
 
 	//! parses the file

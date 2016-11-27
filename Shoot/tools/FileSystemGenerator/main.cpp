@@ -14,6 +14,7 @@ Created: April 28th 2012
 
 int main(int argc, char** argv)
 {
+	shoot::File::SetUseDataFolder(true);
 	shoot::MemoryManager::Init();
 	shoot::ObjectManager::CreateInstance();
 	shoot::ResourceManager::CreateInstance();

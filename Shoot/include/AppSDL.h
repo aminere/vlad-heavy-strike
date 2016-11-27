@@ -26,7 +26,7 @@ namespace shoot
 			   bool bUseSDLWindow = true,
 			   u8 _BitsPerPixel = 24, 
 			   u32 SDLFlags = SDL_INIT_VIDEO, 
-			   u32 VideoFlags = SDL_OPENGL);
+			   u32 VideoFlags = SDL_WINDOW_OPENGL);
 
 		//! destructor
 		~AppSDL();
@@ -39,6 +39,7 @@ namespace shoot
 
 	private:
 
+		SDL_Window* m_Window;
 		bool m_bUseSDLWindow;
 	};
 }

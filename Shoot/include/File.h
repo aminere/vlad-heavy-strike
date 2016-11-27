@@ -100,6 +100,10 @@ namespace shoot
 		//! sets the external writable path
 		inline static void SetExternalWritablePath(const char* strPath) { m_strExternalWritablePath = strPath; }
 
+		//! UseDataFolder
+		inline static void SetUseDataFolder(bool use) { ms_bUseDataFolder = use; }
+		inline static bool GetUseDataFolder() { return ms_bUseDataFolder; }
+
 		//! UseWritablePath
 		struct UseWritablePath
 		{
@@ -126,6 +130,7 @@ namespace shoot
 		static std::string m_strExternalWritablePath;
 		static bool ms_bUseWritablePath;
 		static bool ms_bUseExternalWritablePath;
+		static bool ms_bUseDataFolder;
 	};
 }
 

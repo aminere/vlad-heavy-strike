@@ -11,15 +11,11 @@ Created: April 22nd 2012
 
 #include "File.h"
 
-#ifndef SHOOT_FILE_SYSTEM
 #include "png.h"
 #include "pnginfo.h"
-#endif // SHOOT_FILE_SYSTEM
 
 namespace shoot
 {
-
-#ifndef SHOOT_FILE_SYSTEM
 	//! PNG malloc
 	png_voidp PNGMalloc(png_structp png_ptr, png_size_t size)
 	{
@@ -50,14 +46,13 @@ namespace shoot
 		File* pFile = (File*)png_get_io_ptr(png_ptr);
 		pFile->Read(data, length);
 	}
-#endif // SHOOT_FILE_SYSTEM
 
 	//! loads a texture
 	void* PNGLoader::Load(const char* strPath, s32& width, s32& height, s32& channels, u32& bpp)
 	{
-#ifdef SHOOT_FILE_SYSTEM
-		return LoadFS(strPath, width, height, channels, bpp);
-#else
+		if (!File::GetUseDataFolder())
+			return LoadFS(strPath, width, height, channels, bpp);
+		
 		File* pFile = File::Create(strPath, File::M_ReadBinary);
 		if(!pFile->Open())
 		{
@@ -220,7 +215,6 @@ namespace shoot
 		}
 
 		return pngData;
-#endif // SHOOT_FILE_SYSTEM
 	}
 
 	//! loads a texture from pre-processed file system
