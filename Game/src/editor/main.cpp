@@ -9,6 +9,7 @@ Created: April 4th 2010
 #include "ShootTestEditor.h"
 #include "GameEngine.h"
 #include "AppSDL.h"
+#include "File.h"
 
 //! Define this on the game side to register entities
 extern void RegisterObjects();
@@ -45,6 +46,7 @@ bool Application::OnInit()
 	eType = shoot::GraphicsDriver::DT_DirectX11;
 #endif // DX11
 
+	shoot::File::SetUseDataFolder(true);
 	shoot::Engine* pEngine = new shoot::GameEngine(&RegisterObjects, eType);
 	shoot::App* pApp = new shoot::AppSDL(shoot::Size(640, 480), false, false);
 

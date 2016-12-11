@@ -34,7 +34,6 @@ int main(int argc, char** argv)
 	shoot::MemoryManager::Uninit();
 
 	shoot::Log << "Success!\n";
-	system("pause");
 	return 0;
 }
 

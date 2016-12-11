@@ -65,9 +65,9 @@
       <PrecompiledHeaderFile>Shoot.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>SDL.lib;SDLMain.lib;opengl32.lib;glu32.lib;libfbxsdk.lib;xaudio2.lib;ws2_32.lib;ck.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2Main.lib;opengl32.lib;glu32.lib;libfbxsdk.lib;xaudio2.lib;ws2_32.lib;ck.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>../../../../extern/SDL/lib/x86;../../../../extern/FBXSDK/lib/vs2015/x86/release;../../../../shoot/utils/cricket/lib/win/vs14.0/x86/ReleaseDynamic;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../../../extern/SDL2/lib/x86;../../../../extern/FBXSDK/lib/vs2015/x86/release;../../../../shoot/utils/cricket/lib/win/vs14.0/x86/ReleaseDynamic;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>

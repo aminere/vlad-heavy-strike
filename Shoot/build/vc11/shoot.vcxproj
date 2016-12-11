@@ -284,7 +284,7 @@
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.\..\..\include;.\..\..\utils\cricket\inc;.\..\..\include\OpenGL;.\..\..\include\DX11;.\..\..\include\tinyxml;.\..\..\include\MS3DFile;.\..\..\..\extern\SDL\include;.\..\..\src\zlib;.\..\..\src\libpng;.\..\..\src\;.\..\..\..\extern\FBXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\..\include;.\..\..\utils\cricket\inc;.\..\..\include\OpenGL;.\..\..\include\DX11;.\..\..\include\tinyxml;.\..\..\include\MS3DFile;.\..\..\..\extern\SDL2\include;.\..\..\src\zlib;.\..\..\src\libpng;.\..\..\src\;.\..\..\..\extern\FBXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;SHOOT_EDITOR;FBXSDK_SHARED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>

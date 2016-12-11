@@ -40,7 +40,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>.\..\..\..\..\ShootEditor\include;.\..\..\..\..\shoot\include;.\..\..\..\..\shoot\include\OpenGL;.\..\..\..\..\extern\wxWidgets\include;.\..\..\..\..\extern\wxWidgets\lib\vc_dll\mswu;.\..\..\..\..\extern\SDL\include;.\..\..\..\src\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\..\..\..\ShootEditor\include;.\..\..\..\..\shoot\include;.\..\..\..\..\shoot\include\OpenGL;.\..\..\..\..\extern\wxWidgets\include;.\..\..\..\..\extern\wxWidgets\lib\vc_dll\mswu;.\..\..\..\..\extern\SDL2\include;.\..\..\..\src\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SHOOT_EDITOR;_CRT_SECURE_NO_WARNINGS;WXUSINGDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -52,9 +52,9 @@
       <PrecompiledHeaderFile>ShootEditorCommon.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>wxmsw31u_core.lib;wxmsw31u_aui.lib;wxmsw31u_propgrid.lib;wxmsw31u_adv.lib;wxbase31u.lib;wxmsw31u_gl.lib;wxpng.lib;uuid.lib;rpcrt4.lib;comctl32.lib;SDL.lib;SDLMain.lib;opengl32.lib;glu32.lib;libfbxsdk.lib;ck.lib;xaudio2.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>wxmsw31u_core.lib;wxmsw31u_aui.lib;wxmsw31u_propgrid.lib;wxmsw31u_adv.lib;wxbase31u.lib;wxmsw31u_gl.lib;wxpng.lib;uuid.lib;rpcrt4.lib;comctl32.lib;SDL2.lib;SDL2Main.lib;opengl32.lib;glu32.lib;libfbxsdk.lib;ck.lib;xaudio2.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
-      <AdditionalLibraryDirectories>.\..\..\..\..\extern\wxWidgets\lib\vc_dll;.\..\..\..\..\extern\SDL\lib\x86;.\..\..\..\..\extern\FBXSDK\lib\vs2015\x86\release;.\..\..\..\..\shoot\utils\cricket\lib\win\vs14.0\x86\ReleaseDynamic;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\..\..\..\..\extern\wxWidgets\lib\vc_dll;.\..\..\..\..\extern\SDL2\lib\x86;.\..\..\..\..\extern\FBXSDK\lib\vs2015\x86\release;.\..\..\..\..\shoot\utils\cricket\lib\win\vs14.0\x86\ReleaseDynamic;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
