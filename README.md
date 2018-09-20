@@ -2,7 +2,7 @@
 
 <b>What is this repository about?</b>
 
-This is the full source code to <a href="http://www.franticsoftware.com/vlad.html">VLAD Heavy Strike</a>, a mobile 3D shooter I made and released in 2013.
+This is the full source code to <a href="http://www.franticsoftware.com/vlad">VLAD Heavy Strike</a>, a mobile 3D shooter I made and released in 2013.
 
 In addition to the game source, this includes the full game pipeline (engine, editor, and tools), which I developed from scratch on my free time, starting around January 2010.
 
