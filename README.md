@@ -1,7 +1,5 @@
 # VLAD Heavy Strike
 
-<b>What is this repository about?</b>
-
 This is the full C++ source code to <a href="https://www.franticsoftware.com/vlad">VLAD Heavy Strike</a>, a mobile 3D shooter released in 2013.
 
 In addition to the game source, this includes the full game pipeline (engine, editor, and tools).
