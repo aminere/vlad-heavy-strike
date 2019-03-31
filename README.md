@@ -1,14 +1,10 @@
-# VLADHeavyStrikePublic
+# VLAD Heavy Strike
 
 <b>What is this repository about?</b>
 
-This is the full source code to <a href="http://www.franticsoftware.com/vlad">VLAD Heavy Strike</a>, a mobile 3D shooter I made and released in 2013.
+This is the full C++ source code to <a href="https://www.franticsoftware.com/vlad">VLAD Heavy Strike</a>, a mobile 3D shooter released in 2013.
 
-In addition to the game source, this includes the full game pipeline (engine, editor, and tools), which I developed from scratch on my free time, starting around January 2010.
-
-<b>Why make a game engine from scratch?</b>
-
-I've been interested in game development technology for a long time, even more than playing or making games. I made my university's thesis project about a <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhbWluZXJlaGlvdWl8Z3g6NzQxZDllNWVlMzNkOTIzNQ">Game Development Environment</a>. 
+In addition to the game source, this includes the full game pipeline (engine, editor, and tools).
 
 <b>Non exhaustive list of Engine Features</b>
 
