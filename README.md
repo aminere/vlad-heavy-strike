@@ -1,5 +1,8 @@
 # VLAD Heavy Strike
 
+![Thumbnail](https://franticsoftware.com/wp-content/uploads/2019/03/Level2Crushers.png)
+![Thumbnail](https://franticsoftware.com/wp-content/uploads/2019/03/Boss1Explosion.png)
+
 This is the full C++ source code to <a href="https://www.franticsoftware.com/vlad">VLAD Heavy Strike</a>, a mobile 3D shooter released in 2013.
 
 In addition to the game source, this includes the full game pipeline (engine, editor, and tools).
