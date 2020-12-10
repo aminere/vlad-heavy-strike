@@ -39,7 +39,7 @@ namespace shoot
 		Object* Create(u32 typeIndex);
 
 		//! returns the number of registered creatable objects
-		u32 GetNumCreatableTypes() const { return m_CreationInfo.size(); }
+		size_t GetNumCreatableTypes() const { return m_CreationInfo.size(); }
 
 		//! returns an entity type name given its index
 		const std::string& GetCreatableClassName(u32 typeIndex);

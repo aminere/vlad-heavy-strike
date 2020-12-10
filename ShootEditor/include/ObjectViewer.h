@@ -37,7 +37,7 @@ namespace shoot
 		static const u32 NumColumns = 5;
 		s32 m_ColumnToSort;
 		bool m_ColumSortDescending[NumColumns];
-		static int wxCALLBACK ObjectViewerSort(long item1, long item2, long sortData);
+		static int wxCALLBACK ObjectViewerSort(wxIntPtr item1, wxIntPtr item2, wxIntPtr sortData);
 
 		//! event handlers
 		void OnColumnClick(wxListEvent& event);

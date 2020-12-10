@@ -42,7 +42,7 @@ namespace shoot
 		void SetPath(std::string strPath);
 
 		//! Returns the number of animations
-		u32 GetNumAnimations() const { return m_aAnimations.GetSize(); }
+		size_t GetNumAnimations() const { return m_aAnimations.GetSize(); }
 
 		//! returns an animation name
 		/** \param animIndex: specifies the animation index. Default is -1 to get the current animation name. */
@@ -62,7 +62,7 @@ namespace shoot
 		void SetCurrentAnimation(u32 animIndex, u32 frameIndex = 0);
 
 		//! Returns the number of frames
-		u32 GetNumFrames() const { return m_aAnimations[m_CurrentAnimation].aFrames.size(); }
+		size_t GetNumFrames() const { return m_aAnimations[m_CurrentAnimation].aFrames.size(); }
 
 		//! returns the current frame
 		u32 GetCurrentFrame() const { return m_CurrentFrame; }

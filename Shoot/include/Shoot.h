@@ -9,6 +9,7 @@ Created: February 5th 2010
 #ifndef _SHOOT_H_INCLUDED_
 #define _SHOOT_H_INCLUDED_
 
+
 #include <list>
 #include <vector>
 #include <map>
@@ -25,15 +26,26 @@ Created: February 5th 2010
 
 #if defined(TARGET_OS_IPHONE)
 #define SHOOT_PLATFORM SHOOT_PLATFORM_IOS
+#ifdef __LP64__
+#define SHOOT_64
+#endif
 #elif defined(__ANDROID__)
 #define SHOOT_PLATFORM SHOOT_PLATFORM_ANDROID
+// TODO SHOOT_64
 #elif defined(WINAPI_FAMILY_PHONE_APP)
 #define SHOOT_PLATFORM SHOOT_PLATFORM_WP8
-#elif defined(_WIN32)
+// TODO SHOOT_64
+#elif defined(_WIN32) || defined(_WIN64)
 #define SHOOT_PLATFORM SHOOT_PLATFORM_WIN32
+#if defined(_WIN64)
+#define SHOOT_64
+#endif
 #else
-#define SHOOT_PLATFORM SHOOT_PLATFORM_UNDEFINED
 #error UNSUPPORTED PLATFORM!
+#endif
+
+#ifdef SHOOT_64
+#pragma message("using SHOOT_64")
 #endif
 
 #include "Types.h"

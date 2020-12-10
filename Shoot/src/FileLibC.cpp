@@ -63,13 +63,13 @@ namespace shoot
 	//! reads data from the file
 	s32 FileLibC::Read(void* pDest, u32 bytesToRead)
 	{
-		return fread(pDest, 1, bytesToRead, m_pFile);
+		return (s32)fread(pDest, 1, bytesToRead, m_pFile);
 	}
 
 	//! writes data to the file
 	s32 FileLibC::Write(const void* pSrc, u32 bytesToWrite)
 	{
-		return fwrite(pSrc, 1, bytesToWrite, m_pFile);
+		return (s32)fwrite(pSrc, 1, bytesToWrite, m_pFile);
 	}
 
 	//! changes the current read/write location in the file

@@ -37,7 +37,7 @@ namespace shoot
 	//! print profile info
 	void ProfileManager::Print(const char* strInfo)
 	{
-		m_pFile->Write((void*)strInfo, std::string(strInfo).length());
+		m_pFile->Write((void*)strInfo, (u32)std::string(strInfo).length());
 	}
 
 	//! constructor

@@ -39,7 +39,25 @@ namespace shoot
 		return *this;
 	}
 
-	BaseLog& BaseLog::operator << (u32 _u32)
+	BaseLog& BaseLog::operator << (size_t i)
+	{
+		std::stringstream ss(std::stringstream::in | std::stringstream::out);
+		ss << i;
+		std::string str = ss.str();
+		PrintInternal(str.c_str());
+		return *this;
+	}
+
+	BaseLog& BaseLog::operator << (float f)
+	{
+		std::stringstream ss(std::stringstream::in | std::stringstream::out);
+		ss << f;
+		std::string str = ss.str();
+		PrintInternal(str.c_str());
+		return *this;
+	}
+
+	/*BaseLog& BaseLog::operator << (u32 _u32)
 	{
 		return operator << (s32(_u32));		
 	}
@@ -60,7 +78,7 @@ namespace shoot
 		std::string str = ss.str();
 		PrintInternal(str.c_str());
 		return *this;
-	}
+	}*/
 
 	//! Prints to available output streams
 	void BaseLog::PrintInternal(const char* str)

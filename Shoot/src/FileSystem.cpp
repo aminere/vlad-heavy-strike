@@ -64,7 +64,7 @@ namespace shoot
 				for(u32 j=0; j<partitionInfoWrite.numFiles; ++j)
 				{
 					std::string filePath = fileWriteInfos[j].path;
-					FileInfo info = { fileOffset, fileWriteInfos[j].size, i };
+					FileInfo info = { fileOffset, fileWriteInfos[j].size, (u8)i };
 					SHOOT_ASSERT(m_FileMap.find(filePath) == m_FileMap.end(), "Can't have multiple files with the same path '%s'", filePath.c_str());
 					m_FileMap[filePath] = info;
 					fileOffset += info.size;

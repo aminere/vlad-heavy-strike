@@ -77,7 +77,7 @@ namespace shoot
 		void RemoveProperty(IProperty* pProperty);
 
 		//! returns the number of properties stored in this stream
-		u32 GetNumProperties() const { return m_aProperties.size(); }
+		size_t GetNumProperties() const { return m_aProperties.size(); }
 
 		//! fills this stream from an xml element
 		void ReadFromXML(tinyxml2::XMLElement* pXMLElement, ArrayProperty* pParentArrayProperty = NULL);

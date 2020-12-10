@@ -38,7 +38,7 @@ namespace shoot
 	/** \param fRatio: factor from 0.0f to 1.0f */
 	Vector3 Path::GetPosition(f32 fRatio, s32* pSrcElementIndex /*= NULL*/)
 	{
-		s32 numElements = GetChildCount();
+		auto numElements = (int)GetChildCount();
 		s32 srcIndex;
 		s32 destIndex;
 		f32 fFraction;
@@ -71,7 +71,7 @@ namespace shoot
 	//! returns a position along the path
 	Vector3 Path::GetPosition(s32 srcIndex, s32 destIndex, f32 fLocalRatio)
 	{
-		s32 numElements = GetChildCount();
+		auto numElements = (int)GetChildCount();
 		s32 preSrcIndex;
 		s32 postDestIndex;
 

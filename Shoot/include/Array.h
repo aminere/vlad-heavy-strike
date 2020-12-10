@@ -21,22 +21,22 @@ namespace shoot
 		virtual void Add(void* pElement) = 0;
 
 		//! Returns a pointer to an element, the properties are responsible for casting to the appropriate type
-		virtual void* GetPtr(u32 index) = 0;
+		virtual void* GetPtr(size_t index) = 0;
 
 		//! Returns the number of elements
-		virtual u32 GetSize() const = 0;
+		virtual size_t GetSize() const = 0;
 
 		//! Explicitly clear the array
 		virtual void Clear() = 0;
 
 		//! removes one element from the array
-		virtual void* Remove(u32 index) = 0;
+		virtual void* Remove(size_t index) = 0;
 
 		//! deletes one element from the array
-		virtual void Delete(u32 index) = 0;
+		virtual void Delete(size_t index) = 0;
 
 		//! inserts one element in the array
-		virtual void Insert(u32 index, void* pElement) = 0;
+		virtual void Insert(size_t index, void* pElement) = 0;
 	};
 
 	//! Concrete array class to be used to expose arrays of user data
@@ -63,10 +63,10 @@ namespace shoot
 		}
 
 		//! returns a specific element
-		T& operator[](u32 index) { return *aElements[index]; }
+		T& operator[](size_t index) { return *aElements[index]; }
 
 		//! returns a specific element
-		const T& operator[](u32 index) const { return *aElements[index]; }
+		const T& operator[](size_t index) const { return *aElements[index]; }
 
 		//! Allocates one element, calls the approriate constructor
 		void* Alloc() {	return snew T(); }		
@@ -78,15 +78,15 @@ namespace shoot
 		}
 
 		//! Returns a pointer to an element, the properties are responsible for casting to the appropriate type
-		void* GetPtr(u32 index)	{ return aElements[index]; }		
+		void* GetPtr(size_t index)	{ return aElements[index]; }
 
 		//! Returns the number of elements
-		u32 GetSize() const { return aElements.size(); }
+		size_t GetSize() const { return aElements.size(); }
 
 		//! Explicitly clear the array
 		void Clear() 
 		{ 
-			for(u32 i=0; i<aElements.size(); ++i)
+			for(auto i=0; i<aElements.size(); ++i)
 			{
 				delete aElements[i];
 			}
@@ -94,7 +94,7 @@ namespace shoot
 		}
 
 		//! removes one element from the array
-		void* Remove(u32 index)
+		void* Remove(size_t index)
 		{
 			void* pElement = aElements[index];
 			aElements.erase(aElements.begin()+index);
@@ -102,14 +102,14 @@ namespace shoot
 		}
 
 		//! deletes one element from the array
-		void Delete(u32 index)
+		void Delete(size_t index)
 		{
 			delete aElements[index];
 			aElements.erase(aElements.begin()+index);
 		}
 
 		//! inserts one element in the array
-		void Insert(u32 index, void* pElement)
+		void Insert(size_t index, void* pElement)
 		{
 			aElements.insert(aElements.begin()+index, static_cast<T*>(pElement));
 		}

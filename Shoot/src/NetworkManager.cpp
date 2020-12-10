@@ -80,7 +80,7 @@ namespace shoot
 	void NetworkManager::SendData(const char* strHostName, u32 port, u8* pData, u32 size, NetResultCallback* pResultCallback)
 	{
 		Operation operation;
-		operation.m_SocketID = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+		operation.m_SocketID = (s32)socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 #ifdef USE_WINSOCK2
 		DWORD msec = 5000;
 		int rcvTimeOut = setsockopt(operation.m_SocketID, SOL_SOCKET, SO_RCVTIMEO, (const char*)&msec, sizeof(u32));
@@ -212,7 +212,7 @@ namespace shoot
 
 						if(received > 0)
 						{
-							u32 currentSize = readData.size();
+							u32 currentSize = (u32)readData.size();
 							readData.reserve(currentSize+received);
 							std::copy(pMgr->m_ReadBuffer, pMgr->m_ReadBuffer+received, std::back_inserter(readData));
 						}
@@ -282,7 +282,7 @@ namespace shoot
 				for(; j<maxHeaderChars && IsHexadecimal(dataIn[afterCRLF+j]); ++j);
 				if(dataIn[afterCRLF+j] == '\r' && dataIn[afterCRLF+j+1] == '\n')
 				{
-					u32 currentSize = dataOut.size();
+					auto currentSize = dataOut.size();
 					dataOut.reserve(currentSize+(i-copyOffset));
 					std::copy(&dataIn[copyOffset], &dataIn[i], std::back_inserter(dataOut));
 
@@ -298,7 +298,7 @@ namespace shoot
 
 					if(beforeCRLF > copyOffset)
 					{
-						u32 currentSize = dataOut.size();
+						auto currentSize = dataOut.size();
 						dataOut.reserve(currentSize+(beforeCRLF-copyOffset));
 						std::copy(&dataIn[copyOffset], &dataIn[beforeCRLF], std::back_inserter(dataOut));
 					}

@@ -253,7 +253,7 @@ namespace shoot
 				if(pProperty)
 				{
 					// update existing elements					
-					for(u32 i=0; i<pArray->GetSize() && i<pProperty->GetProperties().size(); ++i)
+					for(auto i=0; i<pArray->GetSize() && i<pProperty->GetProperties().size(); ++i)
 					{
 						IProperty* pSubProperty = pProperty->GetProperties()[i];
 						SHOOT_ASSERT(pSubProperty->GetType() == eSubType, "Actual sub property type differs from expected type");
@@ -262,7 +262,7 @@ namespace shoot
 					}
 
 					// attempt to add new elements
-					for(u32 i=pArray->GetSize(); i<pProperty->GetProperties().size(); ++i)
+					for(auto i=pArray->GetSize(); i<pProperty->GetProperties().size(); ++i)
 					{
 						IProperty* pSubProperty = pProperty->GetProperties()[i];
 						SHOOT_ASSERT(pSubProperty->GetType() == eSubType, "Actual sub property type differs from expected type");
@@ -280,7 +280,7 @@ namespace shoot
 					}
 
 					// attempt to remove elements
-					for(u32 i=pProperty->GetProperties().size(); i<pArray->GetSize(); ++i)
+					for(auto i=pProperty->GetProperties().size(); i<pArray->GetSize(); ++i)
 					{
 						pArray->Delete(i);
 						--i;

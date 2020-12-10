@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release Editor|x64">
+      <Configuration>Release Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02CD2C0D-B04D-4C6E-80F7-0B41C7616AAF}</ProjectGuid>
+    <RootNamespace>ShootTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.\..\..\..\..\shoot\include;.\..\..\..\..\shoot\include\OpenGL;.\..\..\..\src\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ShootTest.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.\..\..\..\..\shoot\include;.\..\..\..\..\shoot\include\OpenGL;.\..\..\..\..\extern\SDL\include;.\..\..\..\src\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;SHOOT_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ShootTest.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\game\AudioManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\Bomber.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss3.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss3FSM.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss4.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss4FSM.cpp" />
+    <ClCompile Include="..\..\..\src\game\DamageComponent.cpp" />
+    <ClCompile Include="..\..\..\src\game\Kamikaze.cpp" />
+    <ClCompile Include="..\..\..\src\game\KamikazeTower.cpp" />
+    <ClCompile Include="..\..\..\src\game\LaserSwiper.cpp" />
+    <ClCompile Include="..\..\..\src\game\PlayerList.cpp" />
+    <ClCompile Include="..\..\..\src\game\RadialShooter.cpp" />
+    <ClCompile Include="..\..\..\src\game\RadialTank.cpp" />
+    <ClCompile Include="..\..\..\src\game\RadialTower.cpp" />
+    <ClCompile Include="..\..\..\src\game\ScoreoidUtils.cpp" />
+    <ClCompile Include="..\..\..\src\game\SpinningLasers.cpp" />
+    <ClCompile Include="..\..\..\src\game\Squad.cpp" />
+    <ClCompile Include="..\..\..\src\game\Starfield.cpp" />
+    <ClCompile Include="..\..\..\src\game\ConfigPoint.cpp" />
+    <ClCompile Include="..\..\..\src\game\Player.cpp" />
+    <ClCompile Include="..\..\..\src\game\PlayerCamera.cpp" />
+    <ClCompile Include="..\..\..\src\game\PlayerCollisionComponent.cpp" />
+    <ClCompile Include="..\..\..\src\game\PlayerFSM.cpp" />
+    <ClCompile Include="..\..\..\src\game\AIManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\AreaSpawner.cpp" />
+    <ClCompile Include="..\..\..\src\game\Asteroid.cpp" />
+    <ClCompile Include="..\..\..\src\game\BasicEnemy.cpp" />
+    <ClCompile Include="..\..\..\src\game\BasicFighter.cpp" />
+    <ClCompile Include="..\..\..\src\game\BasicShooter.cpp" />
+    <ClCompile Include="..\..\..\src\game\BasicTower.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss1.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss1FSM.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss2.cpp" />
+    <ClCompile Include="..\..\..\src\game\Boss2FSM.cpp" />
+    <ClCompile Include="..\..\..\src\game\FallingAsteroid.cpp" />
+    <ClCompile Include="..\..\..\src\game\SpinShooter.cpp" />
+    <ClCompile Include="..\..\..\src\game\TightPassage.cpp" />
+    <ClCompile Include="..\..\..\src\game\TriggerSpawner.cpp" />
+    <ClCompile Include="..\..\..\src\game\BulletManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\BulletManagerCollisionComponent.cpp" />
+    <ClCompile Include="..\..\..\src\game\LaserManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\LaserManagerCollisionComponent.cpp" />
+    <ClCompile Include="..\..\..\src\game\PelletManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\PlayerCannons.cpp" />
+    <ClCompile Include="..\..\..\src\game\PulseManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\UIContext.cpp" />
+    <ClCompile Include="..\..\..\src\game\UIHandler.cpp" />
+    <ClCompile Include="..\..\..\src\game\VKButton.cpp" />
+    <ClCompile Include="..\..\..\src\game\VKeyboard.cpp" />
+    <ClCompile Include="..\..\..\src\game\WeaponConfig.cpp" />
+    <ClCompile Include="..\..\..\src\game\Actor.cpp" />
+    <ClCompile Include="..\..\..\src\game\ConversationManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\ConversationVisitor.cpp" />
+    <ClCompile Include="..\..\..\src\game\DefaultEntityRegistration.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameData.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameEngine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\GameManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\GameThreadiOS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Editor|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\game\Item.cpp" />
+    <ClCompile Include="..\..\..\src\game\ItemManager.cpp" />
+    <ClCompile Include="..\..\..\src\game\SFXManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\game\AudioManager.h" />
+    <ClInclude Include="..\..\..\src\game\Bomber.h" />
+    <ClInclude Include="..\..\..\src\game\Boss3.h" />
+    <ClInclude Include="..\..\..\src\game\Boss3FSM.h" />
+    <ClInclude Include="..\..\..\src\game\Boss4.h" />
+    <ClInclude Include="..\..\..\src\game\Boss4FSM.h" />
+    <ClInclude Include="..\..\..\src\game\DamageComponent.h" />
+    <ClInclude Include="..\..\..\src\game\Kamikaze.h" />
+    <ClInclude Include="..\..\..\src\game\KamikazeTower.h" />
+    <ClInclude Include="..\..\..\src\game\LaserSwiper.h" />
+    <ClInclude Include="..\..\..\src\game\PlayerList.h" />
+    <ClInclude Include="..\..\..\src\game\RadialShooter.h" />
+    <ClInclude Include="..\..\..\src\game\RadialTank.h" />
+    <ClInclude Include="..\..\..\src\game\RadialTower.h" />
+    <ClInclude Include="..\..\..\src\game\ScoreoidUtils.h" />
+    <ClInclude Include="..\..\..\src\game\SpinningLasers.h" />
+    <ClInclude Include="..\..\..\src\game\Squad.h" />
+    <ClInclude Include="..\..\..\src\game\Starfield.h" />
+    <ClInclude Include="..\..\..\src\game\ConfigPoint.h" />
+    <ClInclude Include="..\..\..\src\game\Player.h" />
+    <ClInclude Include="..\..\..\src\game\PlayerCamera.h" />
+    <ClInclude Include="..\..\..\src\game\PlayerCollisionComponent.h" />
+    <ClInclude Include="..\..\..\src\game\PlayerFSM.h" />
+    <ClInclude Include="..\..\..\src\game\AIManager.h" />
+    <ClInclude Include="..\..\..\src\game\AreaSpawner.h" />
+    <ClInclude Include="..\..\..\src\game\Asteroid.h" />
+    <ClInclude Include="..\..\..\src\game\BasicEnemy.h" />
+    <ClInclude Include="..\..\..\src\game\BasicFighter.h" />
+    <ClInclude Include="..\..\..\src\game\BasicShooter.h" />
+    <ClInclude Include="..\..\..\src\game\BasicTower.h" />
+    <ClInclude Include="..\..\..\src\game\Boss1.h" />
+    <ClInclude Include="..\..\..\src\game\Boss1FSM.h" />
+    <ClInclude Include="..\..\..\src\game\Boss2.h" />
+    <ClInclude Include="..\..\..\src\game\Boss2FSM.h" />
+    <ClInclude Include="..\..\..\src\game\FallingAsteroid.h" />
+    <ClInclude Include="..\..\..\src\game\SpinShooter.h" />
+    <ClInclude Include="..\..\..\src\game\TightPassage.h" />
+    <ClInclude Include="..\..\..\src\game\TriggerSpawner.h" />
+    <ClInclude Include="..\..\..\src\game\BulletManager.h" />
+    <ClInclude Include="..\..\..\src\game\BulletManagerCollisionComponent.h" />
+    <ClInclude Include="..\..\..\src\game\LaserManager.h" />
+    <ClInclude Include="..\..\..\src\game\LaserManagerCollisionComponent.h" />
+    <ClInclude Include="..\..\..\src\game\PelletManager.h" />
+    <ClInclude Include="..\..\..\src\game\PlayerCannons.h" />
+    <ClInclude Include="..\..\..\src\game\PulseManager.h" />
+    <ClInclude Include="..\..\..\src\game\UIContext.h" />
+    <ClInclude Include="..\..\..\src\game\UIHandler.h" />
+    <ClInclude Include="..\..\..\src\game\VKButton.h" />
+    <ClInclude Include="..\..\..\src\game\VKeyboard.h" />
+    <ClInclude Include="..\..\..\src\game\WeaponConfig.h" />
+    <ClInclude Include="..\..\..\src\game\Actor.h" />
+    <ClInclude Include="..\..\..\src\game\ConversationManager.h" />
+    <ClInclude Include="..\..\..\src\game\ConversationVisitor.h" />
+    <ClInclude Include="..\..\..\src\game\FSM.h" />
+    <ClInclude Include="..\..\..\src\game\FSMState.h" />
+    <ClInclude Include="..\..\..\src\game\GameData.h" />
+    <ClInclude Include="..\..\..\src\game\GameEngine.h" />
+    <ClInclude Include="..\..\..\src\game\GameManager.h" />
+    <ClInclude Include="..\..\..\src\game\GameThreadiOS.h" />
+    <ClInclude Include="..\..\..\src\game\Item.h" />
+    <ClInclude Include="..\..\..\src\game\ItemManager.h" />
+    <ClInclude Include="..\..\..\src\game\SFXManager.h" />
+    <ClInclude Include="..\..\..\src\game\ShootTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Shoot\build\vc\shoot.vcxproj">
+      <Project>{18ca3f84-75a7-43c4-8388-34c2e384c80f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

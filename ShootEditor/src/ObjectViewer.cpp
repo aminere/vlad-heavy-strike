@@ -74,7 +74,7 @@ namespace shoot
 	{
 		// fill type column		
 		long item = m_pObjectList->InsertItem(m_pObjectList->GetItemCount(), pObject->GetClassName(), IconManager::Instance()->GetIconIndex(pObject));		
-		m_pObjectList->SetItemData(item, (long)pObject);
+		m_pObjectList->SetItemData(item, (wxIntPtr)pObject);
 		m_pObjectList->SetColumnWidth(0, wxLIST_AUTOSIZE);
 
 		// fill ID column
@@ -116,7 +116,7 @@ namespace shoot
 		}
 	}	
 
-	int wxCALLBACK ObjectViewer::ObjectViewerSort(long item1, long item2, long sortData)
+	int wxCALLBACK ObjectViewer::ObjectViewerSort(wxIntPtr item1, wxIntPtr item2, wxIntPtr sortData)
 	{
 		Object* pObject1 = (Object*)item1;
 		Object* pObject2 = (Object*)item2;
@@ -179,7 +179,7 @@ namespace shoot
 	{
 		m_ColumnToSort = event.GetColumn();
 
-		m_pObjectList->SortItems(ObjectViewer::ObjectViewerSort, (long)this);
+		m_pObjectList->SortItems(ObjectViewer::ObjectViewerSort, (wxIntPtr)this);
 
 		SHOOT_ASSERT(m_ColumnToSort >= 0 && m_ColumnToSort < s32(NumColumns), "Invalid Column Index");
 		m_ColumSortDescending[m_ColumnToSort] = !m_ColumSortDescending[m_ColumnToSort];

@@ -66,7 +66,7 @@ namespace shoot
 			{
 				if(m_Direction > 0 && (m_CurrentFrame == m_aTextures.size()))
 				{				
-					m_CurrentFrame = m_aTextures.size()-2;
+					m_CurrentFrame = (s32)m_aTextures.size()-2;
 					m_Direction *= -1;
 				}
 				else if(m_Direction < 0 && (m_CurrentFrame < 0))
@@ -74,7 +74,7 @@ namespace shoot
 					m_CurrentFrame = 1;
 					m_Direction *= -1;
 				}
-				m_CurrentFrame = Math::Clamp<s32>(m_CurrentFrame, 0, m_aTextures.size()-1);
+				m_CurrentFrame = Math::Clamp<s32>(m_CurrentFrame, 0, (s32)m_aTextures.size()-1);
 			}
 			else
 			{

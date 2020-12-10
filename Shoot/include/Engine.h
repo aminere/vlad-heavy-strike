@@ -73,10 +73,10 @@ namespace shoot
 		inline void PopContext() const { GetTopContext()->Pop(); }
 
 		//! returns the number of contexts in the stack
-		inline u32 GetNumContexts() const { return m_ContextStack->GetChildCount(); }
+		inline size_t GetNumContexts() const { return m_ContextStack->GetChildCount(); }
 
 		//! returns a context by index
-		inline Context* GetContext(u32 index) const { return static_cast<Context*>(m_ContextStack->GetChild(index)); }
+		inline Context* GetContext(size_t index) const { return static_cast<Context*>(m_ContextStack->GetChild(index)); }
 
 		//! returns the top context
 		Context* GetTopContext() const;

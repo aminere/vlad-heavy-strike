@@ -106,7 +106,7 @@ namespace shoot
 				break;
 			}
 		}
-		return dest.length();
+		return (s32)dest.length();
 	}
 
 	//! reads a line until a delimiter

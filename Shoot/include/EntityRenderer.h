@@ -100,7 +100,7 @@ namespace shoot
 			std::vector<Matrix44> aTextureTransforms;
 		};
 
-		typedef std::map< u32, VertexInfo > VertexMap;
+		typedef std::map< size_t, VertexInfo > VertexMap;
 
 		//! render info
 		struct RenderInfo
@@ -109,7 +109,7 @@ namespace shoot
 			VertexMap m_VertexMap;
 		};
 		
-		typedef std::map< u32, RenderInfo > RenderMap;
+		typedef std::map< size_t, RenderInfo > RenderMap;
 
 		RenderMap m_Solid3DRenderMap;
 		RenderMap m_Transparent3DRenderMap;

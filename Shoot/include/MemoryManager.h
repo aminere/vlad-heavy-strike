@@ -30,7 +30,7 @@ namespace shoot
 		}
 		
 		//! allocates memory
-		static void* Alloc(u32 size, const char* strFileName, u32 line);
+		static void* Alloc(size_t size, const char* strFileName, u32 line);
 		
 		//! frees memory
 		static void Free(void* pMemory);
@@ -39,21 +39,21 @@ namespace shoot
 		static void LeakCheck();
 
 		//! Get used memory in bytes
-		static u32 GetUsedMemory() { return m_UsedMemory; }
+		static size_t GetUsedMemory() { return m_UsedMemory; }
 
 	private:
 
 		//! Allocation info
 		struct AllocInfo
 		{
-			u32 Size;
+			size_t Size;
 			const char* strFileName;
-			u32 Line;
+			size_t Line;
 		};
 		
 		typedef std::map<void*, AllocInfo> AllocMap;
 		static AllocMap* m_pAllocMap;
-		static s32 m_UsedMemory;
+		static size_t m_UsedMemory;
 		static Mutex* m_pMutex;
 		static bool m_bInitialized;
 	};

@@ -20,9 +20,8 @@ namespace shoot
 
 		//! Print operators
 		BaseLog& operator << (const char* str);
-		BaseLog& operator << (u32 _u32);
-		BaseLog& operator << (s32 _s32);
-		BaseLog& operator << (f32 _f32);
+		BaseLog& operator << (size_t);
+		BaseLog& operator << (float);
 
 	private:
 

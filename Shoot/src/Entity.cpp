@@ -400,12 +400,12 @@ namespace shoot
 		if(!bIsTemplateInstance)
 		{
 			// write components
-			u32 numComponents = pEntity->GetComponentCount();
+			auto numComponents = pEntity->GetComponentCount();
 			if(numComponents > 0)
 			{
 				tinyxml2::XMLElement* pXMLComponents = pXMLElement->GetDocument()->NewElement("Components");
 				PropertyStream stream(SM_Write);
-				for(u32 i=0; i<numComponents; ++i)
+				for(auto i=0; i<numComponents; ++i)
 				{
 					stream.SerializeReference("", &pEntity->m_aComponents[i]);
 				}

@@ -116,7 +116,7 @@ namespace shoot
 						// Create a new sub mesh
 						MeshResource::SubMesh subMesh = { Reference<VertexBuffer>(GraphicsDriver::Instance()->CreateVertexBuffer()), vPosition };
 						m_pMesh->AddSubMesh(subMesh);
-						subMeshIndex = aSubMeshes.size()-1;
+						subMeshIndex = (s32)aSubMeshes.size()-1;
 					}
 					
 					aSubMeshes[subMeshIndex].m_VertexBuffer->SetName(strName);

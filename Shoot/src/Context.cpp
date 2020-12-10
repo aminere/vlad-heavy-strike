@@ -146,7 +146,7 @@ namespace shoot
 	//! returns true if the context is on top of the context stack
 	bool Context::IsTopContext() const
 	{
-		u32 topContextIndex = Engine::Instance()->GetNumContexts()-1;
+		auto topContextIndex = Engine::Instance()->GetNumContexts()-1;
 		return this == Engine::Instance()->GetContext(topContextIndex);
 	}
 }

@@ -119,7 +119,7 @@ namespace shoot
 			u32 numNewParticles = u32(m_fNewParticlesCounter);
 			if(m_aParticles.size() + numNewParticles > m_MaxParticles)
 			{
-				numNewParticles = m_MaxParticles-m_aParticles.size();
+				numNewParticles = m_MaxParticles - (u32)m_aParticles.size();
 			}
 
 			for(u32 i=0; i<numNewParticles; ++i)

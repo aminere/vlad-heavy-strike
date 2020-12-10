@@ -35,7 +35,7 @@ namespace shoot
 		virtual void CheckCollisions(CollisionComponent* pOther);
 
 		//! returns the number of collision shapes
-		u32 GetShapeCount() const { return m_aShapes.GetSize(); }
+		size_t GetShapeCount() const { return m_aShapes.GetSize(); }
 
 		//! returns a collision shape
 		CollisionShape* GetShape(u32 index) { return m_aShapes[index].Get(); }

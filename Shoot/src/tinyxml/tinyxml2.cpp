@@ -1614,7 +1614,7 @@ XMLError XMLDocument::LoadFile( shoot::File* pFile )
     }
 
     _charBuffer = new char[size+1];
-    if ( pFile->Read(_charBuffer, size) != size ) {
+    if ( pFile->Read(_charBuffer, (unsigned int)size) != size ) {
         SetError( XML_ERROR_FILE_READ_ERROR, 0, 0 );
         return _errorID;
     }

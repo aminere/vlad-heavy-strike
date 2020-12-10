@@ -45,11 +45,11 @@ namespace shoot
 		virtual void RegisterForRendering() { }
 
 		//! returns the number of children 
-		inline u32 GetChildCount() const { return m_aChildren.size(); }
+		inline size_t GetChildCount() const { return m_aChildren.size(); }
 
 		//! returns a pointer to a child
 		/** \param index: index of the wanted child */
-		inline Entity* GetChild(int index) const { return m_aChildren[index]; }
+		inline Entity* GetChild(size_t index) const { return m_aChildren[index]; }
 
 		//! returns a child using its ID
 		/** \param ID: ID of the wanted child */
@@ -108,11 +108,11 @@ namespace shoot
 		Entity* GetRoot() const;
 
 		//! returns the number of components 
-		inline u32 GetComponentCount() const { return m_aComponents.size(); }
+		inline size_t GetComponentCount() const { return m_aComponents.size(); }
 
 		//! returns a pointer to a component
 		/** \param index: index of the wanted component */
-		inline Component* GetComponent(int index) const { return m_aComponents[index]; }
+		inline Component* GetComponent(size_t index) const { return m_aComponents[index]; }
 
 		//! returns a pointer to a component		
 		Component* GetComponent(const char* strName) const;

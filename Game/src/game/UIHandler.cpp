@@ -175,7 +175,7 @@ namespace shoot
 						break;
 
 					default:
-						Log << "Unknown game state: " << pMgr->m_eState << "\n";
+						Log << "Unknown game state: " << (size_t)pMgr->m_eState << "\n";
 					}
 				}
 			}

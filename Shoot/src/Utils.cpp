@@ -64,7 +64,7 @@ namespace shoot
 	std::string Utils::GetFileExtension(const char* strPath)
 	{
 		std::string path(strPath);
-		s32 extIndex = path.rfind(".");
+		auto extIndex = path.rfind(".");
 		SHOOT_ASSERT(extIndex >= 0, "Resource::GetFileExtension: invalid path");
 		std::string extension = path.substr(extIndex+1);
 		return extension;

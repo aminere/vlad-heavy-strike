@@ -344,7 +344,7 @@ namespace shoot
 			char *log = snew char[logsize+1];
 			memset(log, 0, logsize+1);
 			pGlGetInfoLogARB(program, logsize, &logsize, log);
-			Log << "Program " << program << " link error:\n" << log << "\n";
+			Log << "Program " << (size_t)program << " link error:\n" << log << "\n";
 			sdelete_array(log);
 			return false;
 		}

@@ -24,7 +24,7 @@ namespace shoot
 	/** \param fRatio: factor from 0.0f to 1.0f */
 	Vector3 CameraPath::GetLookAt(f32 fRatio)
 	{
-		s32 numElements = GetChildCount();
+		auto numElements = (int)GetChildCount();
 		s32 srcIndex;
 		s32 destIndex;
 		f32 fFraction;
@@ -50,7 +50,7 @@ namespace shoot
 	//! returns a camera look at position along the path
 	Vector3 CameraPath::GetLookAt(s32 srcIndex, s32 destIndex, f32 fLocalRatio)
 	{
-		s32 numElements = GetChildCount();
+		auto numElements = (int)GetChildCount();
 		s32 preSrcIndex;
 		s32 postDestIndex;
 

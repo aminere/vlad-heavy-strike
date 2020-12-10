@@ -17,12 +17,12 @@ namespace shoot
 {
 	// static variables initialization
 	MemoryManager::AllocMap* MemoryManager::m_pAllocMap = new MemoryManager::AllocMap();
-	s32 MemoryManager::m_UsedMemory = 0;
+	size_t MemoryManager::m_UsedMemory = 0;
 	Mutex* MemoryManager::m_pMutex = Mutex::Create();
 	bool MemoryManager::m_bInitialized = false;
 
 	//! allocates memory
-	void* MemoryManager::Alloc(u32 size, const char* strFileName, u32 line)
+	void* MemoryManager::Alloc(size_t size, const char* strFileName, u32 line)
 	{
 		void* pMemory = malloc(size);
 		SHOOT_ASSERT(pMemory, "Could not allocate memory");	

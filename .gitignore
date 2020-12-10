@@ -3,22 +3,20 @@
 *.VC.db
 *.VC.opendb
 *.ipch
-Shoot/build/vc11/Release Editor OptimOff/
-Shoot/build/vc11/Release/
-Game/build/vc11/editor/Release OptimOff/
-ShootEditor/build/vc11/Release OptimOff/
-Shoot/build/vc11/Win32/
-Game/build/vc11/game/Win32/
-ShootEditor/build/vc11/Win32/
-Game/build/vc11/game/Release Editor OptimOff/
-Game/build/vc11/editor/Win32/
-Game/build/vc11/editor/ipch/
-Game/build/vc11/game/Release/
-/Game/build/vc11/editor/Release Editor OptimOff
-/Game/ShootTestEditorLauncherRelease OptimOff.map
-/Game/build/vc11/editor/Release
-/Shoot/tools/FileSystemGenerator/vc11/Release Optim Off
-/Shoot/tools/FileSystemGenerator/vc11/Release
-/Game/build/vc11/game/Release Optim Off
-/Game/build/vc11/game/Release OptimOff
+Shoot/build/vc11/x64/
+Game/build/vc/editor/x64/
+ShootEditor/build/vc11/x64/
+Shoot/build/vc11/x64/
+Game/build/vc/game/x64/
+ShootEditor/build/vc11/x64/
+Game/build/vc/game/x64/
 /Game/data.fs
+
+EditorLauncherRelease.map
+*.exe
+*.vcxproj.user
+*.suo
+*.VC.db-*
+*.pdb
+
+Shoot/tools/FileSystemGenerator/x64/

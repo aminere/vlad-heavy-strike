@@ -253,10 +253,15 @@ namespace shoot
 			{
 				SHOOT_ASSERT(pGraphic->GetParent()->IsA(RenderableEntity::TypeID), "Invalid GraphicComponent");
 				RenderableEntity* pEntity = static_cast<RenderableEntity*>(pGraphic->GetParent());
-				u32 materialID = (u32)pMaterial;
-				u32 ID = ((pGraphic->GetRenderingPriority()&0xFF)<<24) | (materialID&0x00FFFFFF);
+				size_t materialID = (size_t)pMaterial;
 
-				u32 vbID = (u32)pVertexBuffer;
+#ifdef SHOOT_64
+				size_t ID = (((size_t)pGraphic->GetRenderingPriority() & 0xFF) << 56) | (materialID & 0x00FFFFFFFFFFFFFF);
+#else
+				size_t ID = ((pGraphic->GetRenderingPriority() & 0xFF) << 24) | (materialID & 0x00FFFFFF);
+#endif				
+
+				size_t vbID = (size_t)pVertexBuffer;
 				renderMap[ID].pMaterial = pMaterial;
 				renderMap[ID].m_VertexMap[vbID].pVertexBuffer = pVertexBuffer;
 				renderMap[ID].m_VertexMap[vbID].aWorldTransforms.push_back(pEntity->GetTransformationMatrix());

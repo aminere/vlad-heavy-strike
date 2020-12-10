@@ -131,7 +131,7 @@ namespace shoot
 		}
 
 		// release unused textures
-		for(s32 i=m_TextureInfos.GetSize(); i<s32(pMaterial->m_aTextures.size()); ++i)
+		for(auto i=m_TextureInfos.GetSize(); i<pMaterial->m_aTextures.size(); ++i)
 		{
 			pMaterial->m_aTextures[i].SetObject(NULL);
 			pMaterial->m_aTextures.erase(pMaterial->m_aTextures.begin()+i);

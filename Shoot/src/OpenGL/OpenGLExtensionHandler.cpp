@@ -17,7 +17,7 @@ namespace shoot
 	OpenGLExtensionHandler::OpenGLExtensionHandler(const char* const strExtensionStrings[E_Count])	
 	{
 		const char* strExtensions = reinterpret_cast<const char*>(glGetString(GL_EXTENSIONS));
-		u32 length = strlen(strExtensions);
+		u32 length = (u32)strlen(strExtensions);
 
 		std::string extension;
 

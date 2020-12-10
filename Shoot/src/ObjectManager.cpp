@@ -219,8 +219,8 @@ namespace shoot
 #endif // SHOOT_EDITOR
 
 			// copy children
-			u32 numChildren = pEntity->GetChildCount();
-			for(u32 i=0; i<numChildren; ++i)
+			auto numChildren = pEntity->GetChildCount();
+			for(size_t i=0; i<numChildren; ++i)
 			{
 				Object* pChild = pEntity->GetChild(i);
 				Object* pChildCopy = InternalCopyObject(pChild, IDMap_OriginalToCopy);
@@ -228,8 +228,8 @@ namespace shoot
 			}
 
 			// copy components
-			u32 numComponents = pEntity->GetComponentCount();
-			for(u32 i=0; i<numComponents; ++i)
+			auto numComponents = pEntity->GetComponentCount();
+			for(size_t i=0; i<numComponents; ++i)
 			{
 				Object* pComponent = pEntity->GetComponent(i);
 				Object* pComponentCopy = InternalCopyObject(pComponent, IDMap_OriginalToCopy);				
