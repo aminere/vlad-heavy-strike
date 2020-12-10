@@ -10,7 +10,7 @@ In addition to the game source, this includes the full game pipeline (engine, ed
 ## How To Build (Windows 10)
 
 * Requires Visual Studio 2019 :warning:
-* Run `BuildEditor.bat` and `BuildGame.bat`
+* Run `BuildEditor.bat` or `BuildGame.bat`
 * Or build from the solution files located in:
   * `Game\build\vc\game\EditorLauncher.sln`
   * `Game\build\vc\game\GameLauncher.sln`
