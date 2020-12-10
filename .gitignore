@@ -3,13 +3,14 @@
 *.VC.db
 *.VC.opendb
 *.ipch
-Shoot/build/vc11/x64/
+
+Shoot/build/vc/x64/
+
+ShootEditor/build/vc11/x64/
+
 Game/build/vc/editor/x64/
-ShootEditor/build/vc11/x64/
-Shoot/build/vc11/x64/
 Game/build/vc/game/x64/
-ShootEditor/build/vc11/x64/
-Game/build/vc/game/x64/
+
 /Game/data.fs
 
 EditorLauncherRelease.map
