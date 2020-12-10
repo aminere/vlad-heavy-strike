@@ -1,4 +1,4 @@
 
 pushd Game
-call "ShootTestEditorLauncherRelease OptimOff.exe"
+call "EditorLauncherRelease.exe"
 popd
